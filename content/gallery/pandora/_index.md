@@ -1,15 +1,9 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <link rel="stylesheet" href="/css/styles.css">   
-    <link rel="stylesheet" href="/css/custom.css">   
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/custom.css">
-</head>
-
+    <link rel="stylesheet" href="/css/styles.css">   
 </head>
 <body>
   
-
-
 <nav class="symbol-menu">
     <ul>
         <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
@@ -19,17 +13,20 @@
     </ul>
 </nav>
 
-
 <header class="gallery-header">
-    <h1>Epimetheus Gallery</h1>  
-    <p class="gallery-description">Welcome to Epimetheus. Epimetheus, the brother of Prometheus, was tasked with giving gifts to the creatures of the Earth. However, in his impulsiveness, he gave the best attributes—speed, strength, and cunning—to the animals, leaving humans defenseless. His lack of foresight left humanity vulnerable, forcing Prometheus to intervene by giving mankind the gift of fire.</p>  
+    <h1>Pandora Gallery</h1>
+    <p class="gallery-description"></p>
 </header>
-
-
+        
+        
 <div class="gallery-content">
-      
-</div>
+    <p>  
+---
+title: "Pandora Gallery"
+description: "Pandora, the first woman in Greek mythology, opened a jar that unleashed all evils into the world."
+---
+</p>
 
-
-</body>
+# Pandora Gallery Content
+Pandora opened a jar given by the gods, releasing hardship but also hope...
 

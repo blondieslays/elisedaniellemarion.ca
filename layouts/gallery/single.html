@@ -1,4 +1,6 @@
 {{ define "main" }}
+
+<!-- Symbols Menu -->
 <nav class="symbol-menu">
     <ul>
         <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
@@ -10,23 +12,14 @@
 
 <!-- Gallery Title and Description -->
 <header class="gallery-header">
-    <h1>{{ .Title }}</h1>
-    <p class="gallery-description">{{ .Params.description }}</p>  <!-- Description for Prometheus gallery -->
+    <h1>{{ .Title }}</h1>  <!-- Dynamically pulls the title from the gallery’s _index.md -->
+    <p class="gallery-description">{{ .Params.description }}</p>  <!-- Pulls the description from the gallery’s _index.md -->
 </header>
 
-<!-- Content (articles list or other data) -->
+<!-- Content (articles or other data) -->
 <div class="gallery-content">
-    {{ .Content }}  <!-- Existing content for Prometheus gallery (optional) -->
-
-    <!-- Include the articles from the articles-gallery -->
-    {{ range .Site.RegularPages }}
-    {{ if eq .Section "articles-gallery" }}
-    <article>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary }}</p>
-    </article>
-    {{ end }}
-    {{ end }}
+    {{ .Content }}  <!-- This renders the content from the gallery’s _index.md -->
 </div>
+
 {{ end }}
 

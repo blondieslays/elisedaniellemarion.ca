@@ -66,11 +66,29 @@
     margin-bottom: 10px;        /* Adds space between title and description */
 }
 
+/* General body font */
+body {
+    font-family: 'Merriweather', serif; /* Use Merriweather as the body font */
+    font-size: 16px;
+    color: #333; /* Default text color */
+}
+
+/* Gallery header styling */
+.gallery-header h1 {
+    font-family: 'Merriweather', serif; /* Use Merriweather for the header */
+    font-size: 2.5rem;
+    color: #3A5F0B; /* Same green color as the symbols */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gallery description styling */
 .gallery-header .gallery-description {
-    font-size: 1.2rem;          /* Adjust the font size for the description */
-    color: #555;                /* Subtle text color for the description */
-    max-width: 800px;           /* Optional: limit the width of the description */
-    margin: 0 auto;             /* Centers the description by auto-adjusting margins */
-    text-align: center;         /* Ensures the description text is also centered */
+    font-family: 'Merriweather', serif; /* Ensure Merriweather is used for the description */
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
