@@ -2,32 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Galleries on My Online Portfolio</title>
-    <link>http://localhost:1313/gallery/</link>
+    <link>http://localhost:57093/gallery/</link>
     <description>Recent content in Galleries on My Online Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/gallery/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Epimetheus Gallery</title>
-      <link>http://localhost:1313/gallery/epimetheus/</link>
-      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/epimetheus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pandora Gallery</title>
-      <link>http://localhost:1313/gallery/pandora/</link>
-      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/pandora/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prometheus Gallery</title>
-      <link>http://localhost:1313/gallery/prometheus/</link>
-      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/prometheus/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://localhost:57093/gallery/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
