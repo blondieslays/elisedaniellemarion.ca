@@ -1,0 +1,13 @@
+<section class="article-gallery">
+  <h2>Articles</h2>
+  <ul>
+    {{ range .Pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ else }}
+      <li>No articles available.</li>
+    {{ end }}
+  </ul>
+</section>
+

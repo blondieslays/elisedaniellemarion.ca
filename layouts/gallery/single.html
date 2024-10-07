@@ -1,0 +1,21 @@
+{{ define "main" }}
+<nav class="symbol-menu">
+    <ul>
+        <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
+        <li><a href="/gallery/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+    </ul>
+</nav>
+
+<!-- Gallery Title and Description -->
+<header class="gallery-header">
+    <h1>{{ .Title }}</h1>  <!-- Pulls in the title from the Markdown file -->
+    <p>{{ .Params.description }}</p>  <!-- Pulls in the description from the Markdown file -->
+</header>
+
+<!-- Content (articles or whatever else you had below the title) -->
+<div class="gallery-content">
+    {{ .Content }}  <!-- This will render the content from the Markdown file -->
+</div>
+{{ end }}

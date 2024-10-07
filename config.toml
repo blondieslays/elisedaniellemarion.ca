@@ -2,7 +2,39 @@ open -e config.toml
 baseURL = "https://www.elisedaniellemarion.ca/"
 
 theme = hello-friend
+languageCode = "en-us"
+title = "Elise Danielle Marion"
+
+author = "Elise Danielle Marion"
+description = "A portfolio site of Elise Danielle Marion"
+defaultContentLanguage = "en"
+
+pagination.pagerSize = 10
+enableGitInfo = true
+disableHugoGeneratorInject = true
 
 
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+
+  [[menu.main]]
+    identifier = "articles"
+    name = "Articles"
+    url = "/articles/"
+    weight = 2 
+    
+[social]
+  github = "https://github.com/blondieslays"
+  linkedin = "https://www.linkedin.com/in/elisedaniellemarion/"
+
+[taxonomies]   
+  category = "categories"  
+  tag = "tags"
+    
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 

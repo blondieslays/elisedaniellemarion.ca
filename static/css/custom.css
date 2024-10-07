@@ -1,0 +1,76 @@
+/* Menu Styling */
+
+
+/* Flexbox layout for the homepage images */
+#homepage-images .image-split-container {
+    display: flex !important;               /* Enables Flexbox */
+    justify-content: center !important;      /* Centers the images horizontally */
+    gap: 20px !important;                    /* Adds spacing between the images */
+    padding: 20px !important;
+}
+
+#homepage-images .image-split-container a {
+    flex: 0 1 300px !important;              /* Fixes the width of each image container */
+}
+
+#homepage-images .image-split-container a img {
+    width: 100% !important;                  /* Forces the image to fill the container */
+    height: auto !important;                 /* Maintains aspect ratio */
+}
+
+/* Styling for the homepage title */
+.homepage-title {
+    text-align: center;           /* Centers the text */
+    font-size: 2.5rem;            /* Adjust the font size as needed */
+    margin-bottom: 20px;          /* Adds space between the title and the images */
+}
+
+/* Menu Styling for the symbols */
+.symbol-menu {
+    display: flex;               /* Use Flexbox to align items */
+    justify-content: center;      /* Centers the symbols horizontally */
+    align-items: center;          /* Aligns symbols vertically in the middle */
+    padding: 20px 0;              /* Add some padding around the menu */
+    background-color: white;      /* Optional: Background color for the menu */
+    margin-bottom: 20px;          /* Add space between the menu and the content below */
+}
+
+.symbol-menu ul {
+    list-style-type: none;        /* Removes bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex;                /* Make the list items align horizontally */
+}
+
+.symbol-menu ul li {
+    margin: 0 15px;               /* Adds spacing between each symbol */
+}
+
+.symbol-menu ul li a img {
+    vertical-align: middle;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.symbol-menu ul li a img:hover {
+    transform: scale(1.1);        /* Slight zoom on hover */
+}
+
+/* Styling for gallery page titles and descriptions */
+.gallery-header {
+    text-align: center;         /* Center the title and description */
+    margin-bottom: 30px;        /* Add space below the header */
+}
+
+.gallery-header h1 {
+    font-size: 2.5rem;          /* Title font size */
+    margin-bottom: 10px;        /* Space between title and description */
+}
+
+.gallery-header p {
+    font-size: 1.2rem;          /* Description font size */
+    color: #555;                /* Subtle text color for description */
+    max-width: 800px;           /* Limit the width of the description */
+    margin: 0 auto;             /* Center the description block */
+    text-align: center;
+}
+

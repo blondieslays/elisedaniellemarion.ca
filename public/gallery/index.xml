@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Online Portfolio</title>
-    <link>http://localhost:50013/</link>
-    <description>Recent content on My Online Portfolio</description>
+    <title>Galleries on My Online Portfolio</title>
+    <link>http://localhost:50013/gallery/</link>
+    <description>Recent content in Galleries on My Online Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:50013/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50013/gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Epimetheus Gallery</title>
       <link>http://localhost:50013/gallery/epimetheus/</link>
@@ -28,13 +28,6 @@
       <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:50013/gallery/prometheus/</guid>
       <description>&lt;p&gt;Welcome to the Prometheus article gallery. Below, you&amp;rsquo;ll find articles related to Prometheus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Articles Gallery</title>
-      <link>http://localhost:50013/articles-gallery/</link>
-      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50013/articles-gallery/</guid>
-      <description>&lt;h2 id=&#34;welcome-to-the-articles-gallery&#34;&gt;Welcome to the Articles Gallery!&lt;/h2&gt;&#xA;&lt;p&gt;Below are some of the highlighted articles. Click on any image to explore the full content!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

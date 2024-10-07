@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on My New Hugo Site</title>
-    <link>https://example.org/articles/</link>
-    <description>Recent content in Articles on My New Hugo Site</description>
+    <title>Articles on My Online Portfolio</title>
+    <link>http://localhost:1313/articles/</link>
+    <description>Recent content in Articles on My Online Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/articles/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Shared Objective: Building Partnerships with Artificial Intelligence</title>
-      <link>https://example.org/articles/my-first-article/</link>
+      <link>http://localhost:1313/articles/my-first-article/</link>
       <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/articles/my-first-article/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://example.org/images/romulus.png&#34; alt=&#34;Featured Image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is an artificial intelligence (AI) trust gap within business: we are often afraid of the potential AI holds because we don’t fully understand it. The reality is, we just don’t know what we can do with AI yet; we can’t quite put it into perspective. We need to learn how to use this new tool effectively before we can apply it strategically.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This phenomenon is not new, but it will be newly accelerated.&lt;/em&gt; - Sam Altman, &lt;em&gt;The Intelligence Age&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/articles/my-first-article/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/romulus.png&#34; alt=&#34;Featured Image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is an artificial intelligence (AI) trust gap within business: we are often afraid of the potential AI holds because we don’t fully understand it. The reality is, we just don’t know what we can do with AI yet; we can’t quite put it into perspective. We need to learn how to use this new tool effectively before we can apply it strategically.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This phenomenon is not new, but it will be newly accelerated.&lt;/em&gt; - Sam Altman, &lt;em&gt;The Intelligence Age&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

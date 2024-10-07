@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/articles/my-first-article/</loc>
-    <lastmod>2024-10-05T00:00:00+00:00</lastmod>
+    <loc>http://localhost:50013/gallery/epimetheus/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/articles/</loc>
-    <lastmod>2024-10-05T00:00:00+00:00</lastmod>
+    <loc>http://localhost:50013/gallery/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
-    <lastmod>2024-10-05T00:00:00+00:00</lastmod>
+    <loc>http://localhost:50013/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/articles-gallery/</loc>
+    <loc>http://localhost:50013/gallery/pandora/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50013/gallery/prometheus/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50013/articles-gallery/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>http://localhost:50013/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>http://localhost:50013/tags/</loc>
   </url>
 </urlset>

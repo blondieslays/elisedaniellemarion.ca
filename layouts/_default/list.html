@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="homepage-container">
+  
+  <!-- Title Section -->
+  <header class="homepage-header">
+    <h1 class="homepage-title">The Intersection of Literature & Technology</h1>
+  </header>
+
+  <!-- Image Section (Left, Middle, Right) -->
+  <div class="image-split-container">
+    <img src="/images/top-part.png" alt="Left part" class="split-image">
+    <img src="/images/middle-part.png" alt="Middle part" class="split-image">
+    <img src="/images/bottom-part.png" alt="Right part" class="split-image">
+  </div>
+
+</div>
+
+<section class="article-list">
+  {{ range .Pages }}
+  <article>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p class="article-excerpt">{{ .Summary }}</p>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
+
