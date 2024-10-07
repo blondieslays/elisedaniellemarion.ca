@@ -10,12 +10,23 @@
 
 <!-- Gallery Title and Description -->
 <header class="gallery-header">
-    <h1>{{ .Title }}</h1>  <!-- Pulls in the title from the Markdown file -->
-    <p>{{ .Params.description }}</p>  <!-- Pulls in the description from the Markdown file -->
+    <h1>{{ .Title }}</h1>
+    <p class="gallery-description">{{ .Params.description }}</p>  <!-- Description for Prometheus gallery -->
 </header>
 
-<!-- Content (articles or whatever else you had below the title) -->
+<!-- Content (articles list or other data) -->
 <div class="gallery-content">
-    {{ .Content }}  <!-- This will render the content from the Markdown file -->
+    {{ .Content }}  <!-- Existing content for Prometheus gallery (optional) -->
+
+    <!-- Include the articles from the articles-gallery -->
+    {{ range .Site.RegularPages }}
+    {{ if eq .Section "articles-gallery" }}
+    <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+    {{ end }}
 </div>
 {{ end }}
+

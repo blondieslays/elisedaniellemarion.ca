@@ -10,7 +10,7 @@
 }
 
 #homepage-images .image-split-container a {
-    flex: 0 1 300px !important;              /* Fixes the width of each image container */
+    flex: 0 1 400px !important;              /* Fixes the width of each image container */
 }
 
 #homepage-images .image-split-container a img {
@@ -21,7 +21,7 @@
 /* Styling for the homepage title */
 .homepage-title {
     text-align: center;           /* Centers the text */
-    font-size: 2.5rem;            /* Adjust the font size as needed */
+    font-size: 3.5rem;            /* Adjust the font size as needed */
     margin-bottom: 20px;          /* Adds space between the title and the images */
 }
 
@@ -57,20 +57,20 @@
 
 /* Styling for gallery page titles and descriptions */
 .gallery-header {
-    text-align: center;         /* Center the title and description */
-    margin-bottom: 30px;        /* Add space below the header */
+    text-align: center;         /* Centers the title and description */
+    margin-bottom: 30px;        /* Adds space below the header */
 }
 
 .gallery-header h1 {
-    font-size: 2.5rem;          /* Title font size */
-    margin-bottom: 10px;        /* Space between title and description */
+    font-size: 2.5rem;          /* Adjust the font size as needed */
+    margin-bottom: 10px;        /* Adds space between title and description */
 }
 
-.gallery-header p {
-    font-size: 1.2rem;          /* Description font size */
-    color: #555;                /* Subtle text color for description */
-    max-width: 800px;           /* Limit the width of the description */
-    margin: 0 auto;             /* Center the description block */
-    text-align: center;
+.gallery-header .gallery-description {
+    font-size: 1.2rem;          /* Adjust the font size for the description */
+    color: #555;                /* Subtle text color for the description */
+    max-width: 800px;           /* Optional: limit the width of the description */
+    margin: 0 auto;             /* Centers the description by auto-adjusting margins */
+    text-align: center;         /* Ensures the description text is also centered */
 }
 
