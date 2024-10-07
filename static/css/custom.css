@@ -1,4 +1,59 @@
-/* Menu Styling */
+/* General body font */
+body {
+    font-family: 'Merriweather', serif; /* Use Merriweather as the body font */
+    font-size: 16px;
+    color: #333; /* Default text color */
+} 
+
+
+/* Gallery header styling */
+.gallery-header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    color: #3A5F0B; /* Same green color as the symbols */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gallery description styling */
+.gallery-header .gallery-description {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Image Split Container for Gallery Pages */
+.image-split-container-small {
+    display: flex;                /* Use Flexbox to align images */
+    justify-content: center;       /* Center the images horizontally */
+    align-items: center;           /* Align the images vertically */
+    gap: 20px;                     /* Add spacing between images */
+    margin-top: 20px;              /* Add space above the images */
+    flex-wrap: nowrap;             /* Prevent the images from wrapping to the next line */
+}
+    
+/* Panel Styling */
+.panel {
+    width: 200px;                  /* Make the panels smaller */
+    text-align: center;
+}
+
+.panel img {
+    width: 100%;                   /* Make the image fit the panel */
+    height: auto;
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+    
+.panel img:hover {
+    transform: scale(1.05);        /* Slight zoom on hover */
+}
+
+
+
 
 
 /* Flexbox layout for the homepage images */
@@ -26,25 +81,34 @@
     margin-bottom: 20px;          /* Adds space between the title and the images */
 }
 
-/* Menu Styling for the symbols */
+
+
+/* Symbols Menu Styling */
 .symbol-menu {
-    display: flex;               /* Use Flexbox to align items */
-    justify-content: center;      /* Centers the symbols horizontally */
-    align-items: center;          /* Aligns symbols vertically in the middle */
-    padding: 20px 0;              /* Add some padding around the menu */
-    background-color: white;      /* Optional: Background color for the menu */
-    margin-bottom: 20px;          /* Add space between the menu and the content below */
+    position: fixed;         /* Fix the menu at the top */
+    top: 0;                  /* Align it to the top of the screen */
+    left: 0;
+    right: 0;
+    z-index: 9999;           /* Make sure the menu is always on top */
+    display: flex;           /* Use Flexbox to align items */
+    justify-content: center;  /* Center the symbols horizontally */
+    align-items: center;      /* Align symbols vertically */
+    padding: 10px 0;          /* Add padding around the menu */
+    background-color: white;  /* Optional: Background color for the menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Add shadow for separation */
 }
 
-.symbol-menu ul {
-    list-style-type: none;        /* Removes bullet points from the list */
-    margin: 0;
+/* Ensure symbols are aligned horizontally */
+.symbol-menu ul { 
+    list-style: none;         /* Remove bullets */
     padding: 0;
-    display: flex;                /* Make the list items align horizontally */
+    margin: 0;
+    display: flex;            /* Align list items horizontally */
+    justify-content: center;  /* Center the list */
 }
 
 .symbol-menu ul li {
-    margin: 0 15px;               /* Adds spacing between each symbol */
+    margin: 0 15px;           /* Add spacing between each symbol */
 }
 
 .symbol-menu ul li a img {
@@ -53,43 +117,6 @@
 }
 
 .symbol-menu ul li a img:hover {
-    transform: scale(1.1);        /* Slight zoom on hover */
-}
-
-/* Styling for gallery page titles and descriptions */
-.gallery-header {
-    text-align: center;         /* Centers the title and description */
-    margin-bottom: 30px;        /* Adds space below the header */
-}
-
-.gallery-header h1 {
-    font-size: 2.5rem;          /* Adjust the font size as needed */
-    margin-bottom: 10px;        /* Adds space between title and description */
-}
-
-/* General body font */
-body {
-    font-family: 'Merriweather', serif; /* Use Merriweather as the body font */
-    font-size: 16px;
-    color: #333; /* Default text color */
-}
-
-/* Gallery header styling */
-.gallery-header h1 {
-    font-family: 'Merriweather', serif; /* Use Merriweather for the header */
-    font-size: 2.5rem;
-    color: #3A5F0B; /* Same green color as the symbols */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Gallery description styling */
-.gallery-header .gallery-description {
-    font-family: 'Merriweather', serif; /* Ensure Merriweather is used for the description */
-    font-size: 1.2rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    transform: scale(1.1);    /* Slight zoom on hover */
 }
 

@@ -1,11 +1,17 @@
 ---
 title: "Pandora Gallery"
+type: "gallery"
+description: "Pandora, the first woman in Greek mythology, opened a jar that unleashed all evils into the world."
 date: 2024-10-07
-description: "Welcome to Pandora.
-Zeus built her as part of his plan to punish Prometheus for the gift
-of fire. Zeus gave Pandora a jar filled with all the evils of the world.
-Although instructed not to open it, Pandora was curious. When she peeked
-inside, she released the evils into the world; leaving only hope inside."
+images:
+  - src: "/images/pandora/pyxis.png"
+    alt: "Pandora Left Panel"
+    link: "/gallery/pandora/pyxis"
+  - src: "/images/pandora/kakon.png"
+    alt: "Pandora Center Panel"
+    link: "/gallery/pandora/kakon"
+  - src: "/images/pandora/elpis.png"
+    alt: "Pandora Right Panel"
+    link: "/gallery/pandora/elpis"
 ---
-
 

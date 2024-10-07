@@ -1,12 +1,17 @@
 ---
 title: "Prometheus Gallery"
+type: gallery
+description: "Prometheus, the Titan who defied Zeus, brought fire to humanity, enabling progress and enlightenment. His rebellion against the gods shaped human civilization."
 date: 2024-10-07
-description: "Welcome to Prometheus.
-Prometheus, a Titan, defied Zeus by stealing fire and gifting it to humanity,
-enabling mankind to progress and thrive. His act of rebellion against the gods
-brought light and knowledge to the world, but it also incurred Zeus' wrath.
-As punishment, Prometheus was bound to a rock, enduring eternal torment 
-for his compassion toward humanity."
+images:
+  - src: "/images/prometheus/fire.png"
+    alt: "Prometheus Left Panel"
+    link: "/gallery/prometheus/fire"
+  - src: "/images/prometheus/creation.png"
+    alt: "Prometheus Center Panel"
+    link: "/gallery/prometheus/creation"
+  - src: "/images/prometheus/punishment.png"
+    alt: "Prometheus Right Panel"
+    link: "/gallery/prometheus/punishment"
 ---
-
 

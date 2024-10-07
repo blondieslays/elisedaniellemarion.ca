@@ -1,11 +1,21 @@
+<!-- Symbols Menu -->
+{{ if eq .Type "gallery" }}
+<nav class="symbol-menu">
+    <ul>
+        <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
+        <li><a href="/gallery/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+    </ul>
+</nav>
+{{ end }}
+
 <head>
     <link rel="stylesheet" href="/css/styles.css">   <!-- Default theme styles -->
-    <link rel="stylesheet" href="/css/custom.css">   <!-- Custom styles, loaded last -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom.css">   <!-- Custom styles -->
 </head>
 
-</head>
 <body>
   {{ block "main" . }}{{ end }}
 </body>
