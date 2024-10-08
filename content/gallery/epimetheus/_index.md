@@ -13,6 +13,9 @@ images:
   - front: "/images/epimetheus/physis.png"
     back: "/images/epimetheus/back3.png"
     link: "/gallery/epimetheus/physis"
+navigation_images:
+  left: "images/arrow-left.png"
+  right: "images/arrow-right.png"
 ---
 
 <!-- Gallery Content -->

@@ -1,13 +1,13 @@
 /* General body font */
 body {
-    font-family: 'Merriweather', serif; /* Use Merriweather as the body font */
+    font-family: 'Playfair Display', serif; /* Change to Playfair Display */
     font-size: 16px;
     color: #333; /* Default text color */
 }
 
 /* Gallery header styling */
 .gallery-header h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif; /* Change to Playfair Display */
     font-size: 2.5rem;
     color: #3A5F0B; /* Same green color as the symbols */
     text-align: center;
@@ -25,7 +25,7 @@ body {
 
 /* Gallery description styling */
 .gallery-header .gallery-description {
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif; /* Change to Playfair Display */
     font-size: 1.2rem;
     color: #555;
     max-width: 800px;
@@ -191,12 +191,14 @@ body {
 
 /* Gallery Navigation Styles */
 .gallery-navigation {
-    display: flex; /* Align buttons horizontally */
-    justify-content: center; /* Center the buttons */
-    margin: 20px 0; /* Space above and below the buttons */
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the navigation */
+    align-items: center; /* Vertically center the items */
+    margin: 20px 0; /* Space above and below the navigation */
+    padding-top: 20px; /* Add padding above the navigation */
 }
 
-.nav-button { 
+.nav-button {
     text-decoration: none; /* Remove underline from links */
     margin: 0 10px; /* Add horizontal space between buttons */
 }
@@ -204,5 +206,11 @@ body {
 .nav-button img {
     width: 40px; /* Set the width of the arrows */
     height: auto; /* Maintain aspect ratio */
+}
+
+.bow-image {
+    width: 60px; /* Set the size of the bow image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 20px; /* Add space around the bow image */
 }
 

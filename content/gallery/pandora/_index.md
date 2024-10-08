@@ -13,6 +13,9 @@ images:
   - front: "/images/pandora/elpis.png"
     back: "/images/pandora/back3.png"
     link: "/gallery/pandora/elpis"
+navigation_images:
+  left: "images/arrow-left.png"
+  right: "images/arrow-right.png"
 ---
 
 <!-- Gallery Content -->
@@ -52,4 +55,17 @@ images:
             </div>
         </div>
     </div>
+
+<div class="gallery-navigation">
+    <a href="{{ .Prev.Permalink }}" class="nav-button left">
+        <img src="{{ .Params.navigation_images.left }}" alt="Previous">
+    </a>
+
+    <img src="/images/bow-image.png" alt="Bows" class="bow-image"> <!-- Bow image -->
+    
+    <a href="{{ .Next.Permalink }}" class="nav-button right">
+        <img src="{{ .Params.navigation_images.right }}" alt="Next">
+    </a>    
+</div>
+
 </div>

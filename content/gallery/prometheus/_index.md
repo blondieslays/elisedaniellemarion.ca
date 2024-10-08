@@ -13,6 +13,9 @@ images:
   - front: "/images/prometheus/phronesis.png"
     back: "/images/prometheus/back3.png"
     link: "/gallery/prometheus/phronesis"
+navigation_images:
+  left: "images/arrow-left.png"
+  right: "images/arrow-right.png"
 ---
 
 <!-- Gallery Content -->
