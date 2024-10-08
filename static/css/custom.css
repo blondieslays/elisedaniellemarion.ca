@@ -199,3 +199,27 @@ body {
     object-fit: cover;
 }
 
+
+
+
+
+.gallery-navigation {
+    display: flex; /* Align buttons horizontally */
+    justify-content: space-between; /* Space between the buttons */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.nav-button {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.nav-button img {
+    width: 40px; /* Set the width of the arrows */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.nav-button:hover img {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
