@@ -15,6 +15,19 @@ body {
     margin-bottom: 20px;
 }
 
+
+
+/* Add padding between the symbols menu and the gallery page titles */
+.gallery-header {
+    padding-top: 20px; /* Adjust the value for more or less padding */
+}
+
+.symbol-menu {
+    margin-bottom: 20px; /* Add space below the symbols menu */
+}
+
+
+
 /* Gallery description styling */
 .gallery-header .gallery-description {
     font-family: 'Merriweather', serif;
