@@ -100,8 +100,8 @@ body {
 
 /* Tile */
 .tile {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     perspective: 1000px; /* Needed for 3D flip effect */
 }
 
@@ -147,8 +147,8 @@ body {
 
 /* Each tile */
 .tile {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     perspective: 1000px; /* Perspective to create the 3D flip effect */
 }
 
@@ -176,7 +176,7 @@ body {
 }
 
 .tile-back {
-    background-color: #f0f0f0;
+    background-color: #3A5F0B;
     transform: rotateY(180deg);
 }
 
