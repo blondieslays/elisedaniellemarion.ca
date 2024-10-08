@@ -26,35 +26,6 @@ body {
 }
 
 
-/* Image Split Container for Gallery Pages */
-.image-split-container-small {
-    display: flex;                /* Use Flexbox to align images */
-    justify-content: center;       /* Center the images horizontally */
-    align-items: center;           /* Align the images vertically */
-    gap: 20px;                     /* Add spacing between images */
-    margin-top: 20px;              /* Add space above the images */
-    flex-wrap: nowrap;             /* Prevent the images from wrapping to the next line */
-}
-    
-/* Panel Styling */
-.panel {
-    width: 200px;                  /* Make the panels smaller */
-    text-align: center;
-}
-
-.panel img {
-    width: 100%;                   /* Make the image fit the panel */
-    height: auto;
-    transition: transform 0.3s ease; /* Add a hover effect */
-}
-    
-.panel img:hover {
-    transform: scale(1.05);        /* Slight zoom on hover */
-}
-
-
-
-
 
 /* Flexbox layout for the homepage images */
 #homepage-images .image-split-container {
@@ -118,5 +89,56 @@ body {
 
 .symbol-menu ul li a img:hover {
     transform: scale(1.1);    /* Slight zoom on hover */
+}
+
+
+
+/* Tile Container */
+.image-tile-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Each tile */
+.tile {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px; /* Perspective to create the 3D flip effect */
+}
+
+.tile-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.tile:hover .tile-inner {
+    transform: rotateY(180deg);
+}
+
+.tile-front, .tile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.tile-front {
+    background-color: #fff;
+}
+
+.tile-back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 

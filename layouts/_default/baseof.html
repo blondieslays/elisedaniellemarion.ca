@@ -1,3 +1,11 @@
+<head>
+    <link rel="stylesheet" href="/css/styles.css">   <!-- Default theme styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">   <!-- Custom styles -->
+</head>
+
+<body>
+
 <!-- Symbols Menu -->
 {{ if eq .Type "gallery" }}
 <nav class="symbol-menu">
@@ -10,13 +18,8 @@
 </nav>
 {{ end }}
 
-<head>
-    <link rel="stylesheet" href="/css/styles.css">   <!-- Default theme styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/custom.css">   <!-- Custom styles -->
-</head>
+<!-- Rest of the content here -->
+{{ block "main" . }}{{ end }}
 
-<body>
-  {{ block "main" . }}{{ end }}
 </body>
 

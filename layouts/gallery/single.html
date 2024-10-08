@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
 <!-- Symbols Menu -->
 <nav class="symbol-menu">
     <ul>
@@ -8,23 +19,15 @@
     </ul>
 </nav>
 
+<div class="gallery-container">
+    <header class="gallery-header">
+        <h1 class="gallery-title">{{ .Title }}</h1>
+        <p>{{ .Params.description }}</p> <!-- This pulls the description dynamically from the front matter -->
+    </header>
 
-
-<!-- Gallery Title and Description -->
-<div class="gallery-header">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Description }}</p>
+    <!-- Add image content here -->
 </div>
 
-
-<div class="image-split-container-small">
-    {{ range .Params.images }}
-    <div class="panel">
-        <a href="{{ .link }}">
-            <img src="{{ .src }}" alt="{{ .alt }}" class="panel-image">
-        </a>
-    </div>
-    {{ end }}
-</div>
-
+</body>
+</html>
 
