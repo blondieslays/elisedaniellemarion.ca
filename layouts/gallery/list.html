@@ -46,9 +46,22 @@
     {{ end }}
 </div>
 
+<div class="gallery-navigation">
+    {{ if .Prev }}
+        <a href="{{ .Prev.Permalink }}" class="nav-button left">
+            <img src="/images/arrow-left.png" alt="Previous">
+        </a>
+    {{ end }}
 
-
+    {{ if .Next }}
+        <a href="{{ .Next.Permalink }}" class="nav-button right">
+            <img src="/images/arrow-right.png" alt="Next">
+        </a>
+    {{ end }}
 </div>
 
+</div>
+    
 </body>
 </html>
+
