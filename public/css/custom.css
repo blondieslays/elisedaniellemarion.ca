@@ -15,6 +15,19 @@ body {
     margin-bottom: 20px;
 }
 
+
+
+/* Add padding between the symbols menu and the gallery page titles */
+.gallery-header {
+    padding-top: 20px; /* Adjust the value for more or less padding */
+}
+
+.symbol-menu {
+    margin-bottom: 20px; /* Add space below the symbols menu */
+}
+
+
+
 /* Gallery description styling */
 .gallery-header .gallery-description {
     font-family: 'Merriweather', serif;
@@ -91,6 +104,50 @@ body {
     transform: scale(1.1);    /* Slight zoom on hover */
 }
 
+/* Tile container */
+.tile-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Tile */
+.tile {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Needed for 3D flip effect */
+}
+
+.tile-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.tile:hover .tile-inner {
+    transform: rotateY(180deg); /* Flip on hover */
+}
+
+/* Front and back faces */
+.tile-front, .tile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face when not flipped */
+}
+
+.tile-back {
+    transform: rotateY(180deg); /* The back face starts rotated */
+}
+
+/* Make sure images are responsive inside the tiles */
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 /* Tile Container */
@@ -103,8 +160,8 @@ body {
 
 /* Each tile */
 .tile {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     perspective: 1000px; /* Perspective to create the 3D flip effect */
 }
 
@@ -132,7 +189,7 @@ body {
 }
 
 .tile-back {
-    background-color: #f0f0f0;
+    background-color: #3A5F0B;
     transform: rotateY(180deg);
 }
 
