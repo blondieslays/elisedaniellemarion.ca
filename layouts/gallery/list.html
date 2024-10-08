@@ -26,6 +26,28 @@
 </header>
 
     <!-- Add image content here -->
+
+<div class="tile-container">
+    {{ range .Params.images }}
+    <div class="tile">
+        <div class="tile-inner">
+            <div class="tile-front">
+                <a href="{{ .link }}">
+                    <img src="{{ .front }}" alt="Front of {{ .link }}">
+                </a>
+            </div>
+            <div class="tile-back">
+                <a href="{{ .link }}">
+                    <img src="{{ .back }}" alt="Back of {{ .link }}">
+                </a>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+
+
 </div>
 
 </body>
