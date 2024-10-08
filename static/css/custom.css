@@ -3,8 +3,7 @@ body {
     font-family: 'Merriweather', serif; /* Use Merriweather as the body font */
     font-size: 16px;
     color: #333; /* Default text color */
-} 
-
+}
 
 /* Gallery header styling */
 .gallery-header h1 {
@@ -15,8 +14,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
 /* Add padding between the symbols menu and the gallery page titles */
 .gallery-header {
     padding-top: 20px; /* Adjust the value for more or less padding */
@@ -25,8 +22,6 @@ body {
 .symbol-menu {
     margin-bottom: 20px; /* Add space below the symbols menu */
 }
-
-
 
 /* Gallery description styling */
 .gallery-header .gallery-description {
@@ -37,8 +32,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
-
 
 /* Flexbox layout for the homepage images */
 #homepage-images .image-split-container {
@@ -65,27 +58,25 @@ body {
     margin-bottom: 20px;          /* Adds space between the title and the images */
 }
 
-
-
 /* Symbols Menu Styling */
 .symbol-menu {
     position: fixed;         /* Fix the menu at the top */
-    top: 0;                  /* Align it to the top of the screen */
+    top: 0;                  /* Align it to the top of the screen */  
     left: 0;
     right: 0;
     z-index: 9999;           /* Make sure the menu is always on top */
     display: flex;           /* Use Flexbox to align items */
     justify-content: center;  /* Center the symbols horizontally */
-    align-items: center;      /* Align symbols vertically */
+    align-items: center;      /* Align symbols vertically */   
     padding: 10px 0;          /* Add padding around the menu */
     background-color: white;  /* Optional: Background color for the menu */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Add shadow for separation */
 }
 
 /* Ensure symbols are aligned horizontally */
-.symbol-menu ul { 
+.symbol-menu ul {
     list-style: none;         /* Remove bullets */
-    padding: 0;
+    padding: 0; 
     margin: 0;
     display: flex;            /* Align list items horizontally */
     justify-content: center;  /* Center the list */
@@ -117,7 +108,7 @@ body {
     height: 400px;
     perspective: 1000px; /* Needed for 3D flip effect */
 }
-
+    
 .tile-inner {
     position: relative;
     width: 100%;
@@ -125,11 +116,11 @@ body {
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
-
+    
 .tile:hover .tile-inner {
     transform: rotateY(180deg); /* Flip on hover */
 }
-
+    
 /* Front and back faces */
 .tile-front, .tile-back {
     position: absolute;
@@ -137,18 +128,17 @@ body {
     height: 100%;
     backface-visibility: hidden; /* Hide the back face when not flipped */
 }
-
-.tile-back {
+    
+.tile-back {    
     transform: rotateY(180deg); /* The back face starts rotated */
 }
-
+    
 /* Make sure images are responsive inside the tiles */
 .tile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 
 /* Tile Container */
 .image-tile-container {
@@ -158,68 +148,61 @@ body {
     margin-top: 20px;
 }
 
-/* Each tile */
+/* Each tile */  
 .tile {
     width: 300px;
-    height: 400px;
+    height: 400px;   
     perspective: 1000px; /* Perspective to create the 3D flip effect */
 }
 
 .tile-inner {
     position: relative;
-    width: 100%;
+    width: 100%;  
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
-
+    
 .tile:hover .tile-inner {
     transform: rotateY(180deg);
 }
-
+    
 .tile-front, .tile-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-}
+}   
 
 .tile-front {
     background-color: #fff;
 }
-
+    
 .tile-back {
     background-color: #3A5F0B;
     transform: rotateY(180deg);
 }
-
+    
 .tile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-
-
-
+/* Gallery Navigation Styles */
 .gallery-navigation {
     display: flex; /* Align buttons horizontally */
-    justify-content: space-between; /* Space between the buttons */
-    margin: 20px 0; /* Adjust the margin as needed */
+    justify-content: center; /* Center the buttons */
+    margin: 20px 0; /* Space above and below the buttons */
 }
 
-.nav-button {
+.nav-button { 
     text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add horizontal space between buttons */
 }
 
 .nav-button img {
     width: 40px; /* Set the width of the arrows */
     height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s; /* Add transition for hover effect */
-}
-
-.nav-button:hover img {
-    transform: scale(1.1); /* Scale up on hover */
 }
 
