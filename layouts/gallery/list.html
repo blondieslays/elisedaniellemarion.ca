@@ -46,22 +46,21 @@
         {{ end }}
     </div>
 
-    <nav class="gallery-navigation">
+<nav class="gallery-navigation">
+    <div class="nav-band"> <!-- Ensure this is present -->
         {{ if .Prev }}  <!-- Check if there is a previous page -->
             <a href="{{ .Prev.Permalink }}" class="nav-button left">
                 <img src="{{ .Params.navigation_images.left }}" alt="Previous">
             </a>
         {{ end }}
 
-        <img src="/images/bow-image.png" alt="Bows" class="bow-image"> <!-- Bow image -->
-        
         {{ if .Next }}  <!-- Check if there is a next page -->
             <a href="{{ .Next.Permalink }}" class="nav-button right">
                 <img src="{{ .Params.navigation_images.right }}" alt="Next">
             </a>
         {{ end }}
-    </nav>
-</div>
+    </div>
+</nav>
 
 </body>
 </html>

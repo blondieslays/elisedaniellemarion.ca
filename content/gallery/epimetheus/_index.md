@@ -1,6 +1,6 @@
 ---
 title: "Epimetheus Gallery"
-description: "Epimetheus, brother of Prometheus, known for acting without foresight."
+description: "Epimetheus, the Titan of afterthought, received all the animals and gave them gifts, ensuring their survival and happiness in the world."
 type: "gallery"
 date: 2024-10-07
 images:

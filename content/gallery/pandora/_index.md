@@ -1,6 +1,6 @@
 ---
 title: "Pandora Gallery"
-description: "Pandora, the first woman in Greek mythology, opened a jar that unleashed all evils into the world."
+description: "Pandora, the first woman in Greek mythology, opened a jar that unleashed all evils into the world. Yet hope remained."
 type: "gallery"
 date: 2024-10-07
 images:

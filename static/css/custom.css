@@ -59,15 +59,17 @@ body {
     padding-top: 20px;            /* Add padding above the title */
 }
 
-
-.description {
-    text-align: center;
-    font-size: 1.0rem;
-    color: #1C2D1A; /* Very dark green */
-    margin-top: 10px; /* Space between the title and description */
-    padding: 0 10px; /* Optional: add some horizontal padding */
+.text-band {
+    background-color: #3A5F0B; /* Green background */
+    padding: 20px; /* Add padding around the text */
+    text-align: center; /* Center the text */
 }
 
+.text-band p {
+    color: #F5F5F5; /* Light off-white text color */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
+}
 
 
 
@@ -202,28 +204,23 @@ body {
     object-fit: cover;
 }
 
-/* Gallery Navigation Styles */
-.gallery-navigation {
-    display: flex; /* Align items in a row */
-    justify-content: center; /* Center the navigation */
-    align-items: center; /* Vertically center the items */
-    margin: 20px 0; /* Space above and below the navigation */
-    padding-top: 20px; /* Add padding above the navigation */
+
+.nav-band {
+    background-color: #3A5F0B;
+    height: 100px; /* Or adjust this according to your current height */
+    padding: 20px 0; /* Add padding for visual balance */
+    width: 100vw; /* Ensure it extends full width of the viewport */
+    position: relative; /* Position relative for better layout control */
+    left: 50%; /* Positioning adjustment */ 
+    right: 50%; /* Positioning adjustment */
+    margin-left: -50vw; /* Shift it to the left */  
+    margin-right: -50vw; /* Shift it to the right */
+    margin-top: 20px; /* Space between the band and tiles */
 }
 
-.nav-button {
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 10px; /* Add horizontal space between buttons */
-}
-
-.nav-button img {
-    width: 40px; /* Set the width of the arrows */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.bow-image {
-    width: 60px; /* Set the size of the bow image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 20px; /* Add space around the bow image */
+.nav-arrows {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
