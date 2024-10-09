@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8"> <!-- Ensure correct character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
     <title>{{ .Title }}</title>
     <meta name="description" content="{{ .Description }}">
     <link rel="stylesheet" href="/css/styles.css">
@@ -20,50 +22,46 @@
 </nav>
 
 <div class="gallery-container">
-<header class="gallery-header">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Params.description }}</p>
-</header>
+    <header class="gallery-header">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.description }}</p>
+    </header>
 
-    <!-- Add image content here -->
-
-<div class="tile-container">
-    {{ range .Params.images }}
-    <div class="tile">
-        <div class="tile-inner">
-            <div class="tile-front">
-                <a href="{{ .link }}">
-                    <img src="{{ .front }}" alt="Front of {{ .link }}">
-                </a>
-            </div>
-            <div class="tile-back">
-                <a href="{{ .link }}">
-                    <img src="{{ .back }}" alt="Back of {{ .link }}">
-                </a>
+    <div class="tile-container">
+        {{ range .Params.images }}
+        <div class="tile">
+            <div class="tile-inner">
+                <div class="tile-front">
+                    <a href="{{ .link }}">
+                        <img src="{{ .front }}" alt="Front of {{ .link }}">
+                    </a>
+                </div>
+                <div class="tile-back">
+                    <a href="{{ .link }}">
+                        <img src="{{ .back }}" alt="Back of {{ .link }}">
+                    </a>
+                </div>
             </div>
         </div>
+        {{ end }}
     </div>
-    {{ end }}
+
+    <nav class="gallery-navigation">
+        {{ if .Prev }}  <!-- Check if there is a previous page -->
+            <a href="{{ .Prev.Permalink }}" class="nav-button left">
+                <img src="{{ .Params.navigation_images.left }}" alt="Previous">
+            </a>
+        {{ end }}
+
+        <img src="/images/bow-image.png" alt="Bows" class="bow-image"> <!-- Bow image -->
+        
+        {{ if .Next }}  <!-- Check if there is a next page -->
+            <a href="{{ .Next.Permalink }}" class="nav-button right">
+                <img src="{{ .Params.navigation_images.right }}" alt="Next">
+            </a>
+        {{ end }}
+    </nav>
 </div>
-
-
-
-<nav class="gallery-navigation">
-    {{ if .Prev }}  <!-- Check if there is a previous page -->
-        <a href="{{ .Prev.Permalink }}" class="nav-button left">
-            <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-        </a>
-    {{ end }}
-
-    <img src="/images/bow-image.png" alt="Bows" class="bow-image"> <!-- Bow image -->
-    
-    {{ if .Next }}  <!-- Check if there is a next page -->
-        <a href="{{ .Next.Permalink }}" class="nav-button right">
-            <img src="{{ .Params.navigation_images.right }}" alt="Next">
-        </a>
-    {{ end }}
-</nav>
 
 </body>
 </html>
-

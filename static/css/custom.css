@@ -53,10 +53,23 @@ body {
 /* Styling for the homepage title */
 .homepage-title {
     text-align: center;           /* Centers the text */
-    font-size: 3.5rem;            /* Adjust the font size as needed */
-    color: #3A5F0B;                /* Green color for the headline (same as gallery pages) */
+    font-size: 3.3rem;            /* Adjust the font size as needed */
+    color: #3A5F0B;               /* Green color for the headline (same as gallery pages) */
     margin-bottom: 20px;          /* Adds space between the title and the images */
+    padding-top: 20px;            /* Add padding above the title */
 }
+
+
+.description {
+    text-align: center;
+    font-size: 1.0rem;
+    color: #1C2D1A; /* Very dark green */
+    margin-top: 10px; /* Space between the title and description */
+    padding: 0 10px; /* Optional: add some horizontal padding */
+}
+
+
+
 
 /* Symbols Menu Styling */
 .symbol-menu {
