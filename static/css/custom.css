@@ -224,3 +224,14 @@ body {
     align-items: center; /* Center vertically */
 }
 
+
+.nav-button {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-button img {
+    width: 30px; /* Adjust this based on your arrow size */
+    height: auto;
+}
+

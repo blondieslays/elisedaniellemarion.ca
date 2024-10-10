@@ -1,6 +1,7 @@
 ---
 title: "Prometheus Gallery"
 description: "Prometheus, the Titan who defied Zeus, brought fire to humanity, enabling progress and enlightenment."
+weight: 1  # Helps determine the order for pagination
 type: "gallery"
 date: 2024-10-07
 images:
@@ -14,8 +15,8 @@ images:
     back: "/images/prometheus/back3.png"
     link: "/gallery/prometheus/phronesis"
 navigation_images:
-  left: "images/arrow-left.png"
-  right: "images/arrow-right.png"
+  left: "/images/arrow-left.png"
+  right: "/images/arrow-right.png"
 ---
 
 <!-- Gallery Content -->
