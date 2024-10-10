@@ -231,7 +231,7 @@ body {
 }
 
 .nav-button img {
-    width: 50px;
+    width: 100px;
     height: auto;
     display: block;
     border: 2px solid green;  /* Green border to visualize for now */

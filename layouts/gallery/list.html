@@ -47,31 +47,31 @@
     </div>
   </div> <!-- End of tile-container -->
 
-    <!-- Navigation Section -->
+
 <nav class="gallery-navigation">
     <div class="nav-band">
         <div class="nav-arrows">
-            <!-- Previous Button -->
+            <p>Left Arrow Test</p> <!-- Add temporary text to debug -->
             {{ if .Paginator.HasPrev }}
                 <a href="{{ .Paginator.Prev.Page.Permalink }}" class="nav-button left">
                     <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
-                    <p>Previous Arrow Loaded</p> <!-- Debugging text -->
                 </a>
             {{ else }}
-                <p>No Previous Page</p>
+                <p>No Previous Page</p> <!-- Add this for better debugging -->
             {{ end }}
 
+            <p>Right Arrow Test</p> <!-- Add temporary text to debug -->
             {{ if .Paginator.HasNext }}
                 <a href="{{ .Paginator.Next.Page.Permalink }}" class="nav-button right">
                     <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
-                    <p>Next Arrow Loaded</p> <!-- Debugging text -->
                 </a>
             {{ else }}
-                <p>No Next Page</p>
+                <p>No Next Page</p> <!-- Add this for better debugging -->
             {{ end }}
-        </div> 
-    </div> 
+        </div>
+    </div>
 </nav>
+
 
 
 </body>
