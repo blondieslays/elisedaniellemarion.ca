@@ -27,6 +27,13 @@
         <p>{{ .Params.description }}</p>
     </header>
 
+    <!-- Slicing images for pagination -->
+    {{ $pageSize := 3 }} <!-- Number of items per page -->
+    {{ $page := .Paginator.PageNumber }}
+    {{ $start := (mul (sub $page 1) $pageSize) }}
+    {{ $end := (add $start $pageSize) }}
+    {{ $slicedImages := slice $start $end }}
+
     <div class="tile-container">
         {{ range .Params.images }}
         <div class="tile">
@@ -45,44 +52,54 @@
         </div>
         {{ end }}
     </div>
+</div>
 
-
-
+<!-- Navigation: Handles both pagination and section navigation -->
 <nav class="gallery-navigation">
     <div class="nav-band">
-        <!-- Navigation band always displays -->
-        
-        {{ with .File }}
-            {{ $section := .BaseFileName }}
-
-            <!-- Link to Previous Section -->
-            {{ if eq $section "prometheus" }}
-                <a href="/gallery/pandora/" class="nav-button left">
-                    <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-                </a>
-            {{ else if eq $section "epimetheus" }}
-                <a href="/gallery/prometheus/" class="nav-button left">
-                    <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-                </a>
-            {{ else if eq $section "pandora" }}
-                <a href="/gallery/epimetheus/" class="nav-button left">
-                    <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-                </a>
+        {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.Page.Permalink }}" class="nav-button left">
+                <img src="{{ .Params.navigation_images.left }}" alt="Previous">
+            </a>
+        {{ else }}
+            {{ with .File }}
+                {{ $section := .BaseFileName }}
+                {{ if eq $section "prometheus" }}
+                    <a href="/gallery/pandora/" class="nav-button left">
+                        <img src="{{ .Params.navigation_images.left }}" alt="Previous">
+                    </a>
+                {{ else if eq $section "epimetheus" }}
+                    <a href="/gallery/prometheus/" class="nav-button left">
+                        <img src="{{ .Params.navigation_images.left }}" alt="Previous">
+                    </a>
+                {{ else if eq $section "pandora" }}
+                    <a href="/gallery/epimetheus/" class="nav-button left">
+                        <img src="{{ .Params.navigation_images.left }}" alt="Previous">
+                    </a>
+                {{ end }}
             {{ end }}
+        {{ end }}
 
-            <!-- Link to Next Section -->
-            {{ if eq $section "prometheus" }}
-                <a href="/gallery/epimetheus/" class="nav-button right">
-                    <img src="{{ .Params.navigation_images.right }}" alt="Next">
-                </a>
-            {{ else if eq $section "epimetheus" }}
-                <a href="/gallery/pandora/" class="nav-button right">
-                    <img src="{{ .Params.navigation_images.right }}" alt="Next">
-                </a>
-            {{ else if eq $section "pandora" }}
-                <a href="/gallery/prometheus/" class="nav-button right">
-                    <img src="{{ .Params.navigation_images.right }}" alt="Next">
-                </a>
+        {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.Page.Permalink }}" class="nav-button right">
+                <img src="{{ .Params.navigation_images.right }}" alt="Next">
+            </a>
+        {{ else }}
+            {{ with .File }}
+                {{ $section := .BaseFileName }}
+                {{ if eq $section "prometheus" }}
+                    <a href="/gallery/epimetheus/" class="nav-button right">
+                        <img src="{{ .Params.navigation_images.right }}" alt="Next">
+                    </a>
+                {{ else if eq $section "epimetheus" }}
+                    <a href="/gallery/pandora/" class="nav-button right">
+                        <img src="{{ .Params.navigation_images.right }}" alt="Next">
+                    </a>
+                {{ else if eq $section "pandora" }}
+                    <a href="/gallery/prometheus/" class="nav-button right">
+                        <img src="{{ .Params.navigation_images.right }}" alt="Next">
+                    </a>
+                {{ end }}
             {{ end }}
         {{ end }}
     </div>
@@ -92,3 +109,4 @@
 
 </body>
 </html>
+
