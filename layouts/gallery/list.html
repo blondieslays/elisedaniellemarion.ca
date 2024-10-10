@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Ensure correct character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
-    <title>{{ .Title }}</title>
-    <meta name="description" content="{{ .Description }}">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Prometheus Gallery</title>
+    <meta name="description" content="Prometheus, the Titan who defied Zeus, brought fire to humanity, enabling progress and enlightenment.">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/custom.css">
@@ -24,17 +24,10 @@
 <div class="gallery-container">
     <header class="gallery-header">
         <h1>{{ .Title }}</h1>
-        <p>{{ .Params.description }}</p>
+        <p>{{ .Description }}</p>
     </header>
 
-    <!-- Slicing images for pagination -->
-    {{ $pageSize := 3 }} <!-- Number of items per page -->
-    {{ $page := .Paginator.PageNumber }}
-    {{ $start := (mul (sub $page 1) $pageSize) }}
-    {{ $end := (add $start $pageSize) }}
-    {{ $slicedImages := slice $start $end }}
-
-    <div class="tile-container">
+<div class="tile-container">
         {{ range .Params.images }}
         <div class="tile">
             <div class="tile-inner">
@@ -52,61 +45,34 @@
         </div>
         {{ end }}
     </div>
-</div>
+  </div> <!-- End of tile-container -->
 
-<!-- Navigation: Handles both pagination and section navigation -->
+    <!-- Navigation Section -->
 <nav class="gallery-navigation">
     <div class="nav-band">
-        {{ if .Paginator.HasPrev }}
-            <a href="{{ .Paginator.Prev.Page.Permalink }}" class="nav-button left">
-                <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-            </a>
-        {{ else }}
-            {{ with .File }}
-                {{ $section := .BaseFileName }}
-                {{ if eq $section "prometheus" }}
-                    <a href="/gallery/pandora/" class="nav-button left">
-                        <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-                    </a>
-                {{ else if eq $section "epimetheus" }}
-                    <a href="/gallery/prometheus/" class="nav-button left">
-                        <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-                    </a>
-                {{ else if eq $section "pandora" }}
-                    <a href="/gallery/epimetheus/" class="nav-button left">
-                        <img src="{{ .Params.navigation_images.left }}" alt="Previous">
-                    </a>
-                {{ end }}
+        <div class="nav-arrows">
+            <!-- Previous Button -->
+            {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.Page.Permalink }}" class="nav-button left">
+                    <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+                    <p>Previous Arrow Loaded</p> <!-- Debugging text -->
+                </a>
+            {{ else }}
+                <p>No Previous Page</p>
             {{ end }}
-        {{ end }}
 
-        {{ if .Paginator.HasNext }}
-            <a href="{{ .Paginator.Next.Page.Permalink }}" class="nav-button right">
-                <img src="{{ .Params.navigation_images.right }}" alt="Next">
-            </a>
-        {{ else }}
-            {{ with .File }}
-                {{ $section := .BaseFileName }}
-                {{ if eq $section "prometheus" }}
-                    <a href="/gallery/epimetheus/" class="nav-button right">
-                        <img src="{{ .Params.navigation_images.right }}" alt="Next">
-                    </a>
-                {{ else if eq $section "epimetheus" }}
-                    <a href="/gallery/pandora/" class="nav-button right">
-                        <img src="{{ .Params.navigation_images.right }}" alt="Next">
-                    </a>
-                {{ else if eq $section "pandora" }}
-                    <a href="/gallery/prometheus/" class="nav-button right">
-                        <img src="{{ .Params.navigation_images.right }}" alt="Next">
-                    </a>
-                {{ end }}
+            {{ if .Paginator.HasNext }}
+                <a href="{{ .Paginator.Next.Page.Permalink }}" class="nav-button right">
+                    <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
+                    <p>Next Arrow Loaded</p> <!-- Debugging text -->
+                </a>
+            {{ else }}
+                <p>No Next Page</p>
             {{ end }}
-        {{ end }}
-    </div>
+        </div> 
+    </div> 
 </nav>
-
 
 
 </body>
 </html>
-

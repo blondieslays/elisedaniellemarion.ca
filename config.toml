@@ -1,7 +1,7 @@
 open -e config.toml
-baseURL = "https://www.elisedaniellemarion.ca/"
 
-theme = hello-friend
+baseURL = "https://www.elisedaniellemarion.ca/"
+theme = "hello-friend"
 languageCode = "en-us"
 title = "Elise Danielle Marion"
 
@@ -9,10 +9,12 @@ author = "Elise Danielle Marion"
 description = "A portfolio site of Elise Danielle Marion"
 defaultContentLanguage = "en"
 
-pagination.pagerSize = 10
+[permalinks]
+  gallery = "/gallery/:title/"
+
+paginate = 3  # Adjust based on how many items you want per page
 enableGitInfo = true
 disableHugoGeneratorInject = true
-
 
 [menu]
   [[menu.main]]
@@ -24,16 +26,16 @@ disableHugoGeneratorInject = true
     identifier = "articles"
     name = "Articles"
     url = "/articles/"
-    weight = 2 
-    
+    weight = 2
+
 [social]
   github = "https://github.com/blondieslays"
   linkedin = "https://www.linkedin.com/in/elisedaniellemarion/"
 
-[taxonomies]   
-  category = "categories"  
+[taxonomies]
+  category = "categories"
   tag = "tags"
-    
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 

@@ -2,7 +2,7 @@
 title: "Pandora Gallery"
 description: "Pandora, the first woman in Greek mythology, opened a jar that unleashed all evils into the world. Yet hope remained."
 weight: 3  # Pandora comes after Epimetheus
-paginate: 6  # Number of items per page (adjust this value)
+paginate: 3  # Number of items per page (adjust this value)
 type: "gallery"
 date: 2024-10-07
 images:

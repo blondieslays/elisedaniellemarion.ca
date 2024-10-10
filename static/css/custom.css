@@ -207,22 +207,22 @@ body {
 
 .nav-band {
     background-color: #3A5F0B;
-    height: 100px; /* Or adjust this according to your current height */
-    padding: 20px 0; /* Add padding for visual balance */
-    width: 100vw; /* Ensure it extends full width of the viewport */
-    position: relative; /* Position relative for better layout control */
-    left: 50%; /* Positioning adjustment */ 
-    right: 50%; /* Positioning adjustment */
-    margin-left: -50vw; /* Shift it to the left */  
-    margin-right: -50vw; /* Shift it to the right */
-    margin-top: 20px; /* Space between the band and tiles */
+    height: 100px;
+    padding: 20px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 20px;
 }
-
 
 .nav-arrows {
     display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
+    justify-content: space-between; /* Align arrows to both sides */
+    align-items: center;  /* Center arrows vertically */
+    width: 100%;  /* Ensure arrows are spread across the entire width */
 }
 
 .nav-button {
@@ -231,9 +231,10 @@ body {
 }
 
 .nav-button img {
-    width: 50px;  /* Make the arrows larger */
+    width: 50px;
     height: auto;
-    display: block;  /* Ensure the image is displayed */
-    border: 2px solid red;  /* Add a red border to make the arrows visible */
-
+    display: block;
+    border: 2px solid green;  /* Green border to visualize for now */
 }
+
+
