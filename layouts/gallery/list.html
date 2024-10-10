@@ -51,23 +51,15 @@
 <nav class="gallery-navigation">
     <div class="nav-band">
         <div class="nav-arrows">
-            <p>Left Arrow Test</p> <!-- Add temporary text to debug -->
-            {{ if .Paginator.HasPrev }}
-                <a href="{{ .Paginator.Prev.Page.Permalink }}" class="nav-button left">
-                    <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
-                </a>
-            {{ else }}
-                <p>No Previous Page</p> <!-- Add this for better debugging -->
-            {{ end }}
+            <!-- Left Arrow -->
+            <a href="#" class="nav-button left">
+                <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+            </a>
 
-            <p>Right Arrow Test</p> <!-- Add temporary text to debug -->
-            {{ if .Paginator.HasNext }}
-                <a href="{{ .Paginator.Next.Page.Permalink }}" class="nav-button right">
-                    <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
-                </a>
-            {{ else }}
-                <p>No Next Page</p> <!-- Add this for better debugging -->
-            {{ end }}
+            <!-- Right Arrow -->
+            <a href="#" class="nav-button right">
+                <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
+            </a>
         </div>
     </div>
 </nav>
