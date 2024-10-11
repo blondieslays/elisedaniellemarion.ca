@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prometheus Gallery</title>
     <meta name="description" content="Prometheus, the Titan who defied Zeus, brought fire to humanity, enabling progress and enlightenment.">
     <link rel="stylesheet" href="/css/styles.css">
@@ -20,13 +20,13 @@
         <li><a href="/gallery/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
     </ul>
 </nav>
-
+                    
 <div class="gallery-container">
     <header class="gallery-header">
         <h1>{{ .Title }}</h1>
         <p>{{ .Description }}</p>
     </header>
-
+                    
 <div class="tile-container">
         {{ range .Params.images }}
         <div class="tile">
@@ -48,23 +48,44 @@
   </div> <!-- End of tile-container -->
 
 
-<nav class="gallery-navigation">
-    <div class="nav-band">
-        <div class="nav-arrows">
-            <!-- Left Arrow -->
-            <a href="#" class="nav-button left">
+
+<div class="nav-band">
+    <div class="nav-arrows">
+        {{ $section := .Title }}
+        {{ if eq $section "Prometheus Gallery" }}
+            <!-- Prometheus goes to Epimetheus next and Pandora previous -->
+            <a href="/gallery/epimetheus/" class="nav-button right">
+                <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
+            </a>
+            <a href="/gallery/pandora/" class="nav-button left">
                 <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
             </a>
 
-            <!-- Right Arrow -->
-            <a href="#" class="nav-button right">
+        {{ else if eq $section "Epimetheus Gallery" }}
+            <!-- Epimetheus goes to Pandora next and Prometheus previous -->
+            <a href="/gallery/pandora/" class="nav-button right">
                 <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
             </a>
-        </div>
+            <a href="/gallery/prometheus/" class="nav-button left">
+                <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+            </a>
+
+        {{ else if eq $section "Pandora Gallery" }}
+            <!-- Pandora goes to Prometheus next and Epimetheus previous -->
+            <a href="/gallery/prometheus/" class="nav-button right">
+                <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
+            </a>
+            <a href="/gallery/epimetheus/" class="nav-button left">
+                <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+            </a>
+
+        {{ end }}
     </div>
-</nav>
+</div>
 
 
 
+        
 </body>
 </html>
+
