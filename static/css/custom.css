@@ -204,39 +204,35 @@ body {
     object-fit: cover;
 }
 
-/* Ensure the nav-band spans the full width */
+
+/* Styling for the green band */
 .nav-band {
-    background-color: #3A5F0B; /* Adjust as needed */
-    padding: 20px 0; /* Padding for spacing */
-    width: 100vw; /* Full viewport width */
-    position: relative;
-    left: 50%; /* Positioning trick for full width */
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-top: 20px; /* Spacing above the navigation band */
+    width: 100%;
+    background-color: #3A5F0B;
+    padding: 0; /* Adjust padding to make the band thicker */
+    align-items: center;
+    box-sizing: border-box;
 }
 
-/* Flexbox settings for arrows */
+
+/* Styling for the arrows */
 .nav-arrows {
     display: flex;
-    justify-content: space-between; /* Align arrows to the sides */
+    justify-content: space-between; /* Space between the arrows */
     align-items: center;
-    width: 100%; /* Full width within nav-band */
-    padding: 0 20px; /* Optional padding for spacing around the arrows */
+    max-width: 800px; /* Match the tile container's width */
+    margin: 0 auto; /* Center the arrows on the page */
+    padding: 10px 0; /* Add some space above and below the arrows */
 }
-
-/* Styling for nav buttons */
+    
 .nav-button {
     display: inline-block;
-    padding: 10px; /* Space around each button */
+    padding: 10px; /* Space around the arrows */
 }
-
-/* Styling for the arrow images */
+ 
 .nav-button img {
-    width: 50px; /* Adjust size of arrows */
+    width: 100px; /* Adjust width for better alignment */
     height: auto;
-    display: block;
-    border: 2px solid green; /* Green border to visualize */
+    display: inline-block;
 }
 

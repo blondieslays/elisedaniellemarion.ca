@@ -13,6 +13,7 @@ defaultContentLanguage = "en"
   gallery = "/gallery/:title/"
 
 paginate = 3  # Adjust based on how many items you want per page
+
 enableGitInfo = true
 disableHugoGeneratorInject = true
 
