@@ -1,13 +1,46 @@
-{{ define "main" }}
-<article class="article-container">
-  <header>
-    <h1 class="article-title">{{ .Title }}</h1>
-    <p class="article-date">{{ .Date.Format "January 2, 2006" }}</p>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+<p>Loading single tile layout for {{ .Title }}</p>
 
-  <div class="article-content">
-    {{ .Content }}
-  </div>
-</article>
-{{ end }}
+<!-- Symbols Menu -->
+<nav class="symbol-menu">
+    <ul>
+        <li><a href="/" title="Home">
+            <img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
+        <li><a href="/gallery/prometheus/" title="Prometheus">
+            <img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/epimetheus/" title="Epimetheus">
+            <img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/pandora/" title="Pandora">
+            <img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+    </ul>
+</nav>
+
+<div class="single-tile-container">
+    <div class="tile">
+        <div class="tile-inner">
+            <div class="tile-front">
+                <img src="/images/single/{{ .Params.imageFront }}" alt="Front of {{ .Title }}">
+            </div>
+            <div class="tile-back">
+                <img src="/images/single/{{ .Params.imageBack }}" alt="Back of {{ .Title }}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="green-band">
+    <p>{{ .Params.bandText }}</p>
+</div>
+
+</body>
+</html>
 
