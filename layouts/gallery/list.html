@@ -48,40 +48,6 @@
   </div> <!-- End of tile-container -->
 
 
-<div class="nav-band">
-    <div class="nav-arrows">
-        {{ $section := .Title }}
-        {{ if eq $section "Prometheus Gallery" }}
-            <!-- Prometheus goes to Epimetheus next and Pandora previous -->
-            <a href="/gallery/pandora/" class="nav-button left">
-                <img src="/images/navigation-arrows/arrow-left.png" alt="Next">
-            </a>
-            <a href="/gallery/epimetheus/" class="nav-button right">
-                <img src="/images/navigation-arrows/arrow-right.png" alt="Previous">
-            </a>
-
-        {{ else if eq $section "Epimetheus Gallery" }}
-            <!-- Epimetheus goes to Pandora next and Prometheus previous -->
-            <a href="/gallery/prometheus/" class="nav-button left">
-                <img src="/images/navigation-arrows/arrow-left.png" alt="Next">
-            </a>
-            <a href="/gallery/pandora/" class="nav-button right">
-                <img src="/images/navigation-arrows/arrow-right.png" alt="Previous">
-            </a>
-
-        {{ else if eq $section "Pandora Gallery" }}
-            <!-- Pandora goes to Prometheus next and Epimetheus previous -->
-            <a href="/gallery/epimetheus/" class="nav-button left">
-                <img src="/images/navigation-arrows/arrow-left.png" alt="Next">
-            </a>
-            <a href="/gallery/prometheus/" class="nav-button right">
-                <img src="/images/navigation-arrows/arrow-right.png" alt="Previous">
-            </a>
-
-        {{ end }}
-    </div>
-</div>
-
         
 </body>
 </html>

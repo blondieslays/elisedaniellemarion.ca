@@ -170,7 +170,7 @@ body {
     margin: 0;
 }
 
-/* Navigation Arrows (Gallery Pages) */
+/* Navigation Arrows (Single Pages) */
 .nav-band {
     width: 100%;
     background-color: #3A5F0B;
@@ -190,35 +190,21 @@ body {
     padding: 10px 0;
 }
 
-/* Adjust the arrow buttons */
-.nav-button {
-    display: inline-block;
-    padding: 0; /* Remove extra padding */
-}
-
-/* Arrow Images */
-.nav-button img {
-    width: 80px; /* Adjust size as needed */
-    height: auto;
-}
-
-.nav-arrows {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .nav-button {
     display: inline-block;
     padding: 10px;
+    z-index: 1000; /* Ensure arrows are on top */
+    cursor: pointer;
 }
 
 .nav-button img {
-    width: 100px;
+    width: 50px;
     height: auto;
+    pointer-events: auto;
 }
+
+
 
 /* Homepage Image Split Container */
 #homepage-images .image-split-container {

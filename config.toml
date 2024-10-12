@@ -9,10 +9,11 @@ author = "Elise Danielle Marion"
 description = "A portfolio site of Elise Danielle Marion"
 defaultContentLanguage = "en"
 
+paginate = 9  # Optional: adjust based on the number of items per page
+
 [permalinks]
   gallery = "/gallery/:section/:title/"
 
-paginate = 3  # Adjust based on how many items you want per page
 
 enableGitInfo = true
 disableHugoGeneratorInject = true

@@ -33,32 +33,37 @@
 </div>
 
 
-<!-- Green Band with Navigation -->
+
 <div class="green-band">
     <div class="nav-arrows">
-        {{ $prev := .PrevInSection }}
-        {{ $next := .NextInSection }}
 
-        <!-- Display Previous Arrow -->
-        {{ if $prev }}
-            <a href="{{ $prev.Permalink }}" class="nav-button left">
+        <!-- Previous Page -->
+        {{ with .PrevInSection }}
+            <a href="{{ .RelPermalink }}" class="nav-button left">
                 <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
             </a>
+        {{ else }}
+            <span class="nav-button disabled">
+                <img src="/images/navigation-arrows/arrow-left.png" alt="No Previous">
+            </span>
         {{ end }}
 
-        <!-- Band Text -->
-        <p class="nav-description">
-            {{ .Params.bandText }}
-        </p>
+        <p class="nav-description">{{ .Params.bandText }}</p>
 
-        <!-- Display Next Arrow -->
-        {{ if $next }}
-            <a href="{{ $next.Permalink }}" class="nav-button right">
+        <!-- Next Page -->
+        {{ with .NextInSection }}
+            <a href="{{ .RelPermalink }}" class="nav-button right">
                 <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
             </a>
+        {{ else }}
+            <span class="nav-button disabled">
+                <img src="/images/navigation-arrows/arrow-right.png" alt="No Next">
+            </span>
         {{ end }}
+
     </div>
 </div>
+
 
 </body>
 </html>

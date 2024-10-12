@@ -1,8 +1,6 @@
 ---
 title: "Epimetheus Gallery"
 description: "Epimetheus, the Titan of afterthought, received all the animals and gave them gifts, ensuring their survival and happiness in the world."
-weight: 2  # Helps determine the order for pagination
-paginate: 3  # Number of items per page (adjust this value)
 type: "gallery"
 date: 2024-10-07
 images:

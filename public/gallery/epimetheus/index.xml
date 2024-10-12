@@ -6,7 +6,28 @@
     <description>Recent content in Epimetheus Gallery on My Online Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/gallery/epimetheus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zoa</title>
+      <link>http://localhost:1313/gallery/epimetheus/zoa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/epimetheus/zoa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ameles</title>
+      <link>http://localhost:1313/gallery/epimetheus/ameles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/epimetheus/ameles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Physis</title>
+      <link>http://localhost:1313/gallery/epimetheus/physis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/epimetheus/physis/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

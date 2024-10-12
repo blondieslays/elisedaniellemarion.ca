@@ -6,7 +6,28 @@
     <description>Recent content in Prometheus Gallery on My Online Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/gallery/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pyr</title>
+      <link>http://localhost:1313/gallery/prometheus/pyr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/prometheus/pyr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philanthropia</title>
+      <link>http://localhost:1313/gallery/prometheus/philanthropia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/prometheus/philanthropia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Phronesis</title>
+      <link>http://localhost:1313/gallery/prometheus/phronesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/prometheus/phronesis/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
