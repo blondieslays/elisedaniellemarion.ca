@@ -246,3 +246,30 @@ body {
     margin: 0;
 }
 
+/* Increase space below the single tile container */
+.single-tile-container {
+    max-width: 800px;
+    margin: 20px auto 100px auto; /* Increased bottom margin */
+    perspective: 1000px;
+}
+
+/* Increase spacing between story content sections */
+.story-content {
+    max-width: 800px;
+    margin: 100px auto; /* Increased top and bottom margin */
+    text-align: center;
+    padding-top: 40px; /* Optional: Add more top padding */
+}
+
+/* Additional spacing between story content paragraphs */
+.story-content p {
+    margin-bottom: 30px; /* Increase spacing between paragraphs */
+}
+
+
+
+/* Optional: Adjust padding between tile and green band */
+.green-band {
+    margin-top: 40px;  /* Add space between the story content and green band */
+}
+

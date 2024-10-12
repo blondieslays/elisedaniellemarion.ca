@@ -24,13 +24,17 @@
     <h1 class="page-title">{{ .Title }}</h1>
 </div>
 
-<!-- Single Tile Container with Hover Effect -->
+
+<!-- Single Tile Container with Story Image -->
 <div class="single-tile-container">
     <div class="hover-tile">
-        <img class="tile-front" src="/images/single/{{ .Params.imageFront }}" alt="Front of {{ .Title }}">
-        <img class="tile-back" src="/images/single/{{ .Params.imageBack }}" alt="Back of {{ .Title }}">
+        <div class="tile-inner">
+            <img class="tile-front" src="{{ .Params.contentImage }}" alt="Front of {{ .Title }}">
+            <img class="tile-back" src="/images/single/{{ .Params.imageBack }}" alt="Back of {{ .Title }}">
+        </div>
     </div>
 </div>
+
 
 <!-- Green Band with Pagination Arrows and Description -->
 <div class="green-band">
@@ -78,7 +82,13 @@
     </div>
 </div>
 
-
+<!-- Story Content (without image) -->
+<div class="story-content">
+    <h2>{{ .Params.contentTitle }}</h2>
+    <p>{{ .Params.contentText1 }}</p>
+    <p>{{ .Params.contentText2 }}</p>
+    <p>{{ .Params.contentText3 }}</p>
+</div>
 
 </body>
 </html>
