@@ -8,35 +8,31 @@
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
-<p>Loading single tile layout for {{ .Title }}</p>
 
 <!-- Symbols Menu -->
 <nav class="symbol-menu">
     <ul>
-        <li><a href="/" title="Home">
-            <img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
-        <li><a href="/gallery/prometheus/" title="Prometheus">
-            <img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
-        <li><a href="/gallery/epimetheus/" title="Epimetheus">
-            <img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
-        <li><a href="/gallery/pandora/" title="Pandora">
-            <img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+        <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
+        <li><a href="/gallery/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+        <li><a href="/gallery/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
     </ul>
 </nav>
 
+<!-- Page Title with Padding -->
+<div class="page-title-container">
+    <h1 class="page-title">{{ .Title }}</h1>
+</div>
+
+<!-- Single Tile (Hover Effect: Front Image Changes to Back Image) -->
 <div class="single-tile-container">
-    <div class="tile">
-        <div class="tile-inner">
-            <div class="tile-front">
-                <img src="/images/single/{{ .Params.imageFront }}" alt="Front of {{ .Title }}">
-            </div>
-            <div class="tile-back">
-                <img src="/images/single/{{ .Params.imageBack }}" alt="Back of {{ .Title }}">
-            </div>
-        </div>
+    <div class="hover-tile">
+        <img class="tile-front" src="/images/single/{{ .Params.imageFront }}" alt="Front of {{ .Title }}">
+        <img class="tile-back" src="/images/single/{{ .Params.imageBack }}" alt="Back of {{ .Title }}">
     </div>
 </div>
 
+<!-- Green Band Below the Single Tile -->
 <div class="green-band">
     <p>{{ .Params.bandText }}</p>
 </div>

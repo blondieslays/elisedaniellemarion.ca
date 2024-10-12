@@ -1,79 +1,14 @@
-/* General body font */
+/* General Body Styling */
 body {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     color: #333;
-}
-
-/* Gallery header styling */
-.gallery-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #3A5F0B;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Add padding between the symbols menu and the gallery page titles */
-.gallery-header {
-    padding-top: 20px;
-}
-
-/* Add space below the symbols menu */
-.symbol-menu {
-    margin-bottom: 20px;
-}
-
-/* Gallery description styling */
-.gallery-header .gallery-description {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Flexbox layout for the homepage images */
-#homepage-images .image-split-container {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 20px !important;
-    padding: 20px !important;
-}
-
-#homepage-images .image-split-container a {
-    flex: 0 1 400px !important;
-}
-
-#homepage-images .image-split-container a img {
-    width: 100% !important;
-    height: auto !important;
-}
-
-/* Styling for the homepage title */
-.homepage-title {
-    text-align: center;
-    font-size: 3.3rem;
-    color: #3A5F0B;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
-/* Text band styling */
-.text-band {
-    background-color: #3A5F0B;
-    padding: 20px;
-    text-align: center;
-}
-
-.text-band p {
-    color: #F5F5F5;
-    font-size: 1.2rem;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Symbols Menu Styling */
+/* Symbol Menu Styling */
 .symbol-menu {
     position: fixed;
     top: 0;
@@ -88,7 +23,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure symbols are aligned horizontally */
 .symbol-menu ul {
     list-style: none;
     padding: 0;
@@ -110,20 +44,45 @@ body {
     transform: scale(1.1);
 }
 
-/* Tile container for gallery pages (multiple tiles) */
+/* Padding between Menu and Page Titles */
+.page-title-container {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #3A5F0B;
+    margin-bottom: 20px;
+}
+
+/* Gallery Header Styling */
+.gallery-header h1 {
+    font-size: 2.5rem;
+    color: #3A5F0B;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery-header .gallery-description {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Gallery Tile Container */
 .tile-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap; /* Prevent wrapping */
     gap: 20px;
-    margin-top: 20px;
+    margin: 20px auto;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-
-/* Each tile in the gallery */
+/* Gallery Tiles */
 .tile {
     width: 300px;
     height: 400px;
@@ -154,69 +113,80 @@ body {
     transform: rotateY(180deg);
 }
 
-/* Make sure images are responsive inside the tiles */
 .tile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Tile Container for Single Tile Pages */
+/* Single Tile Container with Hover Swap */
 .single-tile-container {
     max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+    margin: 20px auto;
 }
 
-.single-tile {
-    width: 100%;
-    height: auto;
-    perspective: 1000px;
-}
-
-.single-tile-inner {
+.hover-tile {
     position: relative;
     width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+    height: auto;
 }
 
-.single-tile:hover .single-tile-inner {
-    transform: rotateY(180deg);
-}
-
-.single-tile-front, .single-tile-back {
-    position: absolute;
+.hover-tile img {
     width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
 }
 
-.single-tile-back {
-    transform: rotateY(180deg);
+.hover-tile .tile-back {
+    opacity: 0;
 }
 
-/* Green Band for gallery pages with navigation arrows */
-.nav-band {
+.hover-tile:hover .tile-back {
+    opacity: 1;
+}
+
+.hover-tile:hover .tile-front {
+    opacity: 0;
+}
+
+/* Green Band for Single Tile Pages */
+.green-band {
     width: 100%;
     background-color: #3A5F0B;
-    padding: 0;
-    align-items: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px auto 40px auto;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
-/* Styling for navigation arrows */
+.green-band p {
+    margin: 0;
+}
+
+/* Navigation Band for Gallery Pages */
+.nav-band {
+    width: 100%;
+    background-color: #3A5F0B;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .nav-arrows {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 10px 0;
 }
 
 .nav-button {
@@ -227,20 +197,44 @@ body {
 .nav-button img {
     width: 100px;
     height: auto;
-    display: inline-block;
 }
 
-/* Green Band without arrows for single tile pages */
-.green-band {
-    background-color: #007f00;
-    color: white;
-    padding: 50px;
+/* Homepage Image Split Container */
+#homepage-images .image-split-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#homepage-images .image-split-container a {
+    flex: 0 1 400px;
+}
+
+#homepage-images .image-split-container a img {
+    width: 100%;
+    height: auto;
+}
+
+/* Homepage Title Styling */
+.homepage-title {
     text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    border-radius: 5px;
+    font-size: 3.3rem;
+    color: #3A5F0B;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 
-.green-band p {
+/* Text Band on Homepage */
+.text-band {
+    background-color: #3A5F0B;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-band p {
+    color: #F5F5F5;
+    font-size: 1.2rem;
     margin: 0;
 }
+
