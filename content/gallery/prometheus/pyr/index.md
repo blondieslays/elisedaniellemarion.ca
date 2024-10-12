@@ -11,5 +11,6 @@ contentText1: "Pyr, meaning 'fire,' is central to the story of Prometheus, who d
 contentText2: "Prometheus's gift of fire represented humanity’s shift toward independence and innovation, embodying our ability to create and shape our future."
 contentText3: "In the context of artificial intelligence, Pyr serves as a metaphor for progress with risks—raising questions about control, ethics, and consequence."
 contentImage: "/images/story/pyr-story-image.png"
+pdf: "pyr-article.pdf"  # Add the PDF filename here
 ---
 

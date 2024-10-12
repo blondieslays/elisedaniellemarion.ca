@@ -90,6 +90,17 @@
     <p>{{ .Params.contentText3 }}</p>
 </div>
 
+{{ if .Params.pdf }}
+<div class="download-article">
+    <a href="/pdf/{{ .Params.pdf }}" download class="download-button">
+        <img src="/images/download-icon.png" alt="Download Icon" class="download-icon">
+        <span>Download the full article on {{ .Title }}</span>
+    </a>
+</div>
+{{ end }}
+
+
+
 </body>
 </html>
 
