@@ -6,14 +6,98 @@
     <description>Recent content on My Online Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus Gallery</title>
+      <link>http://localhost:1313/gallery/prometheus/index-backup/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/prometheus/index-backup/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;!-- Tile 2 --&amp;gt;&#xA;&amp;lt;div class=&amp;quot;tile&amp;quot;&amp;gt;&#xA;    &amp;lt;div class=&amp;quot;tile-inner&amp;quot;&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-front&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/prometheus/philanthropia.png&amp;quot; alt=&amp;quot;Prometheus Front Image 2&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-back&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/prometheus/back2.png&amp;quot; alt=&amp;quot;Prometheus Back Image 2&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&#xA;&amp;lt;!-- Tile 3 --&amp;gt;&#xA;&amp;lt;div class=&amp;quot;tile&amp;quot;&amp;gt;&#xA;    &amp;lt;div class=&amp;quot;tile-inner&amp;quot;&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-front&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/prometheus/phronesis.png&amp;quot; alt=&amp;quot;Prometheus Front Image 3&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-back&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/prometheus/back3.png&amp;quot; alt=&amp;quot;Prometheus Back Image 3&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
+      <title>Epimetheus Gallery</title>
+      <link>http://localhost:1313/gallery/epimetheus/index-backup/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/epimetheus/index-backup/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;!-- Tile 2 --&amp;gt;&#xA;&amp;lt;div class=&amp;quot;tile&amp;quot;&amp;gt;&#xA;    &amp;lt;div class=&amp;quot;tile-inner&amp;quot;&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-front&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/epimetheus/ameles.png&amp;quot; alt=&amp;quot;Epimetheus Front Image 2&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-back&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/epimetheus/back2.png&amp;quot; alt=&amp;quot;Epimetheus Back Image 2&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&#xA;&amp;lt;!-- Tile 3 --&amp;gt;&#xA;&amp;lt;div class=&amp;quot;tile&amp;quot;&amp;gt;&#xA;    &amp;lt;div class=&amp;quot;tile-inner&amp;quot;&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-front&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/epimetheus/physis.png&amp;quot; alt=&amp;quot;Epimetheus Front Image 3&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-back&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/epimetheus/back3.png&amp;quot; alt=&amp;quot;Epimetheus Back Image 3&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
+      <title>Pandora Gallery</title>
+      <link>http://localhost:1313/gallery/pandora/index-backup/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/pandora/index-backup/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;!-- Tile 2 --&amp;gt;&#xA;&amp;lt;div class=&amp;quot;tile&amp;quot;&amp;gt;&#xA;    &amp;lt;div class=&amp;quot;tile-inner&amp;quot;&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-front&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/pandora/kakon.png&amp;quot; alt=&amp;quot;Pandora Front Image 2&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-back&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/pandora/back2.png&amp;quot; alt=&amp;quot;Pandora Back Image 2&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&#xA;&amp;lt;!-- Tile 3 --&amp;gt;&#xA;&amp;lt;div class=&amp;quot;tile&amp;quot;&amp;gt;&#xA;    &amp;lt;div class=&amp;quot;tile-inner&amp;quot;&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-front&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/pandora/elpis.png&amp;quot; alt=&amp;quot;Pandora Front Image 3&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;tile-back&amp;quot;&amp;gt;&#xA;            &amp;lt;img src=&amp;quot;/images/pandora/back3.png&amp;quot; alt=&amp;quot;Pandora Back Image 3&amp;quot;&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;/images/bow-image.png&amp;quot; alt=&amp;quot;Bows&amp;quot; class=&amp;quot;bow-image&amp;quot;&amp;gt; &amp;lt;!-- Bow image --&amp;gt;&#xA;&#xA;&amp;lt;a href=&amp;quot;{{ .Next.Permalink }}&amp;quot; class=&amp;quot;nav-button right&amp;quot;&amp;gt;&#xA;    &amp;lt;img src=&amp;quot;{{ .Params.navigation_images.right }}&amp;quot; alt=&amp;quot;Next&amp;quot;&amp;gt;&#xA;&amp;lt;/a&amp;gt;    &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
     <item>
       <title>Articles Gallery</title>
       <link>http://localhost:1313/articles-gallery/</link>
       <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/articles-gallery/</guid>
       <description>&lt;h2 id=&#34;welcome-to-the-articles-gallery&#34;&gt;Welcome to the Articles Gallery!&lt;/h2&gt;&#xA;&lt;p&gt;Below are some of the highlighted articles. Click on any image to explore the full content!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ameles</title>
+      <link>http://localhost:1313/gallery/epimetheus/ameles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/epimetheus/ameles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elpis</title>
+      <link>http://localhost:1313/gallery/pandora/elpis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/pandora/elpis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kakon</title>
+      <link>http://localhost:1313/gallery/pandora/kakon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/pandora/kakon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philanthropia</title>
+      <link>http://localhost:1313/gallery/prometheus/philanthropia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/prometheus/philanthropia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Phronesis</title>
+      <link>http://localhost:1313/gallery/prometheus/phronesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/prometheus/phronesis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Physis</title>
+      <link>http://localhost:1313/gallery/epimetheus/physis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/epimetheus/physis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pyr</title>
+      <link>http://localhost:1313/gallery/prometheus/pyr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/prometheus/pyr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pyxis</title>
+      <link>http://localhost:1313/gallery/pandora/pyxis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/pandora/pyxis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zoa</title>
+      <link>http://localhost:1313/gallery/epimetheus/zoa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/epimetheus/zoa/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

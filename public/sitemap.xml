@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/gallery/prometheus/</loc>
+    <loc>http://localhost:1313/gallery/prometheus/index-backup/</loc>
     <lastmod>2024-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/gallery/epimetheus/</loc>
+    <loc>http://localhost:1313/gallery/epimetheus/index-backup/</loc>
     <lastmod>2024-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/gallery/pandora/</loc>
+    <loc>http://localhost:1313/gallery/pandora/index-backup/</loc>
     <lastmod>2024-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gallery/</loc>
@@ -20,8 +20,26 @@
     <loc>http://localhost:1313/articles-gallery/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/gallery/epimetheus/ameles/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/gallery/pandora/elpis/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gallery/pandora/kakon/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gallery/prometheus/philanthropia/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gallery/prometheus/phronesis/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gallery/epimetheus/physis/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gallery/prometheus/pyr/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gallery/pandora/pyxis/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gallery/epimetheus/zoa/</loc>
   </url>
 </urlset>
