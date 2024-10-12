@@ -24,7 +24,7 @@
     <h1 class="page-title">{{ .Title }}</h1>
 </div>
 
-<!-- Single Tile (Hover Effect: Front Image Changes to Back Image) -->
+<!-- Single Tile (Hover Effect) -->
 <div class="single-tile-container">
     <div class="hover-tile">
         <img class="tile-front" src="/images/single/{{ .Params.imageFront }}" alt="Front of {{ .Title }}">
@@ -32,9 +32,23 @@
     </div>
 </div>
 
-<!-- Green Band Below the Single Tile -->
+<!-- Green Band with Navigation -->
 <div class="green-band">
-    <p>{{ .Params.bandText }}</p>
+    <div class="nav-arrows">
+        {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" class="nav-button left">
+            <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+        </a>
+        {{ end }}
+
+        <p class="nav-description">{{ .Params.bandText }}</p>
+
+        {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" class="nav-button right">
+            <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
+        </a>
+        {{ end }}
+    </div>
 </div>
 
 </body>

@@ -170,7 +170,7 @@ body {
     margin: 0;
 }
 
-/* Navigation Band for Gallery Pages */
+/* Navigation Arrows (Gallery Pages) */
 .nav-band {
     width: 100%;
     background-color: #3A5F0B;
@@ -179,6 +179,27 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+.nav-arrows {
+    display: flex;
+    justify-content: space-between; /* Align arrows to the edges */
+    align-items: center;
+    max-width: 1000px; /* Same as the tile container's width */
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Adjust the arrow buttons */
+.nav-button {
+    display: inline-block;
+    padding: 0; /* Remove extra padding */
+}
+
+/* Arrow Images */
+.nav-button img {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
 }
 
 .nav-arrows {
