@@ -24,7 +24,7 @@
     <h1 class="page-title">{{ .Title }}</h1>
 </div>
 
-<!-- Single Tile (Hover Effect) -->
+<!-- Single Tile Container with Hover Effect -->
 <div class="single-tile-container">
     <div class="hover-tile">
         <img class="tile-front" src="/images/single/{{ .Params.imageFront }}" alt="Front of {{ .Title }}">
@@ -32,37 +32,52 @@
     </div>
 </div>
 
-
-
+<!-- Green Band with Pagination Arrows and Description -->
 <div class="green-band">
     <div class="nav-arrows">
+        <!-- Define the custom order of tiles -->
+        {{ $tileOrder := slice "Pyr" "Philanthropia" "Phronesis" "Zoa" "Ameles" "Physis" "Pyxis" "Kakon" "Elpis" }}
 
-        <!-- Previous Page -->
-        {{ with .PrevInSection }}
-            <a href="{{ .RelPermalink }}" class="nav-button left">
-                <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
-            </a>
-        {{ else }}
-            <span class="nav-button disabled">
-                <img src="/images/navigation-arrows/arrow-left.png" alt="No Previous">
-            </span>
+        <!-- Ensure the current page is found by title -->
+        {{ $currentPage := . }}
+        {{ $currentIndex := -1 }}
+
+        <!-- Find the index of the current page title -->
+        {{ range $index, $name := $tileOrder }}
+            {{ if eq $name $currentPage.Title }}
+                {{ $currentIndex = $index }}
+            {{ end }}
         {{ end }}
 
-        <p class="nav-description">{{ .Params.bandText }}</p>
+        <!-- Proceed only if a valid index is found -->
+        {{ if ne $currentIndex -1 }}
+            <!-- Calculate previous and next indices -->
+            {{ $totalTiles := len $tileOrder }}
+            {{ $prevIndex := mod (add $currentIndex (sub $totalTiles 1)) $totalTiles }}
+            {{ $nextIndex := mod (add $currentIndex 1) $totalTiles }}
 
-        <!-- Next Page -->
-        {{ with .NextInSection }}
-            <a href="{{ .RelPermalink }}" class="nav-button right">
+            <!-- Fetch the previous and next tiles -->
+            {{ $prevTile := (index (where site.RegularPages "Title" (index $tileOrder $prevIndex)) 0) }}
+            {{ $nextTile := (index (where site.RegularPages "Title" (index $tileOrder $nextIndex)) 0) }}
+
+            <!-- Previous Arrow -->
+            <a href="{{ $prevTile.RelPermalink }}" class="nav-button left">
+                <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+            </a>
+
+            <!-- Band Text / Description -->
+            <p class="nav-description">{{ .Params.bandText }}</p>
+
+            <!-- Next Arrow -->
+            <a href="{{ $nextTile.RelPermalink }}" class="nav-button right">
                 <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
             </a>
         {{ else }}
-            <span class="nav-button disabled">
-                <img src="/images/navigation-arrows/arrow-right.png" alt="No Next">
-            </span>
+            <p>Error: Current page not found in the tile order.</p>
         {{ end }}
-
     </div>
 </div>
+
 
 
 </body>
