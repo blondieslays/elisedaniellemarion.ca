@@ -266,7 +266,22 @@ body {
     margin-bottom: 30px; /* Increase spacing between paragraphs */
 }
 
+/* Story Title */
+.story-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #3A5F0B;  /* Green color */
+    margin-bottom: 15px;
+    text-align: center;
+}
 
+/* Story Paragraphs */
+.story-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;  /* Better line spacing for readability */
+    color: #333;
+    margin-bottom: 20px;
+}
 
 /* Optional: Adjust padding between tile and green band */
 .green-band {
