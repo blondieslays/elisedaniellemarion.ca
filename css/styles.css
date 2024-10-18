@@ -1,0 +1,203 @@
+/* Style for the homepage container */
+.homepage-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the homepage title */
+.homepage-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: black;
+}
+
+/* THIS IS WHERE THE HOMEPAGE GALLERY MENU BEGINS */
+
+/* SLOW DOWN */
+
+/* Gallery container for the three images */
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home-image {
+  width: 400px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+.homepage-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Space between images */
+}
+
+.gallery-image {
+  width: 400px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the designated space */
+}
+
+
+/* THIS IS WHERE THE HOMEPAGE ENDS */
+
+
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.article-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.article-date {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.article-content img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.article-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-list article {
+  margin-bottom: 40px;
+}
+
+.article-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.article-list a {
+  color: black;
+  text-decoration: none;
+}
+
+.article-list a:hover {
+  text-decoration: underline;
+}
+
+.article-excerpt {
+  font-size: 16px;
+  color: gray;
+}
+
+/* THIS IS WHERE THE GALLERY BEGINS */
+
+/* Gallery Container */
+.gallery-container {
+  max-width: 800px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 20px;        /* Adjust this value to match the Prometheus image alignment */
+}
+
+/* Gallery Title */
+.gallery-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Image Grid */
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between images */
+}
+
+/* Each Image Box */
+.gallery-image-box {
+  width: 300px; /* Set the width of each image box */
+  text-decoration: none;
+  color: black;
+}
+
+/* Gallery Images */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+/* Hover Effect */
+.gallery-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image Caption */
+.image-caption {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Styling for gallery page titles and descriptions */
+.gallery-header {
+    text-align: center;         /* Center the title and description */
+    margin-bottom: 30px;        /* Add space below the header */
+}
+
+.gallery-header h1 {
+    font-size: 2.5rem;          /* Title font size */
+    margin-bottom: 10px;        /* Space between title and description */
+}
+
+.gallery-header p {
+    font-size: 1.2rem;          /* Description font size */
+    color: #555;                /* Subtle text color for description */
+    max-width: 800px;           /* Limit the width of the description */
+    margin: 0 auto;             /* Center the description block */
+}
+
+
+/* Clickable Box on Homepage */
+.clickable-box {
+  text-decoration: none;
+}
+
+{{ define "main" }}
+<div class="homepage-container">
+  <h1 class="homepage-title">The Intersection of Literature & Technology</h1>
+  
+  <!-- Image Grid with Clickable Links -->
+  <div class="image-split-container">
+    <a href="/articles-gallery/" class="split-image-link">
+      <img src="/images/left-part.png" alt="Left Image" class="split-image">
+    </a>
+    <a href="/articles-gallery/" class="split-image-link">
+      <img src="/images/middle-part.png" alt="Middle Image" class="split-image">
+    </a>
+    <a href="/articles-gallery/" class="split-image-link">
+      <img src="/images/right-part.png" alt="Right Image" class="split-image">
+    </a>
+  </div>
+</div>
+{{ end }}
+

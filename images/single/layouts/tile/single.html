@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+    <!-- Page Title and Description -->
+    <div class="tile-details">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.description }}</p>
+    </div>
+
+    <!-- Single Flippable Tile Container -->
+<div class="single-tile-container">
+    <div class="tile">
+        <div class="tile-inner">
+            <div class="tile-front">
+                <img src="/images/single/pyr-single-front.png" alt="Front of Pyr">
+            </div>
+            <div class="tile-back">
+                <img src="/images/single/pyr-single-back.png" alt="Back of Pyr">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Green Band -->
+    <div class="green-band">
+        <p>{{ .Params.description }}</p>
+    </div>
+
+</body>
+</html>
+
