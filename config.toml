@@ -1,8 +1,4 @@
-open -e config.toml
-
-<<<<<<< Updated upstream
 baseURL = "https://www.elisedaniellemarion.ca/"
-# theme = "hello-friend"
 languageCode = "en-us"
 title = "Elise Danielle Marion"
 
@@ -14,13 +10,6 @@ paginate = 9  # Optional: adjust based on the number of items per page
 
 [permalinks]
   gallery = "/gallery/:section/:title/"
-=======
-open -e config.toml
-
-baseURL = "https://www.elisedaniellemarion.ca/"
-languageCode = "en-us"
-title = "My Portfolio"
-theme = "hello-friend"
 
 [params]
   description = "Exploring the Intersection of Literature & Technology."
@@ -29,8 +18,6 @@ theme = "hello-friend"
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
-
->>>>>>> Stashed changes
 
 
 enableGitInfo = true
@@ -42,20 +29,9 @@ disableHugoGeneratorInject = true
     name = "Home"
     url = "/"
 
-# [[menu.main]]
-#   identifier = "articles"
-#   name = "Articles"
-#   url = "/articles/"
-#   weight = 2
-
-
 [social]
   github = "https://github.com/blondieslays"
   linkedin = "https://www.linkedin.com/in/elisedaniellemarion/"
-
-# [taxonomies]
-#   category = "categories"
-#   tag = "tags"
 
 
 [outputs]
