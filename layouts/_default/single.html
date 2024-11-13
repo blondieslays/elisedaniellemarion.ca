@@ -13,9 +13,10 @@
 <nav class="symbol-menu">
     <ul>
         <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
-        <li><a href="/gallery/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
-        <li><a href="/gallery/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
-        <li><a href="/gallery/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+        <li><a href="/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+        <li><a href="/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+        <li><a href="/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+        <li><a href="/resume/" title="Resume"><img src="/images/menu-icons/resume.png" alt="Resume" width="32"></a></li>
     </ul>
 </nav>
 
@@ -39,45 +40,48 @@
 <!-- Green Band with Pagination Arrows and Description -->
 <div class="green-band">
     <div class="nav-arrows">
-        <!-- Define the custom order of tiles -->
-        {{ $tileOrder := slice "Pyr" "Philanthropia" "Phronesis" "Zoa" "Ameles" "Physis" "Pyxis" "Kakon" "Elpis" }}
+        {{ $currentWeight := .Weight }}
 
-        <!-- Ensure the current page is found by title -->
-        {{ $currentPage := . }}
+        <!-- Get the list of pages, excluding the Resume page -->
+        {{ $allPages := where .Site.RegularPages "Params.excludeFromPagination" "!=" true }}
+        {{ $totalPages := len $allPages }}
+
+        <!-- Find the current page's index within the filtered pages -->
         {{ $currentIndex := -1 }}
-
-        <!-- Find the index of the current page title -->
-        {{ range $index, $name := $tileOrder }}
-            {{ if eq $name $currentPage.Title }}
+        {{ range $index, $page := $allPages }}
+            {{ if eq $page.Weight $currentWeight }}
                 {{ $currentIndex = $index }}
             {{ end }}
         {{ end }}
 
-        <!-- Proceed only if a valid index is found -->
+        <!-- Only proceed if a valid index is found -->
         {{ if ne $currentIndex -1 }}
-            <!-- Calculate previous and next indices -->
-            {{ $totalTiles := len $tileOrder }}
-            {{ $prevIndex := mod (add $currentIndex (sub $totalTiles 1)) $totalTiles }}
-            {{ $nextIndex := mod (add $currentIndex 1) $totalTiles }}
+            <!-- Calculate previous and next indices, looping around -->
+            {{ $prevIndex := mod (add $currentIndex (sub $totalPages 1)) $totalPages }}
+            {{ $nextIndex := mod (add $currentIndex 1) $totalPages }}
 
-            <!-- Fetch the previous and next tiles -->
-            {{ $prevTile := (index (where site.RegularPages "Title" (index $tileOrder $prevIndex)) 0) }}
-            {{ $nextTile := (index (where site.RegularPages "Title" (index $tileOrder $nextIndex)) 0) }}
+            <!-- Get the previous and next pages from the filtered list -->
+            {{ $prevPage := index $allPages $prevIndex }}
+            {{ $nextPage := index $allPages $nextIndex }}
 
             <!-- Previous Arrow -->
-            <a href="{{ $prevTile.RelPermalink }}" class="nav-button left">
-                <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
-            </a>
+            {{ if $prevPage }}
+                <a href="{{ $prevPage.RelPermalink }}" class="nav-button left">
+                    <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+                </a>
+            {{ end }}
 
             <!-- Band Text / Description -->
             <p class="nav-description">{{ .Params.bandText }}</p>
 
             <!-- Next Arrow -->
-            <a href="{{ $nextTile.RelPermalink }}" class="nav-button right">
-                <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
-            </a>
+            {{ if $nextPage }}
+                <a href="{{ $nextPage.RelPermalink }}" class="nav-button right">
+                    <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
+                </a>
+            {{ end }}
         {{ else }}
-            <p>Error: Current page not found in the tile order.</p>
+            <p>Error: Current page not found in pagination.</p>
         {{ end }}
     </div>
 </div>
@@ -92,7 +96,7 @@
 
 {{ if .Params.pdf }}
 <div class="download-article">
-    <a href="/pdf/{{ .Params.pdf }}" download class="download-button">
+    <a href="/pdfs/{{ .Params.pdf }}" download class="download-button">
         <img src="/images/download-icon.png" alt="Download Icon" class="download-icon">
         <span>Download the full article on {{ .Title }}</span>
     </a>

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Epimetheus Gallery on My Online Portfolio</title>
-    <link>https://www.elisedaniellemarion.ca/gallery/epimetheus/</link>
-    <description>Recent content in Epimetheus Gallery on My Online Portfolio</description>
+    <title>Epimetheus Gallery on Elise Danielle Marion</title>
+    <link>http://localhost:1313/gallery/epimetheus/</link>
+    <description>Recent content in Epimetheus Gallery on Elise Danielle Marion</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.elisedaniellemarion.ca/gallery/epimetheus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/gallery/epimetheus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zoa</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/epimetheus/zoa/</link>
+      <link>http://localhost:1313/gallery/gallery/zoa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/epimetheus/zoa/</guid>
+      <guid>http://localhost:1313/gallery/gallery/zoa/</guid>
       <description></description>
     </item>
     <item>
       <title>Ameles</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/epimetheus/ameles/</link>
+      <link>http://localhost:1313/gallery/gallery/ameles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/epimetheus/ameles/</guid>
+      <guid>http://localhost:1313/gallery/gallery/ameles/</guid>
       <description></description>
     </item>
     <item>
       <title>Physis</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/epimetheus/physis/</link>
+      <link>http://localhost:1313/gallery/gallery/physis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/epimetheus/physis/</guid>
+      <guid>http://localhost:1313/gallery/gallery/physis/</guid>
       <description></description>
     </item>
   </channel>

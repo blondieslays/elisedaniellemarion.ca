@@ -1,6 +1,6 @@
 /* General Body Styling */
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', serif;
     font-size: 16px;
     color: #333;
     margin: 0;
@@ -51,7 +51,7 @@ body {
 }
 
 .page-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', serif;
     font-size: 2.5rem;
     color: #3A5F0B;
     margin-bottom: 20px;
@@ -242,7 +242,7 @@ body {
 
 .text-band p {
     color: #F5F5F5;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0;
 }
 
@@ -268,7 +268,7 @@ body {
 
 /* Story Title */
 .story-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', serif;
     font-size: 2rem;
     color: #3A5F0B;  /* Green color */
     margin-bottom: 15px;
@@ -286,6 +286,7 @@ body {
 /* Optional: Adjust padding between tile and green band */
 .green-band {
     margin-top: 40px;  /* Add space between the story content and green band */
+    margin-bottom: 20px; /* Adjusts space below the green band */
 }
 
 .download-article {
@@ -312,5 +313,123 @@ body {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+}
+
+
+
+.bio-container {
+    max-width: 1000px; /* Matches the three-image container width */
+    margin: 0 auto; /* Centers the bio container */
+    display: flex; /* Aligns items side-by-side */
+    align-items: stretch;
+    padding: 20px; /* Adds space within the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to match the style */
+    border-radius: 6px; /* Softens the edges for a cohesive look */
+    background-color: #f9f9f9; /* Light background to match the portfolio’s aesthetic */
+    margin-top: 40px;  
+    margin-bottom: 20px;
+}
+
+.bio-image {
+    flex: 1;
+    padding-right: 20px; /* Space between image and text */
+}
+
+.circle-photo {
+    width: 400px;
+    height: 600px;
+    border-radius: 6px; 
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow to make the image stand out */
+}
+
+.bio-content {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.bio-content p {
+    margin: 0 0 15px 0; /* Adds space between paragraph breaks */
+}
+
+.resume-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50; /* Accent color for the link */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+}
+
+/* Timeline Container */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* Timeline Line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #333;
+    transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-date {
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.timeline-content {
+    width: 50%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Circle Indicator for Each Timeline Item */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    transform: translate(-50%, -10px);
 }
 

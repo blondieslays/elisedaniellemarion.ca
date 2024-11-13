@@ -1,82 +1,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Online Portfolio</title>
-    <link>https://www.elisedaniellemarion.ca/</link>
-    <description>Recent content on My Online Portfolio</description>
+    <title>Homepage on Elise Danielle Marion</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Homepage on Elise Danielle Marion</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.elisedaniellemarion.ca/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pyr</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/prometheus/pyr/</link>
+      <link>http://localhost:1313/prometheus/pyr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/prometheus/pyr/</guid>
+      <guid>http://localhost:1313/prometheus/pyr/</guid>
       <description></description>
     </item>
     <item>
       <title>Philanthropia</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/prometheus/philanthropia/</link>
+      <link>http://localhost:1313/prometheus/philanthropia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/prometheus/philanthropia/</guid>
+      <guid>http://localhost:1313/prometheus/philanthropia/</guid>
       <description></description>
     </item>
     <item>
       <title>Phronesis</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/prometheus/phronesis/</link>
+      <link>http://localhost:1313/prometheus/phronesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/prometheus/phronesis/</guid>
+      <guid>http://localhost:1313/prometheus/phronesis/</guid>
       <description></description>
     </item>
     <item>
       <title>Zoa</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/epimetheus/zoa/</link>
+      <link>http://localhost:1313/epimetheus/zoa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/epimetheus/zoa/</guid>
+      <guid>http://localhost:1313/epimetheus/zoa/</guid>
       <description></description>
     </item>
     <item>
       <title>Ameles</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/epimetheus/ameles/</link>
+      <link>http://localhost:1313/epimetheus/ameles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/epimetheus/ameles/</guid>
+      <guid>http://localhost:1313/epimetheus/ameles/</guid>
       <description></description>
     </item>
     <item>
       <title>Physis</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/epimetheus/physis/</link>
+      <link>http://localhost:1313/epimetheus/physis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/epimetheus/physis/</guid>
+      <guid>http://localhost:1313/epimetheus/physis/</guid>
       <description></description>
     </item>
     <item>
       <title>Pyxis</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/pandora/pyxis/</link>
+      <link>http://localhost:1313/pandora/pyxis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/pandora/pyxis/</guid>
+      <guid>http://localhost:1313/pandora/pyxis/</guid>
       <description></description>
     </item>
     <item>
       <title>Kakon</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/pandora/kakon/</link>
+      <link>http://localhost:1313/pandora/kakon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/pandora/kakon/</guid>
+      <guid>http://localhost:1313/pandora/kakon/</guid>
       <description></description>
     </item>
     <item>
       <title>Elpis</title>
-      <link>https://www.elisedaniellemarion.ca/gallery/pandora/elpis/</link>
+      <link>http://localhost:1313/pandora/elpis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/gallery/pandora/elpis/</guid>
+      <guid>http://localhost:1313/pandora/elpis/</guid>
       <description></description>
     </item>
     <item>
       <title>Articles Gallery</title>
-      <link>https://www.elisedaniellemarion.ca/articles-gallery/</link>
+      <link>http://localhost:1313/articles-gallery/</link>
       <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/articles-gallery/</guid>
+      <guid>http://localhost:1313/articles-gallery/</guid>
       <description>&lt;h2 id=&#34;welcome-to-the-articles-gallery&#34;&gt;Welcome to the Articles Gallery!&lt;/h2&gt;&#xA;&lt;p&gt;Below are some of the highlighted articles. Click on any image to explore the full content!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resume</title>
+      <link>http://localhost:1313/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
   </channel>
 </rss>

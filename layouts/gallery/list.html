@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prometheus Gallery</title>
-    <meta name="description" content="Prometheus, the Titan who defied Zeus, brought fire to humanity, enabling progress and enlightenment.">
     <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
@@ -15,43 +13,39 @@
 <nav class="symbol-menu">
     <ul>
         <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
-        <li><a href="/gallery/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
-        <li><a href="/gallery/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
-        <li><a href="/gallery/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+        <li><a href="/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+        <li><a href="/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+        <li><a href="/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+        <li><a href="/resume/" title="Resume"><img src="/images/menu-icons/resume.png" alt="Resume" width="32"></a></li>
     </ul>
 </nav>
-                    
+
 <div class="gallery-container">
     <header class="gallery-header">
         <h1>{{ .Title }}</h1>
         <p>{{ .Description }}</p>
     </header>
-                    
-<div class="tile-container">
+
+    <div class="tile-container">
         {{ range .Params.images }}
         <div class="tile">
             <div class="tile-inner">
                 <div class="tile-front">
                     <a href="{{ .link }}">
-                        <img src="{{ .front }}" alt="Front of {{ .link }}">
+                        <img src="{{ .front }}" alt="Front of {{ $.Title }} Gallery">
                     </a>
                 </div>
                 <div class="tile-back">
                     <a href="{{ .link }}">
-                        <img src="{{ .back }}" alt="Back of {{ .link }}">
+                        <img src="{{ .back }}" alt="Back of {{ $.Title }} Gallery">
                     </a>
                 </div>
             </div>
         </div>
         {{ end }}
-    </div>
-  </div> <!-- End of tile-container -->
+    </div> <!-- End of tile-container -->
+</div> <!-- End of gallery-container -->
 
-<!-- Green Band -->
-<div class="green-band">
-    <p>{{ .Params.bandText }}</p>
-</div>
-        
 </body>
 </html>
 
