@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
 /* General Body Styling */
 body {
     font-family: 'Raleway', serif;
@@ -160,6 +163,7 @@ body {
     background-color: #3A5F0B;
     color: white;
     padding: 50px;
+    font-family: 'Raleway', serif;
     text-align: center;
     font-size: 1.2em;
     margin: 20px auto 40px auto;
@@ -227,6 +231,7 @@ body {
 /* Homepage Title Styling */
 .homepage-title {
     text-align: center;
+    font-family: 'Raleway', serif;
     font-size: 3.3rem;
     color: #3A5F0B;
     margin-bottom: 20px;
@@ -242,6 +247,7 @@ body {
 
 .text-band p {
     color: #F5F5F5;
+    font-family: 'Raleway', serif;
     font-size: 1.1rem;
     margin: 0;
 }
@@ -257,7 +263,9 @@ body {
 .story-content {
     max-width: 800px;
     margin: 100px auto; /* Increased top and bottom margin */
+    font-family: 'Raleway', serif;
     text-align: center;
+
     padding-top: 40px; /* Optional: Add more top padding */
 }
 
@@ -277,6 +285,7 @@ body {
 
 /* Story Paragraphs */
 .story-content p {
+    font-family: 'Raleway', serif;
     font-size: 1.2rem;
     line-height: 1.8;  /* Better line spacing for readability */
     color: #333;
