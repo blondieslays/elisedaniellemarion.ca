@@ -1,6 +1,6 @@
 ---
 title: "Ameles"
-layout: "spark"
+layout: "epimetheus"
 type: "spark"
 description: "Ameles symbolizes carelessness or indifference, an oversight of Epimetheus."
 weight: 5  # Helps determine the order for pagination

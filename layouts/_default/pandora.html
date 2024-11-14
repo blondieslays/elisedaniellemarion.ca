@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+</head>
+<body>
+
+    <!-- Symbols Menu -->
+    <nav class="symbol-menu">
+        <ul>
+            <li><a href="{{ "/" | relURL }}" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
+            <li><a href="{{ "prometheus" | relURL }}" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+            <li><a href="{{ "epimetheus" | relURL }}" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+            <li><a href="{{ "pandora" | relURL }}" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+            <li><a href="{{ "resume" | relURL }}" title="Resume"><img src="/images/menu-icons/resume.png" alt="Resume" width="32"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="page-title-container">
+        <h1 class="page-title">{{ .Title }}</h1>
+    </div>
+
+    <!-- Green Band -->
+<div class="green-band">
+    <div class="nav-arrows">
+        {{ $prevPage := "" }}
+        {{ $nextPage := "" }}
+
+        {{ if eq .File.Path "prometheus/pyr/index.md" }}
+            {{ $prevPage = site.GetPage "pandora/elpis" }}
+            {{ $nextPage = site.GetPage "prometheus/philanthropia" }}
+        {{ else if eq .File.Path "prometheus/philanthropia/index.md" }}
+            {{ $prevPage = site.GetPage "prometheus/pyr" }}
+            {{ $nextPage = site.GetPage "prometheus/phronesis" }}
+        {{ else if eq .File.Path "prometheus/phronesis/index.md" }}
+            {{ $prevPage = site.GetPage "prometheus/philanthropia" }}
+            {{ $nextPage = site.GetPage "epimetheus/zoa" }}
+        {{ else if eq .File.Path "epimetheus/zoa/index.md" }}
+            {{ $prevPage = site.GetPage "prometheus/phronesis" }}
+            {{ $nextPage = site.GetPage "epimetheus/ameles" }}
+        {{ else if eq .File.Path "epimetheus/ameles/index.md" }}
+            {{ $prevPage = site.GetPage "epimetheus/zoa" }}
+            {{ $nextPage = site.GetPage "epimetheus/physis" }}
+        {{ else if eq .File.Path "epimetheus/physis/index.md" }}
+            {{ $prevPage = site.GetPage "epimetheus/ameles" }}
+            {{ $nextPage = site.GetPage "pandora/pyxis" }}
+        {{ else if eq .File.Path "pandora/pyxis/index.md" }}
+            {{ $prevPage = site.GetPage "epimetheus/physis" }}
+            {{ $nextPage = site.GetPage "pandora/kakon" }}
+        {{ else if eq .File.Path "pandora/kakon/index.md" }}
+            {{ $prevPage = site.GetPage "pandora/pyxis" }}
+            {{ $nextPage = site.GetPage "pandora/elpis" }}
+        {{ else if eq .File.Path "pandora/elpis/index.md" }}
+            {{ $prevPage = site.GetPage "pandora/kakon" }}
+            {{ $nextPage = site.GetPage "prometheus/pyr" }}
+        {{ end }}
+
+        <!-- Display Previous Arrow -->
+        {{ if $prevPage }}
+            <a href="{{ $prevPage.RelPermalink }}" class="nav-button left">
+                <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
+            </a>
+        {{ else }}
+            <p>Previous Page not found.</p>
+        {{ end }}
+
+        <!-- Band Text or Description -->
+        <p class="nav-description">{{ .Params.bandText }}</p>
+
+        <!-- Display Next Arrow -->
+        {{ if $nextPage }}
+            <a href="{{ $nextPage.RelPermalink }}" class="nav-button right">
+                <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
+            </a>
+        {{ else }}
+            <p>Next Page not found.</p>
+        {{ end }}
+    </div>
+</div>
+
+
+
+    <!-- Main Content -->
+    <div class="story-content">
+        <h2>{{ .Params.contentTitle }}</h2>
+        <p>{{ .Params.contentText1 }}</p>
+        <p>{{ .Params.contentText2 }}</p>
+        <p>{{ .Params.contentText3 }}</p>
+    </div>
+
+    <!-- Download Article Section -->
+    {{ if .Params.pdf }}
+    <div class="download-article">
+        <a href="/pdfs/{{ .Params.pdf }}" download class="download-button">
+            <img src="/images/download-icon.png" alt="Download Icon" class="download-icon">
+            <span>Download the full article on {{ .Title }}</span>
+        </a>
+    </div>
+    {{ end }}
+
+</body>
+</html>
+

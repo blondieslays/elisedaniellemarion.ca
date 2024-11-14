@@ -9,7 +9,7 @@ defaultContentLanguage = "en"
 paginate = 9  # Optional: adjust based on the number of items per page
 
 [permalinks]
-  gallery = "/gallery/:section/:title/"
+  gallery = "/:section/:title/"
 
 [params]
   description = "Exploring the Intersection of Literature & Technology."

@@ -12,13 +12,14 @@
 <!-- Symbols Menu -->
 <nav class="symbol-menu">
     <ul>
-        <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
-        <li><a href=/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
-        <li><a href="/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
-        <li><a href="/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
-        <li><a href="/resume/" title="Resume"><img src="/images/menu-icons/resume.png" alt="Resume" width="32"></a></li>
+        <li><a href="{{ "/" | relURL }}" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
+        <li><a href="{{ "prometheus" | relURL }}" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
+        <li><a href="{{ "epimetheus" | relURL }}" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
+        <li><a href="{{ "pandora" | relURL }}" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
+        <li><a href="{{ "resume" | relURL }}" title="Resume"><img src="/images/menu-icons/resume.png" alt="Resume" width="32"></a></li>
     </ul>
 </nav>
+
 
 <!-- Page Title with Padding -->
 <div class="page-title-container">
@@ -39,41 +40,47 @@
 <!-- Green Band with Pagination Arrows and Description -->
 <div class="green-band">
     <div class="nav-arrows">
-        {{ $currentWeight := .Weight }}
 
         <!-- Get the list of pages, excluding the Resume page -->
         {{ $allPages := where .Site.RegularPages "Params.excludeFromPagination" "!=" true }}
         {{ $totalPages := len $allPages }}
-
+        
         <!-- Find the current page's index within the filtered pages -->
         {{ $currentIndex := -1 }}
         {{ range $index, $page := $allPages }}
-            {{ if eq $page.Weight $currentWeight }}
+            {{ if eq $page.Weight .Weight }}
                 {{ $currentIndex = $index }}
             {{ end }}
         {{ end }}
 
-        <!-- Only proceed if a valid index is found -->
+        <!-- Proceed only if the current page index is found -->
         {{ if ne $currentIndex -1 }}
-            <!-- Calculate previous and next indices, looping around -->
+            <!-- Calculate previous and next indices, with looping -->
             {{ $prevIndex := mod (add $currentIndex (sub $totalPages 1)) $totalPages }}
             {{ $nextIndex := mod (add $currentIndex 1) $totalPages }}
 
-            <!-- Get the previous and next pages from the filtered list -->
+            <!-- Define the previous and next pages -->
             {{ $prevPage := index $allPages $prevIndex }}
-            {{ $nextPage := index $allPages $nextIndex }}
+            {{ $nextPage := "" }}
 
-            <!-- Previous Arrow -->
+            <!-- Conditional to set Elpis' next page to Pyr -->
+            {{ if eq .File.Path "content/gallery/elpis.md" }}
+                {{ $nextPage = site.GetPage "gallery/pyr" }}
+            {{ else }}
+                {{ $nextPage = index $allPages $nextIndex }}
+            {{ end }}
+
+            <!-- Display the Previous Arrow -->
             {{ if $prevPage }}
                 <a href="{{ $prevPage.RelPermalink }}" class="nav-button left">
                     <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
                 </a>
             {{ end }}
 
-            <!-- Band Text / Description -->
+            <!-- Display Band Text or Description -->
             <p class="nav-description">{{ .Params.bandText }}</p>
 
-            <!-- Next Arrow -->
+            <!-- Display the Next Arrow -->
             {{ if $nextPage }}
                 <a href="{{ $nextPage.RelPermalink }}" class="nav-button right">
                     <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
@@ -84,6 +91,7 @@
         {{ end }}
     </div>
 </div>
+
 
 <!-- Story Content (without image) -->
 <div class="story-content">

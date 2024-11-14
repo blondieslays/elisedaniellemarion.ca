@@ -1,6 +1,7 @@
 ---
 title: "Resume"
 layout: "resume"
+excludeFromPagination: true
 ---
 
 <div class="resume-content">

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
 
-
+<!-- Symbols Menu -->
 <nav class="symbol-menu">
     <ul>
         <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
@@ -20,15 +20,14 @@
     </ul>
 </nav>
 
-
+<!-- Page Title -->
 <div class="page-title-container">
-    <h1 class="page-title">Resume</h1>
+    <h1 class="page-title">{{ .Title }}</h1>
 </div>
 
-
+<!-- Resume Content -->
 <div class="resume-content">
-    <!-- raw HTML omitted -->
-
+    {{ .Content }}
 </div>
 
 </body>

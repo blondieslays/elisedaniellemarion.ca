@@ -1,6 +1,6 @@
 ---
 title: "Kakon"
-layout: "spark"
+layout: "pandora"
 type: "spark"
 description: "Kakon symbolizes the release of evil from Pandora's jar."
 weight: 8  # Helps determine the order for pagination

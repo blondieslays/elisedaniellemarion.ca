@@ -8,103 +8,17 @@
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
+    <header>
+        <h1>{{ .Title }}</h1>
+    </header>
 
-<!-- Symbols Menu -->
-<nav class="symbol-menu">
-    <ul>
-        <li><a href="/" title="Home"><img src="/images/menu-icons/arrow.png" alt="Home" width="32" height="32"></a></li>
-        <li><a href="/prometheus/" title="Prometheus"><img src="/images/menu-icons/fire.png" alt="Prometheus" width="32" height="32"></a></li>
-        <li><a href="/epimetheus/" title="Epimetheus"><img src="/images/menu-icons/moon.png" alt="Epimetheus" width="32" height="32"></a></li>
-        <li><a href="/pandora/" title="Pandora"><img src="/images/menu-icons/sun.png" alt="Pandora" width="32" height="32"></a></li>
-        <li><a href="/resume/" title="Resume"><img src="/images/menu-icons/resume.png" alt="Resume" width="32"></a></li>
-    </ul>
-</nav>
-
-<!-- Page Title with Padding -->
-<div class="page-title-container">
-    <h1 class="page-title">{{ .Title }}</h1>
-</div>
-
-
-<!-- Single Tile Container with Story Image -->
-<div class="single-tile-container">
-    <div class="hover-tile">
-        <div class="tile-inner">
-            <img class="tile-front" src="{{ .Params.contentImage }}" alt="Front of {{ .Title }}">
-            <img class="tile-back" src="/images/single/{{ .Params.imageBack }}" alt="Back of {{ .Title }}">
-        </div>
-    </div>
-</div>
-
-
-<!-- Green Band with Pagination Arrows and Description -->
-<div class="green-band">
-    <div class="nav-arrows">
-        {{ $currentWeight := .Weight }}
-
-        <!-- Get the list of pages, excluding the Resume page -->
-        {{ $allPages := where .Site.RegularPages "Params.excludeFromPagination" "!=" true }}
-        {{ $totalPages := len $allPages }}
-
-        <!-- Find the current page's index within the filtered pages -->
-        {{ $currentIndex := -1 }}
-        {{ range $index, $page := $allPages }}
-            {{ if eq $page.Weight $currentWeight }}
-                {{ $currentIndex = $index }}
-            {{ end }}
-        {{ end }}
-
-        <!-- Only proceed if a valid index is found -->
-        {{ if ne $currentIndex -1 }}
-            <!-- Calculate previous and next indices, looping around -->
-            {{ $prevIndex := mod (add $currentIndex (sub $totalPages 1)) $totalPages }}
-            {{ $nextIndex := mod (add $currentIndex 1) $totalPages }}
-
-            <!-- Get the previous and next pages from the filtered list -->
-            {{ $prevPage := index $allPages $prevIndex }}
-            {{ $nextPage := index $allPages $nextIndex }}
-
-            <!-- Previous Arrow -->
-            {{ if $prevPage }}
-                <a href="{{ $prevPage.RelPermalink }}" class="nav-button left">
-                    <img src="/images/navigation-arrows/arrow-left.png" alt="Previous">
-                </a>
-            {{ end }}
-
-            <!-- Band Text / Description -->
-            <p class="nav-description">{{ .Params.bandText }}</p>
-
-            <!-- Next Arrow -->
-            {{ if $nextPage }}
-                <a href="{{ $nextPage.RelPermalink }}" class="nav-button right">
-                    <img src="/images/navigation-arrows/arrow-right.png" alt="Next">
-                </a>
-            {{ end }}
-        {{ else }}
-            <p>Error: Current page not found in pagination.</p>
-        {{ end }}
-    </div>
-</div>
-
-<!-- Story Content (without image) -->
-<div class="story-content">
-    <h2>{{ .Params.contentTitle }}</h2>
-    <p>{{ .Params.contentText1 }}</p>
-    <p>{{ .Params.contentText2 }}</p>
-    <p>{{ .Params.contentText3 }}</p>
-</div>
-
-{{ if .Params.pdf }}
-<div class="download-article">
-    <a href="/pdfs/{{ .Params.pdf }}" download class="download-button">
-        <img src="/images/download-icon.png" alt="Download Icon" class="download-icon">
-        <span>Download the full article on {{ .Title }}</span>
-    </a>
-</div>
-{{ end }}
-
-
-
+    <main>
+        <article>
+            <div class="content">
+                {{ .Content }}
+            </div>
+        </article>
+    </main>
 </body>
 </html>
 

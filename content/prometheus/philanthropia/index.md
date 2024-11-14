@@ -1,6 +1,6 @@
 ---
 title: "Philanthropia"
-layout: "spark"
+layout: "prometheus"
 type: "spark"
 description: "Philanthropia symbolizes the kindness and goodwill of Prometheus towards humanity."
 weight: 2  # Helps determine the order for pagination

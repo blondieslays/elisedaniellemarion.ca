@@ -1,6 +1,6 @@
 ---
 title: "Elpis"
-layout: "spark"
+layout: "pandora"
 type: "spark"
 description: "Elpis represents hope, the last gift remaining in Pandora's jar."
 weight: 9  # Helps determine the order for pagination

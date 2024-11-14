@@ -1,6 +1,6 @@
 ---
 title: "Zoa"
-layout: "spark"
+layout: "epimetheus"
 type: "spark"
 description: "Zoa represents life, vitality, and the gift of existence from Epimetheus."
 weight: 4  # Helps determine the order for pagination

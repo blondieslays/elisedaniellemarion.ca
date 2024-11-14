@@ -1,6 +1,6 @@
 ---
 title: "Phronesis"
-layout: "spark"
+layout: "prometheus"
 type: "spark"
 description: "Phronesis represents practical wisdom and intelligence imparted to humans."
 weight: 3  # Helps determine the order for pagination

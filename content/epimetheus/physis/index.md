@@ -1,6 +1,6 @@
 ---
 title: "Physis"
-layout: "spark"
+layout: "epimetheus"
 type: "spark"
 description: "Physis represents the force of nature, embodied in the gifts given to animals."
 weight: 6  # Helps determine the order for pagination

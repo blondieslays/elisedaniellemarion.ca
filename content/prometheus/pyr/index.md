@@ -1,6 +1,6 @@
 ---
 title: "Pyr"
-layout: "spark"
+layout: "prometheus"
 type: "spark"
 description: "The fire that Prometheus brought to humanity, symbolizing enlightenment and defiance."
 weight: 1  # Helps determine the order for pagination

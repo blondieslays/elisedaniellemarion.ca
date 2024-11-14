@@ -1,6 +1,6 @@
 ---
 title: "Pyxis"
-layout: "spark"
+layout: "pandora"
 type: "spark"
 description: "Pyxis is the vessel of Pandora, containing gifts and burdens for humanity."
 weight: 7  # Helps determine the order for pagination
