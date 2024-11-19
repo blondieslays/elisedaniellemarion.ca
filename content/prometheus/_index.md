@@ -13,6 +13,19 @@ images:
   - front: "/images/prometheus/phronesis.png"
     back: "/images/prometheus/back3.png"
     link: "/prometheus/phronesis/"
+reviews:
+  - title: "Alien Romulus"
+    poster: "/images/inception-poster.jpg"
+    text: "Inception is a masterpiece that delves into the complexities of the subconscious mind. Christopher Nolan's direction is impeccable..."
+    rating: "★★★★☆"
+  - title: "It's What's Inside"
+    poster: "/images/interstellar-poster.jpg"
+    text: "Interstellar explores the vastness of space and the human connection through time and relativity. A visually stunning masterpiece..."
+    rating: "★★★★★"
+  - title: "Terrifier"
+    poster: "/images/matrix-poster.jpg"
+    text: "The Matrix redefined sci-fi cinema with its groundbreaking visuals, thought-provoking narrative, and philosophical undertones..."
+    rating: "★★★★☆"
 ---
 
 <!-- Gallery Content -->
