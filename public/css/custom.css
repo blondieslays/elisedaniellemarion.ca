@@ -328,125 +328,6 @@ body {
 }
 
 
-
-.bio-container {
-    max-width: 1000px; /* Matches the three-image container width */
-    margin: 0 auto; /* Centers the bio container */
-    display: flex; /* Aligns items side-by-side */
-    align-items: stretch;
-    padding: 20px; /* Adds space within the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to match the style */
-    border-radius: 6px; /* Softens the edges for a cohesive look */
-    background-color: #f9f9f9; /* Light background to match the portfolio’s aesthetic */
-    margin-top: 40px;  
-    margin-bottom: 20px;
-}
-
-.bio-image {
-    flex: 1;
-    padding-right: 20px; /* Space between image and text */
-}
-
-.circle-photo {
-    width: 300px;
-    border-radius: 10px 100px / 120px;
-    object-fit: cover;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow to make the image stand out */
-}
-
-.bio-content {
-    flex: 1;
-    font-family: 'Newsreader', serif;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.bio-content p {
-    margin: 0 0 15px 0; /* Adds space between paragraph breaks */
-}
-
-.resume-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #4CAF50; /* Accent color for the link */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.resume-link:hover {
-    text-decoration: underline;
-}
-
-/* Timeline Container */
-.timeline {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-}
-
-/* Timeline Line */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #333;
-    transform: translateX(-50%);
-}
-
-/* Timeline Item */
-.timeline-item {
-    display: flex;
-    margin-bottom: 40px;
-    position: relative;
-    width: 100%;
-}
-
-.timeline-date {
-    width: 50%;
-    text-align: right;
-    padding-right: 20px;
-    font-weight: bold;
-    color: #666;
-    font-size: 1.2em;
-}
-
-.timeline-content {
-    width: 50%;
-    padding-left: 20px;
-    position: relative;
-}
-
-.timeline-content h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #333;
-}
-
-.timeline-content p {
-    margin: 5px 0 0;
-    color: #555;
-    font-family: 'Newsreader', serif;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-/* Circle Indicator for Each Timeline Item */
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #333;
-    border-radius: 50%;
-    transform: translate(-50%, -10px);
-}
-
-
 /* Film Reviews Section on Gallery Pages */
 
 .film-reviews-section {
@@ -500,5 +381,116 @@ body {
 
 .star {
     margin-right: 5px;
+}
+
+/* Career Timeline Section */
+.career-timeline {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.bio-photo {
+  width: 150px; /* Set the desired size */
+  height: 150px; /* Ensure it’s a square */
+  border-radius: 50%; /* Makes the image a circle */
+  object-fit: cover; /* Ensures the image fits the circle */
+  object-position: center; /* Centers the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  display: block; /* Ensures proper layout behavior */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Bio Section Text */
+.bio-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-text p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+.timeline-header h2 {
+  font-size: 2em;
+  font-family: 'Newsreader', serif;
+  color: #3b600c;
+}
+
+/* Timeline Map and Points */
+.timeline-map {
+  position: relative;
+  padding-left: 50px;
+  border-left: 2px solid #3b600c; /* Green line for the map */
+}
+
+.timeline-point {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-point .icon {
+  position: absolute;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #00a676;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-point .point-text {
+  margin-left: 20px;
+}
+
+.timeline-point h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.timeline-point p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .career-timeline {
+    padding: 15px;
+  }
+
+  .timeline-map {
+    padding-left: 30px;
+  }
+
+  .timeline-point {
+    margin-bottom: 30px;
+  }
+
+  .timeline-point .icon {
+    left: -30px;
+    width: 35px;
+    height: 35px;
+  }
 }
 
