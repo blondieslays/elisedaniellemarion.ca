@@ -54,19 +54,44 @@
 
 <!-- Film Reviews Section -->
 <section class="film-reviews-section">
+  <header class="reviews-header">
+    <h2>Film Reviews</h2>
+    <p>These reviews explore how the films connect to the theme of this gallery, offering insights into their narratives, visuals, and emotional resonance.</p>
+  </header>
+
   {{ range .Params.reviews }}
   <div class="review-tile">
-    <img src="{{ .poster }}" alt="{{ .title }} Poster" class="review-image">
     <h3 class="review-title">{{ .title }}</h3>
-    <p class="review-text">{{ .text }}</p>
-    <div class="review-rating">
-      {{ range seq (len (split .rating "")) }}
-        <span class="star">★</span>
-      {{ end }}
+
+<div class="review-rating">
+  {{ $rating := .rating | int }} <!-- Converts .rating to an integer -->
+  {{ $ratingIcon := .ratingIcon }}
+  {{ if gt $rating 0 }} <!-- Only run seq if $rating is greater than 0 -->
+    {{ range seq $rating }}
+      <img src="{{ $ratingIcon }}" alt="Rating Icon" class="rating-icon">
+    {{ end }}
+  {{ else }}
+    <p>No valid rating provided</p> <!-- Fallback message -->
+  {{ end }}
+</div>
+
+
+
+
+
+    <p class="review-text">{{ .text | markdownify }}</p>
+    <div class="favorite-moment">
+      <div class="moment-image">
+        <img src="{{ .momentImage }}" alt="Favorite Moment from {{ .title }}">
+      </div>
+      <div class="moment-text">
+        <p>{{ .momentText }}</p>
+      </div>
     </div>
   </div>
   {{ end }}
 </section>
+
 
 
 <footer>

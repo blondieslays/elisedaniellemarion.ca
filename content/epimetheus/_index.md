@@ -1,6 +1,6 @@
 ---
 title: "Epimetheus Gallery"
-description: "Epimetheus, the Titan of afterthought, received all the animals and gave them gifts, ensuring their survival and happiness in the world."
+description: "Epimetheus, the Titan of afterthought, received all the animals and gave them gifts, but his lack of foresight left humans unprepared until Prometheus intervened."
 type: "gallery"
 date: 2024-10-07
 images:
@@ -16,6 +16,18 @@ images:
 navigation_images:
   left: "/images/navigation-arrows/arrow-left.png"
   right: "/images/navigation-arrows/arrow-right.png"
+reviews:
+  - title: "Alien: Romulus"
+    rating: 5
+    ratingIcon: "/ratings/alien-romulus.png"
+    text: >
+      Alien: Romulus marks a striking shift in tone for the franchise, delivering a grim and introspective take on humanity’s future.
+
+      At its heart, Romulus examines the ethical dilemmas of technological evolution, questioning the balance between innovation and control.
+
+      Where previous installments emphasized survival, Romulus focuses on the moral and ethical implications of creation. Alvarez ensures the franchise remains relevant, balancing its philosophical depth with visceral horror.
+    momentImage: "/moments/alien-romulus-moment.png"
+    momentText: "My favorite moment is the tense exchange between the protagonist and synthetic leader, highlighting the fragile balance of trust between human and machine."
 ---
 
 <!-- Gallery Content -->
