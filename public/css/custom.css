@@ -343,88 +343,55 @@ footer p {
 }
 
 
-/* Film Reviews Section */
-.film-reviews-section {
-    max-width: 1000px;
-    margin: 0 auto; /* Center the section */
-    padding: 20px;
-    background-color: #f9f9f9; /* Optional: light background for contrast */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
-}
-
-.review-text p {
-    margin-bottom: 1.5rem; /* Space between paragraphs */
-    line-height: 1.6; /* Improve readability */
-    font-size: 1rem; /* Adjust text size */
-    color: #333; /* Optional: subtle text color */
-}
-
-
-.reviews-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.reviews-header h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.reviews-header p {
-    font-size: 1.2rem;
-    color: #666; /* Subtle text color */
-}
-
-/* Review Tile */
+/* Film Review Tile Styles */
 .review-tile {
-    border-bottom: 1px solid #ddd; /* Divider between reviews */
-    padding: 20px 0;
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.review-tile:last-child {
-    border-bottom: none; /* Remove border for the last tile */
+/* Row Layout */
+.review-row {
+  display: flex;
+  flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+  margin-bottom: 20px;
 }
 
-.review-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.review-row:last-child {
+  margin-bottom: 0;
 }
 
-.review-rating {
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Space between rating icons */
-    margin-bottom: 10px;
+/* Image Styles */
+.review-image {
+  flex: 1;
+  max-width: 40%;
+  padding: 10px;
 }
 
-.rating-icon {
-    width: 20px; /* Adjust icon size */
-    height: auto;
+.review-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* Favorite Moment Section */
-.favorite-moment {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Space between image and text */
-    margin-top: 15px;
+/* Text and Highlights */
+.review-text, .review-highlights {
+  flex: 2;
+  max-width: 60%;
+  padding: 10px;
 }
 
-.moment-image img {
-    width: 100px; /* Size of the favorite moment image */
-    height: auto;
-    border-radius: 5px; /* Optional: rounded corners */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+.review-text h3 {
+  margin-top: 0;
 }
 
-.moment-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333; /* Text color */
+.review-highlights h4 {
+  margin-top: 0;
+  color: #e0218a; /* Example highlight color */
 }
-
-
 
 
 
