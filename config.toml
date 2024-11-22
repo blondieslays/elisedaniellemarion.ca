@@ -1,4 +1,6 @@
 baseURL = "https://www.elisedaniellemarion.ca/"
+relativeURLs = true
+canonifyURLs = false
 languageCode = "en-us"
 title = "Elise Danielle Marion"
 
@@ -6,7 +8,8 @@ author = "Elise Danielle Marion"
 description = "A portfolio site of Elise Danielle Marion"
 defaultContentLanguage = "en"
 
-paginate = 9  # Optional: adjust based on the number of items per page
+[pagination]
+paperSize = 9  # Optional: adjust based on the number of items per page
 
 [permalinks]
   gallery = "/:section/:title/"
