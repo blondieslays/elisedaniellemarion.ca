@@ -53,6 +53,9 @@
 <div class="green-band"></div>
 
 
+
+
+
 <!-- Film Reviews -->
 <div class="film-reviews">
   <h2>Film Reviews</h2>
@@ -64,14 +67,24 @@
     {{ if eq .Params.gallery $gallery }}
       <div class="review-tile">
         <h3>{{ .Title }}</h3>
-        <p>{{ .Params.description }}</p>
-        <p>Rating: {{ .Params.rating }}/5</p>
+        {{ if .Params.poster }}
+          <img src="{{ .Params.poster }}" alt="{{ .Title }} Poster" class="review-image">
+        {{ end }}
+        <p><strong>Rating:</strong> {{ .Params.rating }}/5</p>
+        <p>{{ .Params.review }}</p>
+        <div class="review-highlights">
+          <h4>Highlights</h4>
+          <p>{{ .Params.highlights }}</p>
+        </div>
       </div>
+    {{ else }}
+      <p>Debug: Review does not match the current gallery</p>
     {{ end }}
   {{ else }}
     <p>No reviews available for this gallery yet.</p>
   {{ end }}
 </div>
+
 
 
 

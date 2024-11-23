@@ -345,6 +345,8 @@ footer p {
 
 
 
+
+
 /* Film Review Container Styles */
 .film-reviews {
   max-width: 800px; /* Restrict the width of the title and description */
@@ -365,56 +367,64 @@ footer p {
   color: #555; /* Text color for description */
 }
 
+
+
+
 /* Film Review Tile Styles */
 .review-tile {
-  max-width: 1000px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  max-width: 800px; /* Restrict width of tiles */
+  margin: 20px auto; /* Center tiles and add spacing between them */
+  border: 1px solid #ddd; /* Subtle border */
+  padding: 20px; /* Add padding inside the tile */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+  background-color: #f9f9f9; /* Light background color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animation */
 }
 
-/* Row Layout */
-.review-row {
-  display: flex;
-  flex-wrap: wrap; /* Ensure it wraps on smaller screens */
-  margin-bottom: 20px;
+/* Hover Effect */
+.review-tile:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
 }
 
-.review-row:last-child {
-  margin-bottom: 0;
-}
-
-/* Image Styles */
-.review-image {
-  flex: 1;
-  max-width: 40%;
-  padding: 10px;
-}
-
-.review-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Text and Highlights */
-.review-text, .review-highlights {
-  flex: 2;
-  max-width: 60%;
-  padding: 10px;
-}
-
+/* Title and Text */
 .review-text h3 {
   margin-top: 0;
+  font-size: 1.5rem; /* Larger title font size */
+  color: #333; /* Darker title color */
+}
+
+.review-text p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #555; /* Softer text color */
+}
+
+/* Highlights Section */
+.review-highlights {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .review-highlights h4 {
   margin-top: 0;
-  color: #e0218a; /* Example highlight color */
+  color: #e0218a; /* Accent color for highlights */
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .review-tile {
+    padding: 15px; /* Slightly smaller padding on smaller screens */
+  }
+
+  .review-text h3 {
+    font-size: 1.25rem; /* Adjust title font size */
+  }
+}
 
 
 
