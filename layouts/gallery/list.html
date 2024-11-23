@@ -54,40 +54,42 @@
 
 
 
-
-
 <!-- Film Reviews -->
+
 <div class="film-reviews">
   <h2>Film Reviews</h2>
   <p>Explore in-depth reviews of films that align with the themes of this gallery.</p>
 
-  {{ $gallery := .Page.Title }}
+  <!-- Review Tile -->
+  <div class="review-tile">
+    <!-- Ivy Decorations -->
+    <img src="/decorations/ivy-top-left.svg" alt="Ivy decoration top-left" class="ivy ivy-top-left">
+    <img src="/decorations/ivy-bottom-right.svg" alt="Ivy decoration bottom-right" class="ivy ivy-bottom-right">
 
-  {{ range where .Site.Pages "Section" "reviews" }}
-    {{ if eq .Params.gallery $gallery }}
-      <div class="review-tile">
-        <h3>{{ .Title }}</h3>
-        {{ if .Params.poster }}
-          <img src="{{ .Params.poster }}" alt="{{ .Title }} Poster" class="review-image">
-        {{ end }}
-        <p><strong>Rating:</strong> {{ .Params.rating }}/5</p>
-        <p>{{ .Params.review }}</p>
-        <div class="review-highlights">
-          <h4>Highlights</h4>
-          <p>{{ .Params.highlights }}</p>
-        </div>
+    <!-- Title Bar -->
+    <div class="review-title-bar">Alien: Romulus</div>
+
+    <!-- Review Top Row -->
+    <div class="review-row">
+      <img src="/films/romulus.gif" alt="Alien: Romulus Review" class="review-image">
+      <div class="review-text">
+        <p><strong>Rating:</strong> /5</p>
+        <p>Alien: Romulus sets a vastly different tone from its predecessors.</p>
       </div>
-    {{ else }}
-      <p>Debug: Review does not match the current gallery</p>
-    {{ end }}
-  {{ else }}
-    <p>No reviews available for this gallery yet.</p>
-  {{ end }}
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="review-highlights">
+      <h4>Highlights</h4>
+      <div class="review-highlights-row">
+        <div class="highlight-text">
+          <p>Explores humanity's reckless curiosity with artificial intelligence.</p>
+        </div>
+        <img src="/moments/alien-romulus-moment.gif" alt="Highlight moment from Alien: Romulus" class="highlight-image">
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
-
 
 
 <footer>
