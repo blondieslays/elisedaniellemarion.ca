@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-{{ $gallery := .Title }}
+{{ $gallery := .Page.Title }}
 
 
 <!-- Symbols Menu -->
@@ -58,22 +58,18 @@
   <h2>Film Reviews</h2>
   <p>Explore in-depth reviews of films that align with the themes of this gallery.</p>
 
+  {{ $gallery := .Page.Title }}
+
   {{ range where .Site.Pages "Section" "reviews" }}
-    <p>Debug: Found review - {{ .Title }}</p>
-    <p>Debug: Review gallery - {{ .Params.gallery }}</p>
-    {{ if eq (lower .Params.gallery) $gallery }}
+    {{ if eq .Params.gallery $gallery }}
       <div class="review-tile">
-        <h3>{{ .Title | default "Untitled Review" }}</h3>
-        {{ with .Params.poster }}
-          <img src="{{ . }}" alt="{{ .Title | default "Untitled Review" }}">
-        {{ else }}
-          <p>No poster available</p>
-        {{ end }}
-        <p>{{ .Params.review | default "No review available." }}</p>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.description }}</p>
+        <p>Rating: {{ .Params.rating }}/5</p>
       </div>
-    {{ else }}
-      <p>Debug: Review does not match current gallery</p>
     {{ end }}
+  {{ else }}
+    <p>No reviews available for this gallery yet.</p>
   {{ end }}
 </div>
 

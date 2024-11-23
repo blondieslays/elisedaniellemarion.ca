@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Film Reviews on Elise Danielle Marion</title>
-    <link>https://www.elisedaniellemarion.ca/reviews/</link>
+    <link>http://localhost:1313/reviews/</link>
     <description>Recent content in Film Reviews on Elise Danielle Marion</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.elisedaniellemarion.ca/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/reviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alien: Romulus</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</link>
+      <link>http://localhost:1313/reviews/alien-romulus/</link>
       <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</guid>
+      <guid>http://localhost:1313/reviews/alien-romulus/</guid>
       <description></description>
     </item>
   </channel>

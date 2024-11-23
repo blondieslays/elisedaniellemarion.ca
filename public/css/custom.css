@@ -343,6 +343,28 @@ footer p {
 }
 
 
+
+
+/* Film Review Container Styles */
+.film-reviews {
+  max-width: 800px; /* Restrict the width of the title and description */
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center; /* Center the text inside the container */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.film-reviews h2 {
+  margin-bottom: 10px; /* Space below the title */
+  font-size: 2rem; /* Adjust font size for better readability */
+  color: #333; /* Title color */
+}
+
+.film-reviews p {
+  margin-bottom: 20px; /* Space below paragraphs */
+  line-height: 1.6; /* Improve paragraph readability */
+  color: #555; /* Text color for description */
+}
+
 /* Film Review Tile Styles */
 .review-tile {
   max-width: 1000px;
