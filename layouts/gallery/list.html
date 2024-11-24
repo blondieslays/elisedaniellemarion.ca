@@ -52,29 +52,31 @@
 <!-- Green Band -->
 <div class="green-band"></div>
 
-
-
 <!-- Film Reviews -->
-
 <div class="film-reviews">
   <h2>Film Reviews</h2>
   <p>Explore in-depth reviews of films that align with the themes of this gallery.</p>
 
-  <!-- Review Tile -->
+  <!-- Define Current Gallery -->
+  {{ $currentGallery := .Page.Title }}
+
+  <!-- Filter and Display Reviews -->
+  {{ range where .Site.RegularPages "Params.gallery" $currentGallery }}
   <div class="review-tile">
+
     <!-- Ivy Decorations -->
     <img src="/decorations/ivy-top-left.svg" alt="Ivy decoration top-left" class="ivy ivy-top-left">
     <img src="/decorations/ivy-bottom-right.svg" alt="Ivy decoration bottom-right" class="ivy ivy-bottom-right">
 
     <!-- Title Bar -->
-    <div class="review-title-bar">Alien: Romulus</div>
+    <div class="review-title-bar">{{ .Title }}</div>
 
     <!-- Review Top Row -->
     <div class="review-row">
-      <img src="/films/romulus.gif" alt="Alien: Romulus Review" class="review-image">
+      <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
       <div class="review-text">
-        <p><strong>Rating:</strong> /5</p>
-        <p>Alien: Romulus sets a vastly different tone from its predecessors.</p>
+        <p><strong>Rating:</strong> {{ .Params.rating | default "N/A" }}/5</p>
+        <p>{{ .Params.review }}</p>
       </div>
     </div>
 
@@ -83,13 +85,20 @@
       <h4>Highlights</h4>
       <div class="review-highlights-row">
         <div class="highlight-text">
-          <p>Explores humanity's reckless curiosity with artificial intelligence.</p>
+          <p>{{ .Params.highlights }}</p>
         </div>
-        <img src="/moments/alien-romulus-moment.gif" alt="Highlight moment from Alien: Romulus" class="highlight-image">
+        <img src="{{ .Params.highlightImage }}" alt="Highlight moment from {{ .Title }}" class="highlight-image">
       </div>
     </div>
+
   </div>
+  {{ end }}
 </div>
+
+
+
+
+
 
 
 <footer>
