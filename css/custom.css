@@ -232,10 +232,14 @@ footer p {
 /* Homepage Image Split Container */
 #homepage-images .image-split-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Spacing between images */
+    padding: 50px;
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center container */
+    box-sizing: border-box; /* Ensure padding doesn't exceed max-width */
 }
+
 
 #homepage-images .image-split-container a {
     flex: 0 1 400px;
@@ -245,6 +249,36 @@ footer p {
     width: 100%;
     height: auto;
 }
+
+/* Image container for hover effect */
+.image-container {
+    position: relative;
+    display: inline-block; /* Makes sure the container wraps around the image */
+}
+
+.image-container img {
+    display: block; /* Prevents extra space below the image */
+}
+
+/* Hover arrow - initially hidden */
+.hover-arrow {
+    position: absolute;
+    top: 10px; /* Adjust for desired placement */
+    left: 10px; /* Adjust for desired placement */
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Only show arrow for the first image (Prometheus) */
+.image-container:first-child:hover .hover-arrow {
+    opacity: 1; /* Arrow becomes visible on hover */
+}
+
+
+
+
+
+
 
 /* Homepage Title Styling */
 .homepage-title {
@@ -276,6 +310,13 @@ footer p {
     margin: 20px auto 100px auto; /* Increased bottom margin */
     perspective: 1000px;
 }
+
+
+
+
+
+
+
 
 /* Increase spacing between story content sections */
 .story-content {
