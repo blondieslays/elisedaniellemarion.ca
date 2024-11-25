@@ -2,44 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/prometheus/pyr/</loc>
+    <loc>https://www.elisedaniellemarion.ca/prometheus/pyr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/prometheus/philanthropia/</loc>
+    <loc>https://www.elisedaniellemarion.ca/prometheus/philanthropia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/prometheus/phronesis/</loc>
+    <loc>https://www.elisedaniellemarion.ca/prometheus/phronesis/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/epimetheus/zoa/</loc>
+    <loc>https://www.elisedaniellemarion.ca/epimetheus/zoa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/epimetheus/ameles/</loc>
+    <loc>https://www.elisedaniellemarion.ca/epimetheus/ameles/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/epimetheus/physis/</loc>
+    <loc>https://www.elisedaniellemarion.ca/epimetheus/physis/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/pandora/pyxis/</loc>
+    <loc>https://www.elisedaniellemarion.ca/pandora/pyxis/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/pandora/kakon/</loc>
+    <loc>https://www.elisedaniellemarion.ca/pandora/kakon/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/pandora/elpis/</loc>
+    <loc>https://www.elisedaniellemarion.ca/pandora/elpis/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/epimetheus/</loc>
-    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+    <loc>https://www.elisedaniellemarion.ca/reviews/annihilation/</loc>
+    <lastmod>2024-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/</loc>
-    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+    <loc>https://www.elisedaniellemarion.ca/reviews/</loc>
+    <lastmod>2024-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://www.elisedaniellemarion.ca/</loc>
-    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/pandora/</loc>
-    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+    <loc>https://www.elisedaniellemarion.ca/reviews/its-whats-inside/</loc>
+    <lastmod>2024-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/gallery/prometheus/</loc>
+    <loc>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</loc>
+    <lastmod>2024-11-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/epimetheus/</loc>
     <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/pandora/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/prometheus/</loc>
+    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://www.elisedaniellemarion.ca/articles-gallery/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://www.elisedaniellemarion.ca/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/resume/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://www.elisedaniellemarion.ca/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap');
+
+
+
 /* General Body Styling */
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', serif;
     font-size: 16px;
     color: #333;
     margin: 0;
@@ -44,6 +49,21 @@ body {
     transform: scale(1.1);
 }
 
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    color: #555;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
 /* Padding between Menu and Page Titles */
 .page-title-container {
     padding-top: 80px;
@@ -51,7 +71,7 @@ body {
 }
 
 .page-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Newsreader', serif;
     font-size: 2.5rem;
     color: #3A5F0B;
     margin-bottom: 20px;
@@ -61,6 +81,7 @@ body {
 .gallery-header h1 {
     padding-top: 50px; /* Adjust padding as needed */
     font-size: 2.5rem;
+    font-family: 'Newsreader', serif;
     color: #3A5F0B;
     text-align: center;
     margin: 20px 0;
@@ -160,6 +181,7 @@ body {
     background-color: #3A5F0B;
     color: white;
     padding: 50px;
+    font-family: 'Newsreader', serif;
     text-align: center;
     font-size: 1.2em;
     margin: 20px auto 40px auto;
@@ -227,6 +249,7 @@ body {
 /* Homepage Title Styling */
 .homepage-title {
     text-align: center;
+    font-family: 'Newsreader', serif;
     font-size: 3.3rem;
     color: #3A5F0B;
     margin-bottom: 20px;
@@ -242,7 +265,8 @@ body {
 
 .text-band p {
     color: #F5F5F5;
-    font-size: 1.2rem;
+    font-family: 'Newsreader', serif;
+    font-size: 1.1rem;
     margin: 0;
 }
 
@@ -257,7 +281,9 @@ body {
 .story-content {
     max-width: 800px;
     margin: 100px auto; /* Increased top and bottom margin */
+    font-family: 'Raleway', serif;
     text-align: center;
+
     padding-top: 40px; /* Optional: Add more top padding */
 }
 
@@ -268,7 +294,7 @@ body {
 
 /* Story Title */
 .story-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Newsreader', serif;
     font-size: 2rem;
     color: #3A5F0B;  /* Green color */
     margin-bottom: 15px;
@@ -277,6 +303,7 @@ body {
 
 /* Story Paragraphs */
 .story-content p {
+    font-family: 'Raleway', serif;
     font-size: 1.2rem;
     line-height: 1.8;  /* Better line spacing for readability */
     color: #333;
@@ -286,6 +313,7 @@ body {
 /* Optional: Adjust padding between tile and green band */
 .green-band {
     margin-top: 40px;  /* Add space between the story content and green band */
+    margin-bottom: 20px; /* Adjusts space below the green band */
 }
 
 .download-article {
@@ -312,5 +340,365 @@ body {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+}
+
+
+
+/* Film Reviews Section */
+.film-reviews {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #3b600c;
+}
+
+.film-reviews h2 {
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+  color: #3b600c;
+  margin-bottom: 10px;
+}
+
+.film-reviews p {
+  font-size: 1rem;
+  color: #3b600c;
+  margin-bottom: 20px;
+}
+
+/* Review Tile */
+.review-tile {
+  background-color: #fdfaf5;
+  position: relative; /* Creates a positioning context for the ivy */
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Optional: Light border for better definition */
+  margin: 20px 0;
+  margin-bottom: 30px; /* Adds spacing between review tiles */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.ivy {
+  position: absolute;
+  width: 80px; /* Twice as large as before */
+  height: auto;
+  z-index: 1; /* Ensure ivy appears above the tile background */
+  pointer-events: none; /* Prevent interaction issues */
+}
+
+.ivy-top-left {
+  top: -25px; /* Positioned slightly outside the box */
+  left: -25px;
+}
+
+.ivy-bottom-right {
+  bottom: -25px; /* Positioned slightly outside the box */
+  right: -25px;
+}
+
+
+/* Title Bar */
+.review-title-bar {
+  background-color: #3b600c;
+  color: #ffffff;
+  font-family: 'Newsreader', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Top Row: Image and Review Text */
+.review-row {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.review-image {
+  max-width: 40%;
+  border-radius: 8px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.review-text {
+  flex: 2;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.review-text p {
+  margin: 5px 0;
+  color: #3b600c;
+}
+
+
+
+
+/* Highlights Section */
+.review-highlights {
+  margin-top: 20px;
+}
+
+.review-highlights h4 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.2rem;
+  color: #3b600c;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Highlight Text and Image Row */
+.review-highlights-row {
+  display: flex;
+  align-items: flex-start; /* Aligns text and image at the top */
+  justify-content: space-between; /* Keeps spacing between text and image */
+}
+
+.highlight-text {
+  text-align: left;
+  maring: 5px;
+  margin-right: 20px; /* Space between text and image */
+  color: #3b600c;
+}
+
+.highlight-image {
+  max-width: 35%;
+  border-radius: 8px;
+  flex: 0 0 auto; /* Fixes the image size */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .review-row, .review-highlights-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-image, .highlight-image {
+    max-width: 80%; /* Adjust image size for smaller screens */
+  }
+
+  .review-text, .highlight-text {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+/* Career Timeline Section */
+.career-timeline {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.bio-photo {
+  width: 150px; /* Set the desired size */
+  height: 150px; /* Ensure it’s a square */
+  border-radius: 50%; /* Makes the image a circle */
+  object-fit: cover; /* Ensures the image fits the circle */
+  object-position: center; /* Centers the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  display: block; /* Ensures proper layout behavior */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Bio Section Text */
+.bio-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-text p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+.timeline-header h2 {
+  font-size: 2em;
+  font-family: 'Newsreader', serif;
+  color: #3b600c;
+}
+
+/* Timeline Map and Points */
+.timeline-map {
+  position: relative;
+  padding-left: 50px;
+  border-left: 2px solid #3b600c; /* Green line for the map */
+}
+
+.timeline-point {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-point .icon {
+  position: absolute;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #00a676;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-point .point-text {
+  margin-left: 20px;
+}
+
+.timeline-point h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.timeline-point p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .career-timeline {
+    padding: 15px;
+  }
+
+  .timeline-map {
+    padding-left: 30px;
+  }
+
+  .timeline-point {
+    margin-bottom: 30px;
+  }
+
+  .timeline-point .icon {
+    left: -30px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Resume Section */
+.resume-section {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume-header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Resume Map (Tiles Layout) */
+.resume-map {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resume-tile {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.resume-tile:hover {
+  transform: scale(1.02);
+}
+
+/* Icon Styling */
+.resume-tile .icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+/* Tile Content */
+.tile-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.tile-content p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.tile-content ul {
+  padding-left: 20px;
+}
+
+.tile-content ul li {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-tile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resume-tile .icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .tile-content ul {
+    text-align: left;
+  }
 }
 
