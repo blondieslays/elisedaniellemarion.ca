@@ -38,17 +38,47 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/annihilation/</loc>
-    <lastmod>2024-11-24T00:00:00+00:00</lastmod>
+    <loc>https://www.elisedaniellemarion.ca/reviews/arrival/</loc>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/reviews/ex-machina/</loc>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.elisedaniellemarion.ca/reviews/</loc>
-    <lastmod>2024-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.elisedaniellemarion.ca/</loc>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/reviews/interstellar/</loc>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/reviews/it-follows/</loc>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/reviews/logan/</loc>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/reviews/the-dark-knight/</loc>
+    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/reviews/annihilation/</loc>
     <lastmod>2024-11-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
