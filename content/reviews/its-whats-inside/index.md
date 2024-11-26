@@ -1,7 +1,9 @@
 ---
 title: "It's What's Inside"
 gallery: "Pandora Gallery"
-rating: "4.5"
+rating: "5"
+year: "2024"
+director: "Greg Jardin"
 poster: "/films/its-whats-inside.gif"
 review: "It's What's Inside (2024) is a kaleidoscopic exploration of identity, ethics, and the human condition, wrapped in a horror-whodunit that keeps you circling back for more.
 Thematically, the film dives into the consequences of separating physical form from identity, a haunting reflection on modern developments in AI and biogenetics. Through its dazzling use of RGB color theory, the film layers its story visually, using shifting filters to reveal how characters see each other and themselves—a subtle but striking commentary on the fractured ways we perceive identity.

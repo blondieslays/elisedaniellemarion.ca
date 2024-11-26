@@ -465,15 +465,39 @@ footer p {
   flex: 1;
 }
 
+
+/* Review Text */
 .review-text {
   flex: 2;
-  text-align: left;
-  padding-left: 20px;
+  text-align: left; /* Ensure all text aligns to the left */
+  padding-left: 20px; /* Keep a consistent padding */
 }
 
+/* Add space between metadata fields */
+.review-text p:first-of-type {
+  margin-top: 10px; /* Add space at the top of the first paragraph */
+}
+
+.review-text p:last-of-type {
+  margin-bottom: 10px; /* Add space below the last paragraph */
+}
+
+
+/* Individual Paragraphs in Review Text */
 .review-text p {
-  margin: 5px 0;
+  margin: 10px 0; /* Ensure consistent spacing between paragraphs */
+  line-height: 1.6; /* Adjust line height for better readability */
   color: #3b600c;
+  font-size: 0.95rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .review-text {
+    text-align: center; /* Center-align on smaller devices */
+    padding-left: 0; /* Remove padding for better responsiveness */
+  }
 }
 
 
@@ -501,6 +525,7 @@ footer p {
 
 .highlight-text {
   text-align: left;
+  flex: 2;
   maring: 5px;
   margin-right: 20px; /* Space between text and image */
   color: #3b600c;
@@ -512,6 +537,13 @@ footer p {
   flex: 0 0 auto; /* Fixes the image size */
 }
 
+/* Highlight Text */
+.highlight-text p {
+  margin: 10px 0; /* Match the margin with .review-text */
+  line-height: 1.6; /* Match the line height with .review-text */
+  color: #3b600c;
+  font-size: 0.95rem;
+}
 
 
 /* Responsive Design */

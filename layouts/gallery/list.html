@@ -52,6 +52,8 @@
 <!-- Green Band -->
 <div class="green-band"></div>
 
+
+
 <!-- Film Reviews -->
 <div class="film-reviews">
   <h2>Film Reviews</h2>
@@ -71,14 +73,20 @@
     <!-- Title Bar -->
     <div class="review-title-bar">{{ .Title }}</div>
 
-    <!-- Review Top Row -->
-    <div class="review-row">
-      <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
-      <div class="review-text">
-        <p><strong>Rating:</strong> {{ .Params.rating | default "N/A" }}/5</p>
-        <p>{{ .Params.review }}</p>
-      </div>
-    </div>
+<!-- Review Top Row -->
+<div class="review-row">
+  <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
+  <div class="review-text">
+    <!-- Director and Year Metadata -->
+    <p><strong>Director:</strong> {{ .Params.director | default "Unknown" }}</p>
+    <p><strong>Year:</strong> {{ .Params.year | default "N/A" }}</p>
+    <!-- Review Text -->
+    <p><strong>Rating:</strong> {{ .Params.rating | default "N/A" }}/5</p>
+    <p>{{ .Params.review }}</p>
+  </div>
+</div>
+
+
 
     <!-- Highlights Section -->
     <div class="review-highlights">
@@ -90,10 +98,11 @@
         <img src="{{ .Params.highlightImage }}" alt="Highlight moment from {{ .Title }}" class="highlight-image">
       </div>
     </div>
-
   </div>
   {{ end }}
 </div>
+
+
 
 
 

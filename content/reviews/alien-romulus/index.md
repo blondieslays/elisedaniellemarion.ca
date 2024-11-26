@@ -2,6 +2,8 @@
 title: "Alien: Romulus"
 gallery: "Epimetheus Gallery"
 rating: "5"
+year: "2024"
+director: "Fede Álvarez"
 poster: "/films/romulus.gif"
 review: "Alien: Romulus sets a vastly different tone from its predecessors, offering a grim and unsettling vision of humanity's future with space colonization. 
 Thematically, Romulus tackles the consequences of technological evolution, particularly the ethical balance between innovation and control. 

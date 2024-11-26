@@ -1,7 +1,9 @@
 ---
 title: "Annihilation"
 gallery: "Prometheus Gallery"
-rating: "5"
+rating: "3.5"
+year: "2018"
+director: "Alex Garland"
 poster: "/films/annihilation.gif"
 review: "Annihilation (2018), much like Margaret Atwood’s works in the MaddAddam Trilogy, is a haunting exploration of humanity’s hubris and its collision with the unknowable forces of nature. The film plunges into the psychological and ecological consequences of human interference with life’s building blocks. 
 Thematically, the film resonates with Atwood’s meditations on the arrogance of attempting to control or manipulate natural processes—whether through bioengineering in Oryx and Crake or the genetic experimentation of the Shimmer in Annihilation.
