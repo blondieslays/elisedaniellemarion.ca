@@ -71,6 +71,11 @@ transition: opacity 0.3s ease; /* Smooth fade-in effect */
 opacity: 1; /* Arrow becomes visible on hover */
 }
 
+
+
+
+
+
 /* Homepage Title Styling */
 .homepage-title {
 text-align: center;
@@ -81,6 +86,28 @@ margin-bottom: 20px;
 padding-top: 20px;
 }
 
+/* Styling for the welcome band */
+.welcome-band {
+    background-color: #fdfaf5; /* Match the review tile background */
+    padding: 20px 10px; /* Add subtle padding inside the welcome band */
+    margin-bottom: 20px; /* Reduce gap between the welcome band and images */
+    line-height: 1.6; /* Improve readability */
+    text-align: center; /* Ensure consistent alignment across screen sizes */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Style for the welcome text */
+.homepage-welcome {
+    font-size: 1rem; /* Match the green band text size */
+    color: #3b600c; /* Use the branded green color */
+    margin: 0; /* Remove default margins */
+    line-height: 1.6; /* Improve readability */
+    max-width: 800px; /* Limit width for better readability */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
+}
+
+/* Responsive Adjustments for Homepage */
 @media (max-width: 768px) {
 /* Homepage Title */
 .homepage-title {
@@ -94,12 +121,25 @@ margin-bottom: -10px
 #homepage-images .image-split-container {
 flex-direction: column; /* Stack images vertically */
 align-items: center;
-gap: 15px; /* Reduce gap between images */
+gap: 20px; /* Reduce gap between images */
 }
 
 #homepage-images .image-split-container a {
 width: 80%; /* Ensure images fill more space on smaller screens */
 }
+
+
+    .welcome-band {
+        margin-bottom: 15px; /* Add spacing between welcome band and first image */
+    }
+
+
+   .image-container img {
+        height: auto;
+        width: 100%; /* Ensure images are responsive */
+    }
+
+
 }
 
 
@@ -117,6 +157,10 @@ font-family: 'Newsreader', serif;
 font-size: 1.1rem;
 margin: 0;
 }
+
+
+
+
 
 /* Career Timeline Section */
 .career-timeline {
@@ -673,7 +717,11 @@ font-size: 1rem; /* Reduce description font size */
     }
 
     .review-image, .highlight-image {
-        max-width: 80%; /* Adjust image size for smaller screens */
+        width: 100%; /* Set consistent width */
+        max-width: 300px; /* Prevent exceeding a certain size */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        margin: 0 auto; /* Center-align the images */
     }
 
     .review-highlights h4 {
@@ -685,6 +733,8 @@ font-size: 1rem; /* Reduce description font size */
         padding-left: 0; /* Remove padding for better responsiveness */
     }
 }
+
+
 
 
 
