@@ -678,6 +678,7 @@ font-size: 1rem; /* Reduce description font size */
     text-align: left;
     margin-bottom: 10px;
     font-size: 1.3rem;
+    font-family: 'Newsreader', serif;
     color: #3b600c;
 }
 

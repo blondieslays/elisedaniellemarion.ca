@@ -87,7 +87,7 @@
 <div class="review-row">
     <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
     <div class="review-text">
-        <p>{{ .Params.review }}</p>
+        <p>{{ .Params.review | markdownify }}</p>
     </div>
 </div>
 
@@ -97,7 +97,7 @@
       <h4>Highlights</h4>
       <div class="review-highlights-row">
         <div class="highlight-text">
-          <p>{{ .Params.highlights }}</p>
+          <p>{{ .Params.highlights | markdownify }}</p>
         </div>
         <img src="{{ .Params.highlightImage }}" alt="Highlight moment from {{ .Title }}" class="highlight-image">
       </div>
