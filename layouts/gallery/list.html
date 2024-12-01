@@ -70,22 +70,26 @@
     <img src="/decorations/ivy-top-left.svg" alt="Ivy decoration top-left" class="ivy ivy-top-left">
     <img src="/decorations/ivy-bottom-right.svg" alt="Ivy decoration bottom-right" class="ivy ivy-bottom-right">
 
-    <!-- Title Bar -->
-    <div class="review-title-bar">{{ .Title }}</div>
 
-<!-- Review Top Row -->
-<div class="review-row">
-  <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
-  <div class="review-text">
-    <!-- Director and Year Metadata -->
-    <p><strong>Director:</strong> {{ .Params.director | default "Unknown" }}</p>
-    <p><strong>Year:</strong> {{ .Params.year | default "N/A" }}</p>
-    <!-- Review Text -->
-    <p><strong>Rating:</strong> {{ .Params.rating | default "N/A" }}/5</p>
-    <p>{{ .Params.review }}</p>
-  </div>
+<!-- Title Bar with Metadata -->
+<div class="review-title-bar">
+    <div class="title-and-metadata">
+        <span class="review-title">{{ .Title }}</span>
+        <span class="review-metadata">
+            <strong>Director:</strong> {{ .Params.director | default "Unknown" }} |
+            <strong>Year:</strong> {{ .Params.year | default "N/A" }} |
+            <strong>Rating:</strong> {{ .Params.rating | default "N/A" }}/5
+        </span>
+    </div>
 </div>
 
+<!-- Review Content -->
+<div class="review-row">
+    <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
+    <div class="review-text">
+        <p>{{ .Params.review }}</p>
+    </div>
+</div>
 
 
     <!-- Highlights Section -->
