@@ -621,6 +621,31 @@ font-size: 1rem; /* Reduce description font size */
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for long titles or metadata */
     gap: 10px;
+    transition: text-decoration 0.2s ease-in-out; /* Smooth transition */
+}
+
+/* Styling for Hyperlinks in Film Reviews */
+.review-title-bar a {
+   background-color: #3b600c; /* Slightly darker green for contrast */
+    color: #ffffff;
+    font-family: 'Newsreader', serif;
+    font-weight: 600; /* Semi-bold */
+}
+
+.review-title-bar a:hover {
+    text-decoration: underline;
+}
+
+/* If hyperlinks are elsewhere and need similar styling */
+.review-text a, .review-metadata a {
+    color: #ffffff;
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Ensures boldness */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.review-text a:hover, .review-metadata a:hover {
+    text-decoration: underline;
 }
 
 .review-title-bar .review-title {
