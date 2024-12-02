@@ -54,6 +54,7 @@
 
 
 
+
 <!-- Film Reviews -->
 <div class="film-reviews">
   <h2>Film Reviews</h2>
@@ -70,34 +71,40 @@
     <img src="/decorations/ivy-top-left.svg" alt="Ivy decoration top-left" class="ivy ivy-top-left">
     <img src="/decorations/ivy-bottom-right.svg" alt="Ivy decoration bottom-right" class="ivy ivy-bottom-right">
 
+    <!-- Review Header (Title and Metadata) -->
+    <div class="review-header">
 
-<!-- Title Bar with Metadata -->
-<div class="review-title-bar">
-    <div class="title-and-metadata">
-        <span class="review-title">{{ .Title }}</span>
-        <span class="review-metadata">
-            <strong>Director:</strong> {{ .Params.director | default "Unknown" }} |
-            <strong>Year:</strong> {{ .Params.year | default "N/A" }} |
-            <strong>Rating:</strong> {{ .Params.rating | default "N/A" }}/5
-        </span>
+      <div class="review-title-bar">
+        <div class="title-and-metadata">
+          <span class="review-title">
+           <a href="{{ .Params.filmURL }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+          </span>
+          <span class="review-metadata">
+            <strong>Director:</strong>
+            <a href="{{ .Params.directorURL }}" target="_blank" rel="noopener noreferrer">{{ .Params.director }}</a>
+            </a>
+            |
+            <strong>Year:</strong> {{ .Params.year }} |
+            <strong>Rating:</strong> {{ .Params.rating }}/5
+          </span>
+        </div>
+      </div>
     </div>
-</div>
 
-<!-- Review Content -->
-<div class="review-row">
-    <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
-    <div class="review-text">
-        <p>{{ .Params.review | markdownify }}</p>
+    <!-- Review Row (Image and Text) -->
+    <div class="review-row">
+      <img src="{{ .Params.poster }}" alt="{{ .Title }}" class="review-image">
+      <div class="review-text">
+        {{ .Params.review | markdownify }}
+      </div>
     </div>
-</div>
-
 
     <!-- Highlights Section -->
     <div class="review-highlights">
       <h4>Highlights</h4>
       <div class="review-highlights-row">
         <div class="highlight-text">
-          <p>{{ .Params.highlights | markdownify }}</p>
+          {{ .Params.highlights | markdownify }}
         </div>
         <img src="{{ .Params.highlightImage }}" alt="Highlight moment from {{ .Title }}" class="highlight-image">
       </div>
@@ -105,9 +112,6 @@
   </div>
   {{ end }}
 </div>
-
-
-
 
 
 
