@@ -1,7 +1,7 @@
 ---
 title: "Ex Machina"
 gallery: "Prometheus Gallery"
-rating: "4.5"
+rating: "4"
 year: "2014"
 director: "Alex Garland"
 poster: "/films/ex-machina.gif"
