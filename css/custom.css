@@ -253,6 +253,48 @@ color: #555;
 
 
 
+/* RESUME PAGE */
+
+/* Apply Newsreader Font */
+h1, h2, h3, .skills-section h2, .resume-section h2, .education-section h2, .teaching-section h2 {
+  font-family: 'Newsreader', serif; /* Use Newsreader font */
+}
+
+/* Styling for the Name in the Bio Section */
+.bio-section h1 {
+  font-family: 'Newsreader', serif;
+  font-size: 2.5rem;
+  font-weight: 700; /* Semi-bold for emphasis */
+  margin-bottom: 10px;
+}
+
+/* Adjusting Section Headings */
+.skills-section h2,
+.resume-section h2,
+.education-section h2,
+.teaching-section h2 {
+  text-align: center; /* Center align the text */
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+  color: #3b600c;
+  font-weight: 600; /* Slightly bold */
+  margin-bottom: 15px;
+}
+
+/* Adjusting Subheadings in Skills and Education */
+.skills-section h3, .education-item h3, .teaching-item h3 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.5rem;
+  font-weight: 500; /* Medium weight */
+  margin-bottom: 10px;
+}
+
+/* Optional: Section Spacing for Better Flow */
+.skills-section, .resume-section, .education-section, .teaching-section {
+  margin-bottom: 40px;
+}
+
+
 
 
 
@@ -317,6 +359,97 @@ color: #555;
 
 
 
+/* Skills Section */
+.skills-section {
+margin: 50px auto;
+max-width: 900px;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 8px;  
+background-color: #fdfaf5;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #3b600c;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3b600c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skill-category {
+  flex: 1 1 45%; /* Two-column layout */
+  min-width: 250px;
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  color: #3b600c;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3b600c;
+  padding-bottom: 5px;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skill-category ul li::before {
+  content: "✔";
+  color: #3b600c;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+
+/* Download Button */
+.download-resume {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #3b600c;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background-color: #2d4b0a;
+}
+
+
+
+
 
 
 
@@ -339,6 +472,14 @@ font: "Newsreader";
 font-size: 2.5em;
 color: #333;
 }
+
+.resume-header h2 {
+font: "Newsreader";
+text-align: center;
+font-size: 2.5em;
+color: #333;
+}
+
 
 /* Resume Map (Tiles Layout) */
 .resume-map {
@@ -567,6 +708,8 @@ margin-bottom: 5px;
 
 
 
+/* GALLERY PAGES */
+
 /* Gallery Header Styling */
 .gallery-header h1 {
 padding-top: 50px; /* Adjust padding as needed */
@@ -683,8 +826,6 @@ font-size: 1rem; /* Reduce description font size */
 
 
 
-
-
 /* Film Reviews Section */
 .film-reviews {
     max-width: 1000px;
@@ -710,13 +851,12 @@ font-size: 1rem; /* Reduce description font size */
 /* Review Tile */
 .review-tile {
     background-color: #fdfaf5;
-    position: relative; /* Creates a positioning context for the ivy */
+    position: relative;
     border-radius: 8px;
-    border: 1px solid #ddd; /* Optional: Light border for better definition */
+    border: 1px solid #ddd;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 10px;
-    flex: 0 1 calc(50% - 20px); /* Two tiles per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
 }
 
 /* Ivy Decorations */
@@ -724,8 +864,8 @@ font-size: 1rem; /* Reduce description font size */
     position: absolute;
     width: 80px;
     height: auto;
-    z-index: 1; /* Ensure ivy appears above the tile background */
-    pointer-events: none; /* Prevent interaction issues */
+    z-index: 1;
+    pointer-events: none;
 }
 
 .ivy-top-left {
@@ -740,44 +880,19 @@ font-size: 1rem; /* Reduce description font size */
 
 /* Title Bar with Metadata */
 .review-title-bar {
-    background-color: #3b600c; /* Slightly darker green for contrast */
+    background-color: #3b600c;
     color: #ffffff;
     font-family: 'Newsreader', serif;
     padding: 15px 20px;
     border-radius: 8px 8px 0 0;
     text-align: left;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for long titles or metadata */
-    gap: 10px;
-    transition: text-decoration 0.2s ease-in-out; /* Smooth transition */
-}
-
-/* Styling for Hyperlinks in Film Reviews */
-.review-title-bar a {
-   background-color: #3b600c; /* Slightly darker green for contrast */
-    color: #ffffff;
-    font-family: 'Newsreader', serif;
-    font-weight: 600; /* Semi-bold */
-}
-
-.review-title-bar a:hover {
-    text-decoration: underline;
-}
-
-/* If hyperlinks are elsewhere and need similar styling */
-.review-text a, .review-metadata a {
-    color: #ffffff;
-    text-decoration: none; /* Removes the underline */
-    font-weight: bold; /* Ensures boldness */
-    transition: color 0.3s ease; /* Smooth transition for hover */
-}
-
-.review-text a:hover, .review-metadata a:hover {
-    text-decoration: underline;
+    flex-wrap: nowrap; /* Prevent wrapping on desktop */
+    gap: 15px;
 }
 
 .review-title-bar .review-title {
-    font-size: 1.8rem; /* Emphasized font size for the title */
+    font-size: 1.8rem;
     font-weight: bold;
     flex: 1; /* Allow title to take up available space */
 }
@@ -787,33 +902,62 @@ font-size: 1rem; /* Reduce description font size */
     line-height: 1.4;
     color: #fdfaf5; /* Off-white for contrast */
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-wrap: nowrap; /* Prevent wrapping on desktop */
+    gap: 15px; /* Space between metadata items */
 }
 
-.review-title-bar .review-metadata span {
-    margin-right: 15px; /* Space between metadata items */
-    font-style: italic; /* Highlight metadata labels */
+.review-title-bar a {
+    color: #ffffff;
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    text-decoration: none; /* No underline */
 }
 
-/* Top Row: Image and Review Text */
+.review-title-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Metadata Items */
+.review-metadata .metadata-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.metadata-item.director {
+    font-size: 1rem;
+}
+
+.metadata-item.year-rating {
+    display: flex;
+    gap: 5px;
+    font-size: 1rem;
+}
+
+/* Separator */
+.separator {
+    margin: 0 5px;
+}
+
+/* Row Structure: Image and Review Text */
 .review-row {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 20px;
     margin-top: 20px;
 }
 
 .review-image {
-    max-width: 40%; /* Restrict width to 40% */
+    max-width: 40%; /* Restrict image width to 40% */
     border-radius: 8px;
     margin: 0;
     flex-shrink: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .review-text {
-    flex: 2; /* Allow text to grow and fill available space */
+    flex: 1; /* Allow text to take up the remaining space */
     text-align: left;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -823,7 +967,7 @@ font-size: 1rem; /* Reduce description font size */
 /* Highlights Section */
 .review-highlights {
     margin-top: 30px;
-    border-top: 1px solid #ddd; /* Divider between review text and highlights */
+    border-top: 1px solid #ddd;
     padding-top: 20px;
 }
 
@@ -837,7 +981,7 @@ font-size: 1rem; /* Reduce description font size */
 
 .review-highlights-row {
     display: flex;
-    align-items: flex-start; /* Align text and image at the top */
+    align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
 }
@@ -851,24 +995,33 @@ font-size: 1rem; /* Reduce description font size */
 }
 
 .highlight-image {
-    max-width: 35%; /* Restrict highlight image size */
+    max-width: 35%;
     border-radius: 8px;
-    flex-shrink: 0; /* Prevent shrinking of the image */
+    flex-shrink: 0;
 }
 
 /* Responsive Design for Film Reviews */
 @media (max-width: 768px) {
-    .review-tile {
-        flex: 0 1 100%; /* Stack reviews vertically on smaller screens */
-    }
-
     .review-title-bar {
         text-align: center; /* Center-align title and metadata */
-        flex-direction: column; /* Stack title and metadata */
+        flex-direction: column; /* Stack title and metadata vertically */
     }
 
     .review-title-bar .review-title {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .review-title-bar .review-metadata {
+        text-align: center; /* Center-align metadata */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: center; /* Ensure items are centered */
+        gap: 10px; /* Add spacing between metadata items */
+    }
+
+    .metadata-item.director,
+    .metadata-item.year-rating {
+        display: flex;
+        justify-content: center; /* Center-align each metadata item */
     }
 
     .review-row {
@@ -877,32 +1030,38 @@ font-size: 1rem; /* Reduce description font size */
     }
 
     .review-image {
-        max-width: 80%; /* Scale image for smaller screens */
-        margin-bottom: 20px;
+        max-width: 90%; /* Scale image for smaller screens */
+        margin-bottom: 15px; /* Add spacing below the image */
     }
 
     .review-text {
-        text-align: center; /* Center-align text for smaller screens */
+        text-align: center; /* Center-align text for mobile */
+        margin: 0 15px;
     }
 
     .review-highlights h4 {
-        text-align: center; /* Center-align highlight heading */
+        text-align: center; /* Center-align highlights heading */
     }
 
     .review-highlights-row {
-        flex-direction: column; /* Stack highlight image and text vertically */
+        flex-direction: column; /* Stack highlight text and image vertically */
         align-items: center;
     }
 
     .highlight-image {
-        max-width: 80%; /* Scale highlight image */
+        max-width: 80%; /* Scale highlight image for smaller screens */
         margin-bottom: 20px;
     }
 
     .highlight-text {
-        text-align: center; /* Center-align text */
+        text-align: center; /* Center-align highlight text */
+        margin: 0 15px;
     }
 }
+
+
+
+
 
 
 
