@@ -117,6 +117,48 @@
     </div>
   </div>
   {{ end }}
+
+
+
+<!-- Next Gallery Button -->
+<div class="next-gallery">
+    <!-- Define the gallery sequence -->
+    {{ $galleries := slice "Prometheus Gallery" "Epimetheus Gallery" "Pandora Gallery" }}
+
+    <!-- Get the current gallery from the page title -->
+    {{ $currentGallery := .Page.Title }}
+
+    <!-- Find the index of the current gallery -->
+    {{ $currentIndex := -1 }}
+    {{ range $index, $gallery := $galleries }}
+        {{ if eq $currentGallery $gallery }}
+            {{ $currentIndex = $index }}
+        {{ end }}
+    {{ end }}
+
+    <!-- Calculate the next gallery index -->
+    {{ $nextIndex := mod (add $currentIndex 1) (len $galleries) }}
+
+    <!-- Get the next gallery -->
+    {{ $nextGallery := index $galleries $nextIndex }}
+
+    <!-- Generate the link for the next gallery without "Gallery" in the URL -->
+    <a href="/{{ lower (replace $nextGallery " Gallery" "" ) }}" class="next-gallery-button">
+        {{ $nextGallery }} →
+    </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
