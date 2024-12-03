@@ -307,7 +307,7 @@ h1, h2, h3, .skills-section h2, .resume-section h2, .education-section h2, .teac
 }
 
 .bio-container {
-  max-width: 1000px; /* Limit the max width */
+  max-width: 900px; /* Limit the max width */
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -361,16 +361,24 @@ h1, h2, h3, .skills-section h2, .resume-section h2, .education-section h2, .teac
 
 /* Skills Section */
 .skills-section {
-margin: 50px auto;
-max-width: 900px;
-padding: 20px;
-background-color: #f9f9f9;
-border-radius: 8px;  
-background-color: #fdfaf5;
+  background-color: #fdfaf5;
+  padding: 30px;
   text-align: left;
+  max-width: 800px; /* Limit width for desktop */
+  margin: 20px auto; /* Center horizontally and add vertical space */
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 1px solid #3b600c;
+  border: 1px solid #ddd;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skills-section {
+    margin: 20px 20px; /* Add margin all around for mobile */
+    padding: 20px; /* Maintain consistent padding on smaller screens */
+  }
+}
+
 
 .skills-section h2 {
   font-size: 2rem;
@@ -809,7 +817,7 @@ justify-content: center; /* Center-align tiles */
 }
 
 .tile {
-width: 90%; /* Reduce width for smaller screens */
+width: 150px; /* Reduce width for smaller screens */
 height: auto; /* Adjust height automatically */
 }
 
