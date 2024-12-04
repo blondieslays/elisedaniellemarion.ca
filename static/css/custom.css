@@ -456,7 +456,7 @@ h1, h2, h3, .skills-section h2, .resume-section h2, .education-section h2, .teac
 .skill-category ul li::before {
   content: "✔";
   color: #3b600c;
-  font-size: 1rem;
+  font-size: 0.9rem;
   position: absolute;
   left: 0;
   top: 0;
