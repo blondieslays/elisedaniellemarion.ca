@@ -12,6 +12,6 @@ contentTitle: "Pyxis – The Box of Curiosity"
 contentText1: "Pyxis, often referred to as Pandora’s box, symbolizes the risks of unchecked curiosity. It contained all the world’s evils, released by Pandora."
 contentText2: "While curiosity drives innovation, it can also lead to unintended consequences—just as it did with Pandora’s box."
 contentText3: "In the realm of AI, Pyxis serves as a reminder to explore with caution and responsibility, ensuring that what we unleash serves the greater good."
-contentImage: "/images/story/pyxis-story-image.png"
+storyImage: "/images/story/pyxis-story-image.png"
 ---
 

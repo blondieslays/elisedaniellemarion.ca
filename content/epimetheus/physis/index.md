@@ -12,6 +12,6 @@ contentTitle: "Physis – The Essence of Nature"
 contentText1: "Physis captures the natural world's essence, reflecting the beauty and unpredictability of life."
 contentText2: "This reminds us to respect the power of nature and acknowledge that technology, including AI, must harmonize with the world around us."
 contentText3: "AI development inspired by Physis encourages sustainable and eco-conscious technologies that work with, rather than against, nature."
-contentImage: "/images/story/physis-story-image.png"
+storyImage: "/images/story/physis-story-image.png"
 ---
 

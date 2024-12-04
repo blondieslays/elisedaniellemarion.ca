@@ -87,6 +87,14 @@
 
 
 
+<!-- Display Story Image -->
+<div class="story-image">
+    <img src="{{ .Params.storyImage }}" alt="{{ .Title }} Story Image">
+</div>
+
+
+
+
     <!-- Main Content -->
     <div class="story-content">
         <h2>{{ .Params.contentTitle }}</h2>
@@ -104,6 +112,11 @@
         </a>
     </div>
     {{ end }}
+
+
+<footer>
+    <p>&copy; 2024 Elise Danielle Marion</p>
+</footer>
 
 </body>
 </html>

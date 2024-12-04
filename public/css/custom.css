@@ -1135,7 +1135,7 @@ width: 80%; /* Ensure images fill more space on smaller screens */
 
 
 
-/* Spark Pages Section */
+/* SPARK PAGES */
 
 
 /* Page Title Container for Spark Pages */
@@ -1166,40 +1166,6 @@ width: 80%; /* Ensure images fill more space on smaller screens */
 
 
 
-/* Single Tile Container with Hover Effect */
-.single-tile-container {
-    max-width: 800px;
-    margin: 20px auto;
-    perspective: 1000px; /* Add 3D perspective for hover effects */
-}
-
-.hover-tile {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.hover-tile img {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.5s ease; /* Smooth fade transition */
-}
-
-.hover-tile .tile-back {
-    opacity: 0;
-}
-
-.hover-tile:hover .tile-back {
-    opacity: 1; /* Back image appears on hover */
-}
-
-.hover-tile:hover .tile-front {
-    opacity: 0; /* Front image disappears on hover */
-}
 
 /* Green Band Styling */
 .green-band {
@@ -1210,8 +1176,7 @@ width: 80%; /* Ensure images fill more space on smaller screens */
     font-family: 'Newsreader', serif;
     text-align: center;
     font-size: 1.2em;
-    margin: 40px auto; /* Consistent spacing above and below */
-    border-radius: 5px; /* Optional: Rounded corners */
+    margin: 20px auto; /* Consistent spacing above and below */
     box-sizing: border-box;
 }
 
@@ -1252,13 +1217,52 @@ width: 80%; /* Ensure images fill more space on smaller screens */
     pointer-events: auto; /* Ensure images remain clickable */
 }
 
+
+
+
+
+/* Story Image Styling */
+.story-image img {
+    width: 100%; /* Ensure the image adjusts responsively */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    display: flex;
+    margin: 20px auto; /* Center the image horizontally */
+    border-radius: 8px; /* Optional: Rounded corners for a polished look */
+    text-align: center;
+}
+
+/* Center the story image container */
+.story-image {
+    margin: 20px auto; /* Add vertical spacing above and below */
+    text-align: center; /* Center the image inside the container */
+    padding: 0 10px; /* Add horizontal padding to prevent clipping on smaller screens */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .story-image img {
+        max-width: 300px; /* Ensure the image fits the screen width */
+        margin: 20px auto; /* Center the image horizontally */          
+ }
+
+    .story-image {
+        padding: 0; /* Reset padding for mobile */
+    }
+}
+
+
+
+
+
+
+
 /* Story Section Styling */
 .story-content {
     max-width: 800px;
-    margin: 100px auto; /* Add top and bottom spacing */
+    margin: 20px auto; /* Add top and bottom spacing */
     font-family: 'Raleway', serif;
     text-align: center;
-    padding-top: 40px; /* Optional: Add more top padding */
 }
 
 .story-content h2 {
@@ -1277,10 +1281,25 @@ width: 80%; /* Ensure images fill more space on smaller screens */
     margin-bottom: 20px;
 }
 
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .story-content {
+        max-width: 400px; /* Ensure the image fits the screen width */
+        margin: 10px auto; /* Center the image horizontally */
+ }
+
+    .story-content p {
+        padding: 20px; /* Reset padding for mobile */
+        font-size: 0.9rem;   
+ }
+}
+
 /* Download Article Button */
 .download-article {
     text-align: center;
     margin-top: 40px;
+    padding: 20px;
 }
 
 .download-button {

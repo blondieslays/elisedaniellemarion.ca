@@ -12,6 +12,6 @@ contentTitle: "Ameles – The Consequences of Neglect"
 contentText1: "Ameles represents negligence, symbolizing Epimetheus's failure to think ahead when gifting animals their abilities."
 contentText2: "It serves as a cautionary tale for today’s AI developers—reminding us of the risks when we prioritize speed and innovation over thoughtful design."
 contentText3: "Neglect in the development of AI can lead to unforeseen challenges. Ameles warns us to stay vigilant and anticipate future consequences."
-contentImage: "/images/story/ameles-story-image.png"
+storyImage: "/images/story/ameles-story-image.png"
 ---
 
