@@ -124,5 +124,9 @@
     <loc>https://www.elisedaniellemarion.ca/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elisedaniellemarion.ca/template-downloads/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
