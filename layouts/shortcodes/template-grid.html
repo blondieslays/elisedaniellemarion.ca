@@ -1,0 +1,57 @@
+<div class="templates-grid">
+    <!-- Cheese of the Month Tile -->
+    <div class="template-tile">
+        <div class="template-preview">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/templates/cheese1.jpg" alt="Cheese Template Page 1"></div>
+                    <div class="swiper-slide"><img src="/images/templates/cheese2.jpg" alt="Cheese Template Page 2"></div>
+                    <div class="swiper-slide"><img src="/images/templates/cheese3.jpg" alt="Cheese Template Page 3"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="template-info">
+            <h2>Cheese of the Month Club</h2>
+            <p>A fun and creative template to showcase monthly cheese selections.</p>
+            <a href="/pdfs/cheese-club-template.pdf" class="btn download-btn" download>Download PDF</a>
+            <a href="https://pinterest.com/pin/create/button/" class="btn share-btn">Share on Pinterest</a>
+        </div>
+    </div>
+
+    <!-- Family Recipe Book Tile -->
+    <div class="template-tile">
+        <div class="template-preview">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/templates/recipe1.jpg" alt="Recipe Book Page 1"></div>
+                    <div class="swiper-slide"><img src="/images/templates/recipe2.jpg" alt="Recipe Book Page 2"></div>
+                    <div class="swiper-slide"><img src="/images/templates/recipe3.jpg" alt="Recipe Book Page 3"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="template-info">
+            <h2>Family Recipe Book</h2>
+            <p>Preserve your family recipes with this customizable recipe book template.</p>
+            <a href="/pdfs/recipe-book-template.pdf" class="btn download-btn" download>Download PDF</a>
+            <a href="https://pinterest.com/pin/create/button/" class="btn share-btn">Share on Pinterest</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize Swiper instances
+    document.querySelectorAll('.swiper-container').forEach(container => {
+        new Swiper(container, {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+</script>
+

@@ -2,158 +2,158 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homepage on Elise Danielle Marion</title>
-    <link>https://www.elisedaniellemarion.ca/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Homepage on Elise Danielle Marion</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.elisedaniellemarion.ca/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pyr</title>
-      <link>https://www.elisedaniellemarion.ca/prometheus/pyr/</link>
+      <link>http://localhost:1313/prometheus/pyr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/prometheus/pyr/</guid>
+      <guid>http://localhost:1313/prometheus/pyr/</guid>
       <description></description>
     </item>
     <item>
       <title>Philanthropia</title>
-      <link>https://www.elisedaniellemarion.ca/prometheus/philanthropia/</link>
+      <link>http://localhost:1313/prometheus/philanthropia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/prometheus/philanthropia/</guid>
+      <guid>http://localhost:1313/prometheus/philanthropia/</guid>
       <description></description>
     </item>
     <item>
       <title>Phronesis</title>
-      <link>https://www.elisedaniellemarion.ca/prometheus/phronesis/</link>
+      <link>http://localhost:1313/prometheus/phronesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/prometheus/phronesis/</guid>
+      <guid>http://localhost:1313/prometheus/phronesis/</guid>
       <description></description>
     </item>
     <item>
       <title>Zoa</title>
-      <link>https://www.elisedaniellemarion.ca/epimetheus/zoa/</link>
+      <link>http://localhost:1313/epimetheus/zoa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/epimetheus/zoa/</guid>
+      <guid>http://localhost:1313/epimetheus/zoa/</guid>
       <description></description>
     </item>
     <item>
       <title>Ameles</title>
-      <link>https://www.elisedaniellemarion.ca/epimetheus/ameles/</link>
+      <link>http://localhost:1313/epimetheus/ameles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/epimetheus/ameles/</guid>
+      <guid>http://localhost:1313/epimetheus/ameles/</guid>
       <description></description>
     </item>
     <item>
       <title>Physis</title>
-      <link>https://www.elisedaniellemarion.ca/epimetheus/physis/</link>
+      <link>http://localhost:1313/epimetheus/physis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/epimetheus/physis/</guid>
+      <guid>http://localhost:1313/epimetheus/physis/</guid>
       <description></description>
     </item>
     <item>
       <title>Pyxis</title>
-      <link>https://www.elisedaniellemarion.ca/pandora/pyxis/</link>
+      <link>http://localhost:1313/pandora/pyxis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/pandora/pyxis/</guid>
+      <guid>http://localhost:1313/pandora/pyxis/</guid>
       <description></description>
     </item>
     <item>
       <title>Kakon</title>
-      <link>https://www.elisedaniellemarion.ca/pandora/kakon/</link>
+      <link>http://localhost:1313/pandora/kakon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/pandora/kakon/</guid>
+      <guid>http://localhost:1313/pandora/kakon/</guid>
       <description></description>
     </item>
     <item>
       <title>Elpis</title>
-      <link>https://www.elisedaniellemarion.ca/pandora/elpis/</link>
+      <link>http://localhost:1313/pandora/elpis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/pandora/elpis/</guid>
+      <guid>http://localhost:1313/pandora/elpis/</guid>
       <description></description>
     </item>
     <item>
       <title>Arrival</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/arrival/</link>
+      <link>http://localhost:1313/reviews/arrival/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/arrival/</guid>
+      <guid>http://localhost:1313/reviews/arrival/</guid>
       <description></description>
     </item>
     <item>
       <title>Ex Machina</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/ex-machina/</link>
+      <link>http://localhost:1313/reviews/ex-machina/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/ex-machina/</guid>
+      <guid>http://localhost:1313/reviews/ex-machina/</guid>
       <description></description>
     </item>
     <item>
       <title>Interstellar</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/interstellar/</link>
+      <link>http://localhost:1313/reviews/interstellar/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/interstellar/</guid>
+      <guid>http://localhost:1313/reviews/interstellar/</guid>
       <description></description>
     </item>
     <item>
       <title>It Follows</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/it-follows/</link>
+      <link>http://localhost:1313/reviews/it-follows/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/it-follows/</guid>
+      <guid>http://localhost:1313/reviews/it-follows/</guid>
       <description></description>
     </item>
     <item>
       <title>Logan</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/logan/</link>
+      <link>http://localhost:1313/reviews/logan/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/logan/</guid>
+      <guid>http://localhost:1313/reviews/logan/</guid>
       <description></description>
     </item>
     <item>
       <title>The Dark Knight</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/the-dark-knight/</link>
+      <link>http://localhost:1313/reviews/the-dark-knight/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/the-dark-knight/</guid>
+      <guid>http://localhost:1313/reviews/the-dark-knight/</guid>
       <description></description>
     </item>
     <item>
       <title>Annihilation</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/annihilation/</link>
+      <link>http://localhost:1313/reviews/annihilation/</link>
       <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/annihilation/</guid>
+      <guid>http://localhost:1313/reviews/annihilation/</guid>
       <description></description>
     </item>
     <item>
       <title>It&#39;s What&#39;s Inside</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/its-whats-inside/</link>
+      <link>http://localhost:1313/reviews/its-whats-inside/</link>
       <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/its-whats-inside/</guid>
+      <guid>http://localhost:1313/reviews/its-whats-inside/</guid>
       <description></description>
     </item>
     <item>
       <title>Alien: Romulus</title>
-      <link>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</link>
+      <link>http://localhost:1313/reviews/alien-romulus/</link>
       <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</guid>
+      <guid>http://localhost:1313/reviews/alien-romulus/</guid>
       <description></description>
     </item>
     <item>
       <title>Articles Gallery</title>
-      <link>https://www.elisedaniellemarion.ca/articles-gallery/</link>
+      <link>http://localhost:1313/articles-gallery/</link>
       <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/articles-gallery/</guid>
+      <guid>http://localhost:1313/articles-gallery/</guid>
       <description>&lt;h2 id=&#34;welcome-to-the-articles-gallery&#34;&gt;Welcome to the Articles Gallery!&lt;/h2&gt;&#xA;&lt;p&gt;Below are some of the highlighted articles. Click on any image to explore the full content!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resume</title>
-      <link>https://www.elisedaniellemarion.ca/resume/</link>
+      <link>http://localhost:1313/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/resume/</guid>
+      <guid>http://localhost:1313/resume/</guid>
       <description></description>
     </item>
     <item>
       <title>Template Downloads</title>
-      <link>https://www.elisedaniellemarion.ca/template-downloads/</link>
+      <link>http://localhost:1313/template-downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.elisedaniellemarion.ca/template-downloads/</guid>
-      <description>&lt;p&gt;Explore my free templates and download them to use for your projects!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/template-downloads/</guid>
+      <description>&lt;p&gt;Explore my free templates and download them to use for your projects!&lt;/p&gt;&#xA;&lt;div class=&#34;templates-grid&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;template-tile&#34;&gt;&#xA;        &lt;div class=&#34;template-preview&#34;&gt;&#xA;            &lt;div class=&#34;swiper-container&#34;&gt;&#xA;                &lt;div class=&#34;swiper-wrapper&#34;&gt;&#xA;                    &lt;div class=&#34;swiper-slide&#34;&gt;&lt;img src=&#34;./images/templates/cheese1.jpg&#34; alt=&#34;Cheese Template Page 1&#34;&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;swiper-slide&#34;&gt;&lt;img src=&#34;./images/templates/cheese2.jpg&#34; alt=&#34;Cheese Template Page 2&#34;&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;swiper-slide&#34;&gt;&lt;img src=&#34;./images/templates/cheese3.jpg&#34; alt=&#34;Cheese Template Page 3&#34;&gt;&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;                &lt;div class=&#34;swiper-button-next&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;swiper-button-prev&#34;&gt;&lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;template-info&#34;&gt;&#xA;            &lt;h2&gt;Cheese of the Month Club&lt;/h2&gt;&#xA;            &lt;p&gt;A fun and creative template to showcase monthly cheese selections.&lt;/p&gt;&#xA;            &lt;a href=&#34;./pdfs/cheese-club-template.pdf&#34; class=&#34;btn download-btn&#34; download&gt;Download PDF&lt;/a&gt;&#xA;            &lt;a href=&#34;https://pinterest.com/pin/create/button/&#34; class=&#34;btn share-btn&#34;&gt;Share on Pinterest&lt;/a&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &#xA;    &lt;div class=&#34;template-tile&#34;&gt;&#xA;        &lt;div class=&#34;template-preview&#34;&gt;&#xA;            &lt;div class=&#34;swiper-container&#34;&gt;&#xA;                &lt;div class=&#34;swiper-wrapper&#34;&gt;&#xA;                    &lt;div class=&#34;swiper-slide&#34;&gt;&lt;img src=&#34;./images/templates/recipe1.jpg&#34; alt=&#34;Recipe Book Page 1&#34;&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;swiper-slide&#34;&gt;&lt;img src=&#34;./images/templates/recipe2.jpg&#34; alt=&#34;Recipe Book Page 2&#34;&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;swiper-slide&#34;&gt;&lt;img src=&#34;./images/templates/recipe3.jpg&#34; alt=&#34;Recipe Book Page 3&#34;&gt;&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;                &lt;div class=&#34;swiper-button-next&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;swiper-button-prev&#34;&gt;&lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;template-info&#34;&gt;&#xA;            &lt;h2&gt;Family Recipe Book&lt;/h2&gt;&#xA;            &lt;p&gt;Preserve your family recipes with this customizable recipe book template.&lt;/p&gt;&#xA;            &lt;a href=&#34;./pdfs/recipe-book-template.pdf&#34; class=&#34;btn download-btn&#34; download&gt;Download PDF&lt;/a&gt;&#xA;            &lt;a href=&#34;https://pinterest.com/pin/create/button/&#34; class=&#34;btn share-btn&#34;&gt;Share on Pinterest&lt;/a&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;script&gt;&#xA;    &#xA;    document.querySelectorAll(&#39;.swiper-container&#39;).forEach(container =&gt; {&#xA;        new Swiper(container, {&#xA;            loop: true,&#xA;            navigation: {&#xA;                nextEl: &#39;.swiper-button-next&#39;,&#xA;                prevEl: &#39;.swiper-button-prev&#39;,&#xA;            },&#xA;        });&#xA;    });&#xA;&lt;/script&gt;</description>
     </item>
   </channel>
 </rss>
