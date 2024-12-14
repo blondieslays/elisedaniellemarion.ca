@@ -808,7 +808,7 @@ padding-top: 20px; /* Remove padding */
 width: 300px; /* Fixed width for tiles */
 height: 400px; /* Fixed height for tiles */
 perspective: 1000px; /* Enable 3D perspective */
-margin: 10px; /* Add margin between tiles */
+margin: 5px; /* Add margin between tiles */
 border-radius: 15px; /* Adjust the value as needed */
 overflow: hidden; /* Ensures that child content respects the rounded corners */
 }
