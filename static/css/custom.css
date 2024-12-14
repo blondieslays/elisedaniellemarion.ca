@@ -800,7 +800,7 @@ align-items: flex-start; /* Align tiles to the top */
 gap: 20px; /* Add spacing between tiles */
 margin: 0 auto; /* Center the container */
 max-width: 1000px; /* Restrict the container width */
-padding: 0; /* Remove padding */
+padding-top: 20px; /* Remove padding */
 }
 
 /* Gallery Tiles */
@@ -809,6 +809,8 @@ width: 300px; /* Fixed width for tiles */
 height: 400px; /* Fixed height for tiles */
 perspective: 1000px; /* Enable 3D perspective */
 margin: 10px; /* Add margin between tiles */
+border-radius: 15px; /* Adjust the value as needed */
+overflow: hidden; /* Ensures that child content respects the rounded corners */
 }
 
 /* Tile Inner */
@@ -816,6 +818,7 @@ margin: 10px; /* Add margin between tiles */
 position: relative;
 width: 100%;
 height: 100%;
+border-radius: 15px; /* Adjust the value as needed */
 transition: transform 0.6s;
 transform-style: preserve-3d;
 }
@@ -843,7 +846,7 @@ transform: rotateY(180deg); /* Back side rotation */
 width: 100%; /* Make image fill the tile */
 height: 100%; /* Maintain the aspect ratio */
 object-fit: cover; /* Prevent image distortion */
-border-radius: 0; /* No rounded corners */
+border-radius: 15px; /* No rounded corners */
 box-shadow: none; /* Remove shadows */
 }
 
