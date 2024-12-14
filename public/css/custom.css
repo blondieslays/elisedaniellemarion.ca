@@ -757,7 +757,7 @@ margin-bottom: 5px;
 .gallery-container .gallery-header {
     background-color: #fdfaf5; /* Light neutral background */
     color: #3b600c; /* Dark green text */
-    padding: 2rem; /* Add more padding for readability */
+    padding: 20px; /* Add more padding for readability */
     text-align: center; /* Ensure alignment */
     font-family: 'Newsreader', serif; /* Gallery-specific font */
     border-bottom: 2px solid #3b600c;
@@ -767,20 +767,29 @@ margin-bottom: 5px;
 /* Specific styling for the gallery title (h1) */
 .gallery-container .gallery-header h1 {
     font-size: 2.5rem; /* Adjust font size */
+    color: #3b600c; /* Dark green text */
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 /* Specific styling for the gallery description (p) */
 .gallery-container .gallery-header p {
     font-size: 1.2rem;
-    color: #555; /* Subtle gray text */
+    color: #3b600c; /* Dark green text */
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto; /* Center the description */
 }
 
+/* Add spacing between the symbol menu and gallery container */
+.symbol-menu {
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+}
 
+/* Additional spacing for the gallery container itself, if necessary */
+.gallery-container {
+    padding-top: 50px; /* Adds space above the gallery container */
+}
 
 
 /* Gallery Tile Container */
