@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pandora Gallery on Elise Danielle Marion</title>
-    <link>http://localhost:1313/pandora/</link>
+    <link>https://www.elisedaniellemarion.ca/pandora/</link>
     <description>Recent content in Pandora Gallery on Elise Danielle Marion</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/pandora/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.elisedaniellemarion.ca/pandora/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pyxis</title>
-      <link>http://localhost:1313/pandora/pyxis/</link>
+      <link>https://www.elisedaniellemarion.ca/pandora/pyxis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pandora/pyxis/</guid>
+      <guid>https://www.elisedaniellemarion.ca/pandora/pyxis/</guid>
       <description></description>
     </item>
     <item>
       <title>Kakon</title>
-      <link>http://localhost:1313/pandora/kakon/</link>
+      <link>https://www.elisedaniellemarion.ca/pandora/kakon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pandora/kakon/</guid>
+      <guid>https://www.elisedaniellemarion.ca/pandora/kakon/</guid>
       <description></description>
     </item>
     <item>
       <title>Elpis</title>
-      <link>http://localhost:1313/pandora/elpis/</link>
+      <link>https://www.elisedaniellemarion.ca/pandora/elpis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pandora/elpis/</guid>
+      <guid>https://www.elisedaniellemarion.ca/pandora/elpis/</guid>
       <description></description>
     </item>
   </channel>

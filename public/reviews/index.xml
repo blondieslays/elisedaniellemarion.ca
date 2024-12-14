@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Film Reviews on Elise Danielle Marion</title>
-    <link>http://localhost:1313/reviews/</link>
+    <link>https://www.elisedaniellemarion.ca/reviews/</link>
     <description>Recent content in Film Reviews on Elise Danielle Marion</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.elisedaniellemarion.ca/reviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arrival</title>
-      <link>http://localhost:1313/reviews/arrival/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/arrival/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/arrival/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/arrival/</guid>
       <description></description>
     </item>
     <item>
       <title>Ex Machina</title>
-      <link>http://localhost:1313/reviews/ex-machina/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/ex-machina/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/ex-machina/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/ex-machina/</guid>
       <description></description>
     </item>
     <item>
       <title>Interstellar</title>
-      <link>http://localhost:1313/reviews/interstellar/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/interstellar/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/interstellar/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/interstellar/</guid>
       <description></description>
     </item>
     <item>
       <title>It Follows</title>
-      <link>http://localhost:1313/reviews/it-follows/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/it-follows/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/it-follows/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/it-follows/</guid>
       <description></description>
     </item>
     <item>
       <title>Logan</title>
-      <link>http://localhost:1313/reviews/logan/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/logan/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/logan/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/logan/</guid>
       <description></description>
     </item>
     <item>
       <title>The Dark Knight</title>
-      <link>http://localhost:1313/reviews/the-dark-knight/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/the-dark-knight/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/the-dark-knight/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/the-dark-knight/</guid>
       <description></description>
     </item>
     <item>
       <title>Annihilation</title>
-      <link>http://localhost:1313/reviews/annihilation/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/annihilation/</link>
       <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/annihilation/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/annihilation/</guid>
       <description></description>
     </item>
     <item>
       <title>It&#39;s What&#39;s Inside</title>
-      <link>http://localhost:1313/reviews/its-whats-inside/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/its-whats-inside/</link>
       <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/its-whats-inside/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/its-whats-inside/</guid>
       <description></description>
     </item>
     <item>
       <title>Alien: Romulus</title>
-      <link>http://localhost:1313/reviews/alien-romulus/</link>
+      <link>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</link>
       <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reviews/alien-romulus/</guid>
+      <guid>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</guid>
       <description></description>
     </item>
   </channel>
