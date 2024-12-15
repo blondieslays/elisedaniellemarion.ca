@@ -2,130 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.elisedaniellemarion.ca/prometheus/pyr/</loc>
+    <loc>http://localhost:1313/prometheus/pyr/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/prometheus/philanthropia/</loc>
+    <loc>http://localhost:1313/prometheus/philanthropia/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/prometheus/phronesis/</loc>
+    <loc>http://localhost:1313/prometheus/phronesis/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/epimetheus/zoa/</loc>
+    <loc>http://localhost:1313/epimetheus/zoa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/epimetheus/ameles/</loc>
+    <loc>http://localhost:1313/epimetheus/ameles/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/epimetheus/physis/</loc>
+    <loc>http://localhost:1313/epimetheus/physis/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/pandora/pyxis/</loc>
+    <loc>http://localhost:1313/pandora/pyxis/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/pandora/kakon/</loc>
+    <loc>http://localhost:1313/pandora/kakon/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/pandora/elpis/</loc>
+    <loc>http://localhost:1313/pandora/elpis/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/arrival/</loc>
+    <loc>http://localhost:1313/reviews/arrival/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/ex-machina/</loc>
+    <loc>http://localhost:1313/reviews/ex-machina/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/</loc>
+    <loc>http://localhost:1313/reviews/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/interstellar/</loc>
+    <loc>http://localhost:1313/reviews/interstellar/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/it-follows/</loc>
+    <loc>http://localhost:1313/reviews/it-follows/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/logan/</loc>
+    <loc>http://localhost:1313/reviews/logan/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/the-dark-knight/</loc>
+    <loc>http://localhost:1313/reviews/the-dark-knight/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/annihilation/</loc>
+    <loc>http://localhost:1313/reviews/annihilation/</loc>
     <lastmod>2024-11-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/its-whats-inside/</loc>
+    <loc>http://localhost:1313/reviews/its-whats-inside/</loc>
     <lastmod>2024-11-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/reviews/alien-romulus/</loc>
+    <loc>http://localhost:1313/reviews/alien-romulus/</loc>
     <lastmod>2024-11-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/epimetheus/</loc>
+    <loc>http://localhost:1313/epimetheus/</loc>
     <lastmod>2024-10-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/pandora/</loc>
+    <loc>http://localhost:1313/pandora/</loc>
     <lastmod>2024-10-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/prometheus/</loc>
+    <loc>http://localhost:1313/prometheus/</loc>
     <lastmod>2024-10-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/articles-gallery/</loc>
+    <loc>http://localhost:1313/articles-gallery/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/resume/</loc>
+    <loc>http://localhost:1313/resume/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.elisedaniellemarion.ca/template-downloads/</loc>
+    <loc>http://localhost:1313/template-downloads/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
